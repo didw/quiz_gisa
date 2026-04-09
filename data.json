@@ -1565,6 +1565,159 @@
       "frequency": "최빈출",
       "front": "`hosts.equiv` 및 `.rhosts` 파일의 보안 위험과 대응 방안은?",
       "back": "**위험**: `r-command`(rlogin, rsh)를 위한 신뢰 관계 설정 파일로, IP 스푸핑 공격에 극도로 취약\n\n**대응 방안**:\n- 소유자 외 쓰기 권한 제거\n- `+` 설정(모든 호스트 허용) 금지\n- r-command 서비스 자체를 비활성화하고 SSH로 대체"
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "서술형",
+      "frequency": "최빈출",
+      "front": "침해사고 대응 7단계 절차를 순서대로 나열하고 각 단계의 핵심 활동을 서술하시오.",
+      "back": "1. **사전 준비(Preparation)** - 대응 조직 구성, 도구·절차 마련\n2. **탐지 및 분석(Detection)** - 이상 징후 모니터링, 로그 분석\n3. **초기 대응(Initial Response)** - 침해 범위 파악, 보고 체계 가동\n4. **증거 확보(Evidence Collection)** - 디스크 이미징, 메모리 덤프, **무결성 확보(해시값 생성)**\n5. **상세 분석(Analysis)** - 공격 경로·기법·피해 범위 분석\n6. **차단 및 복구(Containment & Recovery)** - 악성코드 제거, 취약점 패치, 시스템 복구\n7. **사후 관리(Post-Incident)** - 재발 방지 대책 수립, 보고서 작성, 교훈 반영",
+      "id": 175,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "디지털 포렌식에서 증거의 무결성을 보장하기 위해 수집부터 법정 제출까지 증거 취급 이력을 문서화하는 절차는?",
+      "back": "**연계 보관성** (Chain of Custody)\n\n**정의**: 디지털 증거의 수집→분석→보관→법정 제출까지 **모든 취급 이력을 기록**하는 절차\n\n**핵심 원칙**:\n- 증거 수집 즉시 **해시값(MD5/SHA-256)** 생성하여 무결성 검증\n- 누가, 언제, 어디서, 무엇을 했는지 **모든 접근 기록** 유지\n- 원본은 보존하고 **사본(이미지)**으로 분석",
+      "id": 176,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "MITRE ATT&CK 프레임워크란 무엇이며, 구성 요소를 설명하시오.",
+      "back": "**MITRE ATT&CK** (Adversarial Tactics, Techniques & Common Knowledge)\n\n**정의**: 실제 사이버 공격에서 관찰된 **공격자의 전술(Tactics)과 기법(Techniques)**을 체계적으로 분류한 지식 기반 프레임워크\n\n**구성**: 전술(What) → 기법(How) → 절차(Detail)\n\n**활용**: 위협 인텔리전스, 레드팀 훈련, 보안 솔루션 탐지율 평가, 침해 분석 시 공격 기법 매핑",
+      "id": 177,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "ESM(Enterprise Security Management)과 SIEM(Security Information & Event Management)의 차이는?",
+      "back": "**ESM** (통합보안관리):\n- 방화벽, IDS/IPS, VPN 등 **이기종 보안장비의 로그를 통합 수집·관리**\n- 실시간 모니터링 및 정책 관리 중심\n\n**SIEM** (보안정보 및 이벤트 관리):\n- ESM + **로그 간 상관관계 분석(Correlation)** + 위협 인텔리전스 연동\n- 다양한 소스의 로그를 **정규화·상관분석**하여 고도화된 위협 탐지\n\n**관계**: SIEM은 ESM의 발전형으로 이해",
+      "id": 178,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "서술형",
+      "frequency": "최빈출",
+      "front": "APT(Advanced Persistent Threat) 공격의 특징과 Kill Chain 단계를 설명하시오.",
+      "back": "**APT 특징**: 특정 조직을 대상으로 **장기간·지속적**으로 수행하는 지능형 표적 공격\n\n**사이버 Kill Chain (Lockheed Martin) 7단계**:\n1. **정찰(Reconnaissance)** - 표적 정보 수집\n2. **무기화(Weaponization)** - 악성코드 제작\n3. **전달(Delivery)** - 스피어 피싱, 워터링 홀 등\n4. **취약점 공격(Exploitation)** - 취약점 실행\n5. **설치(Installation)** - 백도어/RAT 설치\n6. **명령·제어(C2, C&C)** - 공격자 서버와 통신 채널 구축\n7. **목적 달성(Actions on Objectives)** - 데이터 유출, 시스템 파괴",
+      "id": 179,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "악성코드의 주요 유형(바이러스, 웜, 트로이목마, 랜섬웨어, 루트킷)의 특징을 비교하시오.",
+      "back": "| 유형 | 자기복제 | 숙주 필요 | 핵심 특징 |\n|---|---|---|---|\n| **바이러스** | O | O | 정상 파일에 기생, 실행 시 감염 |\n| **웜(Worm)** | O | X | 네트워크로 **자체 전파**, 숙주 불필요 |\n| **트로이목마** | X | X | 정상 프로그램으로 **위장**, 백도어 설치 |\n| **랜섬웨어** | △ | X | 파일 **암호화** 후 금전 요구 |\n| **루트킷** | X | X | 커널/시스템 레벨에서 **자신을 은닉** |",
+      "id": 180,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "실무형",
+      "frequency": "최빈출",
+      "front": "다음 iptables 규칙을 해석하시오:\n\n`iptables -A INPUT -s 192.168.1.0/24 -p tcp --dport 22 -j ACCEPT`\n`iptables -A INPUT -p tcp --dport 22 -j DROP`",
+      "back": "**해석**:\n1. **첫 번째 룰**: 출발지가 192.168.1.0/24 대역인 TCP 패킷 중 목적지 포트 22(SSH)로 향하는 것을 **허용(ACCEPT)**\n2. **두 번째 룰**: 그 외 모든 출발지에서 SSH(22) 접속을 **차단(DROP)**\n\n**종합**: 내부망(192.168.1.0/24)에서만 SSH 접속 허용, 외부는 모두 차단\n\n**iptables 주요 옵션**:\n- `-A`: 룰 추가, `-s`: 출발지, `-d`: 목적지\n- `-p`: 프로토콜, `--dport`: 목적지 포트\n- `-j`: 액션(ACCEPT/DROP/REJECT/LOG)",
+      "id": 181,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "NAC(Network Access Control)의 정의와 주요 기능은?",
+      "back": "**NAC** (네트워크 접근 제어)\n\n**정의**: 네트워크에 접속하는 단말의 **보안 상태를 검증**하고, 정책에 부합하지 않는 단말의 접근을 **차단·격리**하는 보안 솔루션\n\n**주요 기능**:\n1. **인증(Authentication)** - 사용자/단말 신원 확인 (802.1X)\n2. **검역(Quarantine)** - 보안 패치 미적용, 백신 미설치 단말 격리\n3. **권한 부여** - 보안 수준에 따라 VLAN/접근 범위 차등 할당\n4. **모니터링** - 접속 후 지속적 상태 점검",
+      "id": 182,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "포렌식 분석 시 휘발성 증거 수집 순서(Order of Volatility)를 나열하시오.",
+      "back": "**휘발성이 높은 순서대로 수집** (전원 차단 시 소멸):\n\n1. **레지스터, 캐시** (CPU 내부)\n2. **메모리(RAM)** - 실행 중 프로세스, 네트워크 연결 정보\n3. **임시 파일, 스왑 영역**\n4. **디스크(HDD/SSD)** - 파일 시스템, 로그\n5. **원격 로그, 모니터링 데이터**\n6. **물리적 구성, 네트워크 토폴로지**\n7. **백업 매체** (가장 낮은 휘발성)\n\n※ **메모리 덤프를 최우선** 수집 (전원 유지 상태에서)",
+      "id": 183,
+      "subcategory": ""
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "OWASP Top 10 (2021)의 상위 5개 항목을 나열하시오.",
+      "back": "**OWASP Top 10 (2021)**:\n\n1. **A01: Broken Access Control** - 접근통제 실패\n2. **A02: Cryptographic Failures** - 암호화 실패\n3. **A03: Injection** - SQL/OS/LDAP 인젝션\n4. **A04: Insecure Design** - 안전하지 않은 설계\n5. **A05: Security Misconfiguration** - 보안 설정 오류\n\n※ A06: Vulnerable Components, A07: Authentication Failures, A08: Data Integrity, A09: Logging Failures, A10: SSRF",
+      "id": 184,
+      "subcategory": ""
+    },
+    {
+      "category": "시스템 보안",
+      "type": "서술형",
+      "frequency": "최빈출",
+      "front": "Bell-LaPadula 모델과 Biba 모델의 보안 속성(규칙)을 비교하시오.",
+      "back": "**Bell-LaPadula** (기밀성 모델):\n- **No Read Up** (Simple Security): 자신보다 **높은** 등급의 객체를 읽을 수 없음\n- **No Write Down** (*-property): 자신보다 **낮은** 등급의 객체에 쓸 수 없음\n- 목적: 정보의 **상향 유출 방지** (기밀성 보장)\n\n**Biba** (무결성 모델):\n- **No Read Down**: 자신보다 **낮은** 등급의 객체를 읽을 수 없음\n- **No Write Up**: 자신보다 **높은** 등급의 객체에 쓸 수 없음\n- 목적: 정보의 **하향 오염 방지** (무결성 보장)\n\n> 암기: BLP는 **기밀성**(읽기↑X, 쓰기↓X), Biba는 **무결성**(읽기↓X, 쓰기↑X) → **정반대**",
+      "id": 185,
+      "subcategory": ""
+    },
+    {
+      "category": "침해사고 분석 및 대응",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "CVE와 CWE의 차이점은?",
+      "back": "**CVE** (Common Vulnerabilities and Exposures):\n- 공개된 **특정 소프트웨어의 알려진 취약점**에 부여되는 고유 식별 번호\n- 예: CVE-2021-44228 (Log4Shell)\n\n**CWE** (Common Weakness Enumeration):\n- 소프트웨어의 **보안 약점 유형을 분류**한 목록 (추상적 분류 체계)\n- 예: CWE-89 (SQL Injection), CWE-79 (XSS)\n\n**관계**: CWE는 약점의 **유형**, CVE는 약점이 실제로 발현된 **개별 사례**",
+      "id": 186,
+      "subcategory": ""
+    },
+    {
+      "category": "네트워크 보안",
+      "type": "실무형",
+      "frequency": "최빈출",
+      "front": "DNS Zone Transfer를 인가된 Slave 서버(192.168.1.2)에서만 허용하도록 BIND named.conf를 설정하시오.",
+      "back": "```\noptions {\n  allow-transfer { 192.168.1.2; };\n  allow-recursion { 192.168.1.0/24; };\n};\n```\n\n**설명**:\n- `allow-transfer`: Zone Transfer(AXFR) 허용 IP 제한 → **정보 유출 방지**\n- `allow-recursion`: 재귀적 질의 허용 대역 제한 → **DNS 증폭 공격 방지**\n\n**위험**: 제한 없을 시 `nslookup`/`dig`으로 도메인 전체 호스트 정보 유출",
+      "id": 187,
+      "subcategory": ""
+    },
+    {
+      "category": "시스템 보안",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "Windows 이벤트 로그의 3가지 주요 유형과 각각의 기록 내용은?",
+      "back": "| 로그 유형 | 기록 내용 |\n|---|---|\n| **시스템(System)** | OS 서비스 시작/중지, 드라이버 오류, 부팅/종료 |\n| **보안(Security)** | 로그인 성공/실패, 권한 변경, 감사 정책 이벤트 |\n| **응용 프로그램(Application)** | 응용 프로그램 오류, 경고, 정보 이벤트 |\n\n**주요 보안 이벤트 ID**:\n- **4624**: 로그인 성공\n- **4625**: 로그인 실패\n- **4720**: 계정 생성\n- **4732**: 그룹 멤버 추가",
+      "id": 188,
+      "subcategory": ""
+    },
+    {
+      "category": "시스템 보안",
+      "type": "실무형",
+      "frequency": "최빈출",
+      "front": "다음 `/etc/sudoers` 설정을 해석하시오:\n\n`algisa ALL=(ALL) NOPASSWD: ALL`",
+      "back": "**해석**: 사용자 `algisa`는 **모든 호스트(ALL)**에서, **모든 사용자 권한(ALL)**으로, **패스워드 입력 없이(NOPASSWD)**, **모든 명령(ALL)**을 실행할 수 있다.\n\n**보안 위험**: 사실상 무제한 root 권한 → 계정 탈취 시 시스템 전체 장악\n\n**대응**:\n- NOPASSWD 제거\n- 필요한 명령어만 명시적 허용\n- `visudo` 명령으로 편집 (문법 검증)",
+      "id": 189,
+      "subcategory": ""
+    },
+    {
+      "category": "시스템 보안",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "접근통제의 3가지 유형(MAC, DAC, RBAC)과 대표 보안 모델을 비교하시오.",
+      "back": "| 유형 | 결정 주체 | 특징 | 대표 모델 |\n|---|---|---|---|\n| **MAC** | **시스템**(중앙) | 보안 등급 기반, 관리자도 변경 불가 | Bell-LaPadula, Biba |\n| **DAC** | **소유자** | 소유자가 임의 권한 부여 | Unix rwx, Windows ACL |\n| **RBAC** | **역할**(직무) | 역할에 권한 부여, 사용자에 역할 할당 | 기업 ERP, 클라우드 IAM |\n\n**시험 포인트**: MAC은 군/정부(높은 보안), DAC는 일반 OS, RBAC는 기업 환경",
+      "id": 190,
+      "subcategory": ""
+    },
+    {
+      "category": "네트워크 보안",
+      "type": "실무형",
+      "frequency": "최빈출",
+      "front": "TCP 헤더의 6개 제어 플래그(Control Flags)를 나열하고 각 기능을 설명하시오.",
+      "back": "| 플래그 | 기능 |\n|---|---|\n| **SYN** | 연결 수립 요청 (3-way handshake 시작) |\n| **ACK** | 확인 응답 (수신 확인) |\n| **FIN** | 연결 정상 종료 요청 |\n| **RST** | 연결 강제 종료 (비정상 세션 끊기) |\n| **PSH** | 수신 데이터를 즉시 상위 계층으로 전달 |\n| **URG** | 긴급 데이터 존재 표시 |\n\n**시험 빈출**: SYN Flooding(SYN), 세션 하이재킹(ACK Storm), 포트 스캔(SYN→RST)",
+      "id": 191,
+      "subcategory": ""
     }
   ]
 }

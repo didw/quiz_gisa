@@ -97,6 +97,7 @@ main {
 .filter-btn[data-category="네트워크 보안"].active  { background: #2ecc71; border-color: #2ecc71; color: #fff; }
 .filter-btn[data-category="웹/애플리케이션 보안"].active { background: #f39c12; border-color: #f39c12; }
 .filter-btn[data-category="법규 및 관리체계"].active { background: #9b59b6; border-color: #9b59b6; }
+.filter-btn[data-category="침해사고 분석 및 대응"].active { background: #e67e22; border-color: #e67e22; }
 
 /* Type filter bar */
 .type-filter-bar {
@@ -269,6 +270,7 @@ main {
 .category-badge[data-cat="네트워크 보안"]   { background: #e9faf0; color: #27ae60; }
 .category-badge[data-cat="웹/애플리케이션 보안"] { background: #fef6e4; color: #e67e22; }
 .category-badge[data-cat="법규 및 관리체계"] { background: #f5eefb; color: #9b59b6; }
+.category-badge[data-cat="침해사고 분석 및 대응"] { background: #fef0e4; color: #e67e22; }
 
 /* Category top-border accent */
 .card-face::before {
@@ -285,6 +287,7 @@ main {
 .card-face[data-cat="네트워크 보안"]::before   { background: #2ecc71; }
 .card-face[data-cat="웹/애플리케이션 보안"]::before { background: #f39c12; }
 .card-face[data-cat="법규 및 관리체계"]::before { background: #9b59b6; }
+.card-face[data-cat="침해사고 분석 및 대응"]::before { background: #e67e22; }
 
 /* Shared card content typography */
 .card-front-content,
