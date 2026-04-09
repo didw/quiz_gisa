@@ -1,0 +1,392 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-위험관리: #e74c3c;
+  --color-시스템보안: #3498db;
+  --color-네트워크보안: #2ecc71;
+  --color-웹보안: #f39c12;
+  --color-법규: #9b59b6;
+  --header-bg: #1a1a2e;
+  --card-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  --transition-speed: 0.6s;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', sans-serif;
+  background: #f0f2f5;
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: var(--header-bg);
+  color: #fff;
+  padding: 18px 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 16px;
+  gap: 16px;
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 760px;
+  width: 100%;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 2px solid #dde1e7;
+  border-radius: 999px;
+  background: #fff;
+  color: #555;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: #aab;
+  background: #f8f9fb;
+}
+
+.filter-btn.active {
+  background: var(--header-bg);
+  border-color: var(--header-bg);
+  color: #fff;
+}
+
+.filter-btn[data-category="위험관리"].active       { background: #e74c3c; border-color: #e74c3c; }
+.filter-btn[data-category="시스템 보안"].active    { background: #3498db; border-color: #3498db; }
+.filter-btn[data-category="네트워크 보안"].active  { background: #2ecc71; border-color: #2ecc71; color: #fff; }
+.filter-btn[data-category="웹/애플리케이션 보안"].active { background: #f39c12; border-color: #f39c12; }
+.filter-btn[data-category="법규 및 관리체계"].active { background: #9b59b6; border-color: #9b59b6; }
+
+/* Controls top */
+.controls-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+}
+
+.card-counter {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.shuffle-btn {
+  padding: 8px 18px;
+  border: 2px solid #dde1e7;
+  border-radius: 999px;
+  background: #fff;
+  color: #555;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.shuffle-btn:hover {
+  background: var(--header-bg);
+  border-color: var(--header-bg);
+  color: #fff;
+}
+
+/* Card scene — 3D perspective */
+.card-scene {
+  width: 100%;
+  max-width: 700px;
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  transform-style: preserve-3d;
+  transition: transform var(--transition-speed) ease;
+  border-radius: 16px;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.no-transition {
+  transition: none;
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  min-height: 400px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  padding: 28px 32px 24px;
+  overflow: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+/* Category badge */
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.category-badge[data-cat="위험관리"]        { background: #fdecea; color: #e74c3c; }
+.category-badge[data-cat="시스템 보안"]     { background: #e8f4fd; color: #3498db; }
+.category-badge[data-cat="네트워크 보안"]   { background: #e9faf0; color: #27ae60; }
+.category-badge[data-cat="웹/애플리케이션 보안"] { background: #fef6e4; color: #e67e22; }
+.category-badge[data-cat="법규 및 관리체계"] { background: #f5eefb; color: #9b59b6; }
+
+/* Category top-border accent */
+.card-face::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  border-radius: 16px 16px 0 0;
+  background: #dde1e7;
+}
+
+.card-face[data-cat="위험관리"]::before        { background: #e74c3c; }
+.card-face[data-cat="시스템 보안"]::before     { background: #3498db; }
+.card-face[data-cat="네트워크 보안"]::before   { background: #2ecc71; }
+.card-face[data-cat="웹/애플리케이션 보안"]::before { background: #f39c12; }
+.card-face[data-cat="법규 및 관리체계"]::before { background: #9b59b6; }
+
+/* Front content */
+.card-front-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.65;
+  color: #1a1a2e;
+  padding: 8px 0;
+}
+
+/* Back content */
+.card-back-content {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #2c3e50;
+  overflow-y: auto;
+}
+
+/* Markdown styles inside card back */
+.card-back-content h1,
+.card-back-content h2,
+.card-back-content h3 {
+  margin: 14px 0 6px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+.card-back-content h1 { font-size: 1.15rem; }
+.card-back-content h2 { font-size: 1.05rem; }
+.card-back-content h3 { font-size: 0.98rem; }
+
+.card-back-content p {
+  margin-bottom: 10px;
+}
+
+.card-back-content ul,
+.card-back-content ol {
+  margin: 8px 0 12px 20px;
+}
+
+.card-back-content li {
+  margin-bottom: 4px;
+}
+
+.card-back-content strong {
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.card-back-content em {
+  font-style: italic;
+  color: #555;
+}
+
+.card-back-content code {
+  background: #f4f5f7;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 0.88em;
+  color: #c0392b;
+}
+
+.card-back-content pre {
+  background: #f4f5f7;
+  border-radius: 8px;
+  padding: 12px 16px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.card-back-content pre code {
+  background: none;
+  padding: 0;
+  color: #2c3e50;
+}
+
+.card-back-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 0.9rem;
+}
+
+.card-back-content th {
+  background: #f0f2f5;
+  font-weight: 700;
+  text-align: left;
+  padding: 8px 12px;
+  border: 1px solid #dde1e7;
+}
+
+.card-back-content td {
+  padding: 7px 12px;
+  border: 1px solid #dde1e7;
+  vertical-align: top;
+}
+
+.card-back-content tr:nth-child(even) td {
+  background: #f8f9fb;
+}
+
+.card-back-content blockquote {
+  border-left: 4px solid #dde1e7;
+  margin: 10px 0;
+  padding: 6px 16px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid #dde1e7;
+  background: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-width: 52px;
+  min-height: 52px;
+}
+
+.nav-btn:hover {
+  background: var(--header-bg);
+  border-color: var(--header-bg);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+.nav-btn:active {
+  transform: scale(0.96);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 0.8rem;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.1rem;
+  }
+
+  .filter-btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+
+  .card-scene {
+    max-width: 100%;
+  }
+
+  .card-face {
+    padding: 20px 20px 18px;
+  }
+
+  .card-front-content {
+    font-size: 1.1rem;
+  }
+
+  .card-back-content {
+    font-size: 0.88rem;
+  }
+}
