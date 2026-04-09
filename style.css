@@ -130,6 +130,41 @@ main {
 .type-btn[data-type="서술형"].active { background: #8e44ad; border-color: #8e44ad; }
 .type-btn[data-type="실무형"].active { background: #d35400; border-color: #d35400; }
 
+.filter-divider {
+  color: #ccc;
+  font-size: 1.1rem;
+  align-self: center;
+  margin: 0 4px;
+}
+
+.freq-btn {
+  padding: 6px 14px;
+  border: 2px solid #dde1e7;
+  border-radius: 999px;
+  background: #fff;
+  color: #555;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 38px;
+  white-space: nowrap;
+}
+
+.freq-btn:hover {
+  border-color: #aab;
+  background: #f8f9fb;
+}
+
+.freq-btn.active {
+  background: #34495e;
+  border-color: #34495e;
+  color: #fff;
+}
+
+.freq-btn[data-freq="최빈출"].active { background: #e74c3c; border-color: #e74c3c; }
+.freq-btn[data-freq="일반"].active { background: #7f8c8d; border-color: #7f8c8d; }
+
 /* Controls top */
 .controls-top {
   display: flex;

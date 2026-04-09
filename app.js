@@ -5,6 +5,7 @@ let currentIndex = 0;
 let isFlipped = false;
 let currentCategory = '전체';
 let currentType = '전체';
+let currentFreq = '전체';
 
 // DOM references
 const cardEl = document.getElementById('card');
@@ -20,6 +21,7 @@ const nextBtn = document.getElementById('nextBtn');
 const shuffleBtn = document.getElementById('shuffleBtn');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const typeBtns = document.querySelectorAll('.type-btn');
+const freqBtns = document.querySelectorAll('.freq-btn');
 
 // Load data
 fetch('data.json')
@@ -136,7 +138,8 @@ function applyFilters() {
   filteredCards = allCards.filter(c => {
     const catMatch = currentCategory === '전체' || c.category === currentCategory;
     const typeMatch = currentType === '전체' || c.type === currentType;
-    return catMatch && typeMatch;
+    const freqMatch = currentFreq === '전체' || c.frequency === currentFreq;
+    return catMatch && typeMatch && freqMatch;
   });
 
   // Update active buttons
@@ -145,6 +148,9 @@ function applyFilters() {
   });
   typeBtns.forEach(btn => {
     btn.classList.toggle('active', btn.dataset.type === currentType);
+  });
+  freqBtns.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.freq === currentFreq);
   });
 
   goTo(0);
@@ -172,6 +178,14 @@ filterBtns.forEach(btn => {
 typeBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     currentType = btn.dataset.type;
+    applyFilters();
+  });
+});
+
+// Frequency filter buttons
+freqBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentFreq = btn.dataset.freq;
     applyFilters();
   });
 });
