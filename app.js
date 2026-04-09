@@ -6,6 +6,7 @@ let isFlipped = false;
 let currentCategory = '전체';
 let currentType = '전체';
 let currentFreq = '전체';
+let examMode = false;
 
 // DOM references
 const cardEl = document.getElementById('card');
@@ -22,6 +23,7 @@ const shuffleBtn = document.getElementById('shuffleBtn');
 const filterBtns = document.querySelectorAll('.filter-btn');
 const typeBtns = document.querySelectorAll('.type-btn');
 const freqBtns = document.querySelectorAll('.freq-btn');
+const examBtn = document.getElementById('examBtn');
 
 // Sanitize HTML output - strip dangerous tags while keeping markdown-generated ones
 function sanitizeHtml(html) {
@@ -170,6 +172,44 @@ function applyFilters() {
   goTo(0);
 }
 
+// Exam mode - pick 10 random cards from current filters
+function startExam() {
+  // Get pool from current filter settings
+  const pool = allCards.filter(c => {
+    const catMatch = currentCategory === '전체' || c.category === currentCategory;
+    const typeMatch = currentType === '전체' || c.type === currentType;
+    const freqMatch = currentFreq === '전체' || c.frequency === currentFreq;
+    return catMatch && typeMatch && freqMatch;
+  });
+
+  if (pool.length === 0) {
+    alert('선택한 필터에 해당하는 카드가 없습니다.');
+    return;
+  }
+
+  const count = Math.min(10, pool.length);
+  filteredCards = shuffle(pool).slice(0, count);
+  examMode = true;
+  examBtn.classList.add('active');
+  examBtn.textContent = '\u2716 시험 종료';
+  goTo(0);
+}
+
+function stopExam() {
+  examMode = false;
+  examBtn.classList.remove('active');
+  examBtn.textContent = '\u270D 시험';
+  applyFilters();
+}
+
+function toggleExam() {
+  if (examMode) {
+    stopExam();
+  } else {
+    startExam();
+  }
+}
+
 // Event listeners — card click
 cardEl.addEventListener('click', flipCard);
 
@@ -180,9 +220,13 @@ nextBtn.addEventListener('click', goNext);
 // Shuffle button
 shuffleBtn.addEventListener('click', shuffleCards);
 
+// Exam button
+examBtn.addEventListener('click', toggleExam);
+
 // Category filter buttons
 filterBtns.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (examMode) stopExam();
     currentCategory = btn.dataset.category;
     applyFilters();
   });
@@ -191,6 +235,7 @@ filterBtns.forEach(btn => {
 // Type filter buttons
 typeBtns.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (examMode) stopExam();
     currentType = btn.dataset.type;
     applyFilters();
   });
@@ -199,6 +244,7 @@ typeBtns.forEach(btn => {
 // Frequency filter buttons
 freqBtns.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (examMode) stopExam();
     currentFreq = btn.dataset.freq;
     applyFilters();
   });

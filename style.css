@@ -202,10 +202,42 @@ main {
   min-height: 44px;
 }
 
-.shuffle-btn:hover {
+.shuffle-btn:hover,
+.exam-btn:hover {
   background: var(--header-bg);
   border-color: var(--header-bg);
   color: #fff;
+}
+
+.exam-btn {
+  padding: 8px 18px;
+  border: 2px solid #e74c3c;
+  border-radius: 999px;
+  background: #fff;
+  color: #e74c3c;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+}
+
+.exam-btn:hover {
+  background: #e74c3c !important;
+  border-color: #e74c3c !important;
+  color: #fff;
+}
+
+.exam-btn.active {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(231, 76, 60, 0); }
 }
 
 /* Card scene — 3D perspective */
