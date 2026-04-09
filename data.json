@@ -1718,6 +1718,42 @@
       "back": "| 플래그 | 기능 |\n|---|---|\n| **SYN** | 연결 수립 요청 (3-way handshake 시작) |\n| **ACK** | 확인 응답 (수신 확인) |\n| **FIN** | 연결 정상 종료 요청 |\n| **RST** | 연결 강제 종료 (비정상 세션 끊기) |\n| **PSH** | 수신 데이터를 즉시 상위 계층으로 전달 |\n| **URG** | 긴급 데이터 존재 표시 |\n\n**시험 빈출**: SYN Flooding(SYN), 세션 하이재킹(ACK Storm), 포트 스캔(SYN→RST)",
       "id": 191,
       "subcategory": ""
+    },
+    {
+      "category": "네트워크 보안",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "제로 트러스트(Zero Trust) 보안 모델의 핵심 원칙과 구성 요소를 설명하시오.",
+      "back": "**제로 트러스트** (Zero Trust)\n\n**핵심 원칙**: \"Never Trust, Always Verify\" — 내부/외부 구분 없이 **모든 접근을 검증**\n\n**구성 요소**:\n1. **강력한 인증**: 다중 인증(MFA), 지속적 인증\n2. **최소 권한**: 필요한 리소스에만 최소한의 접근 허용\n3. **마이크로 세그멘테이션**: 네트워크를 세분화하여 측면 이동(Lateral Movement) 차단\n4. **지속적 모니터링**: 모든 트래픽·행위를 실시간 분석\n\n※ 기존 경계 보안(Perimeter Security)의 한계를 보완하는 차세대 보안 아키텍처",
+      "id": 192,
+      "subcategory": ""
+    },
+    {
+      "category": "네트워크 보안",
+      "type": "단답형",
+      "frequency": "일반",
+      "front": "양자 암호(Quantum Cryptography)의 기본 개념: QKD와 PQC의 차이는?",
+      "back": "**QKD** (Quantum Key Distribution, 양자 키 분배):\n- 양자역학 원리(불확정성)를 이용하여 **도청 불가능한 암호키 교환**\n- 도청 시도 시 양자 상태 붕괴 → 도청 **즉시 탐지** 가능\n\n**PQC** (Post-Quantum Cryptography, 양자내성 암호):\n- 양자 컴퓨터의 공격에도 **안전한 수학적 암호 알고리즘**\n- 기존 RSA/ECC를 대체할 격자(Lattice) 기반 등 새로운 암호 체계\n\n**차이**: QKD는 물리적 키 교환, PQC는 수학적 알고리즘 교체",
+      "id": 193,
+      "subcategory": ""
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "하트블리드(Heartbleed) 취약점의 발생 원리와 영향은?",
+      "back": "**Heartbleed** (CVE-2014-0160)\n\n**정의**: OpenSSL 라이브러리의 **Heartbeat 확장 기능** 구현 오류로 발생한 메모리 정보 유출 취약점\n\n**발생 원리**: Heartbeat 요청 시 **페이로드 길이를 검증하지 않아**, 서버 메모리의 최대 64KB를 무단 읽기 가능\n\n**위협**: 서버의 **비밀키, 세션 토큰, 사용자 비밀번호** 등 민감 데이터 유출\n\n**대응**: OpenSSL **1.0.1g 이상**으로 업데이트, SSL 인증서 및 비밀키 재발급",
+      "id": 194,
+      "subcategory": ""
+    },
+    {
+      "category": "네트워크 보안",
+      "type": "단답형",
+      "frequency": "최빈출",
+      "front": "Land Attack의 공격 원리와 대응 방안은?",
+      "back": "**Land Attack**\n\n**정의**: 출발지 IP와 목적지 IP를 **동일하게 위조**하여 패킷을 전송, 시스템이 **자기 자신에게 응답**하게 만드는 DoS 공격\n\n**위협**: 무한 루프 형태의 자기 참조로 시스템 자원 고갈 → 서비스 마비\n\n**대응**:\n1. 방화벽에서 **출발지 IP = 목적지 IP** 패킷 차단\n2. OS 패치 적용 (최신 OS는 대부분 자체 방어)\n3. **Ingress Filtering**: 외부에서 내부 IP로 위장한 패킷 차단",
+      "id": 195,
+      "subcategory": ""
     }
   ]
 }
