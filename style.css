@@ -16,6 +16,8 @@
   --font-base: 0.95rem;
   --font-sm: 0.88rem;
   --font-lg: 1.05rem;
+  --font-xs: 0.8rem;
+  --font-xl: 1.2rem;
   --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
   --line-height: 1.7;
 }
@@ -40,7 +42,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.4rem;
+  font-size: var(--font-xl);
   font-weight: 700;
   letter-spacing: -0.3px;
 }
@@ -71,7 +73,7 @@ main {
   border-radius: 999px;
   background: #fff;
   color: #555;
-  font-size: 0.85rem;
+  font-size: var(--font-sm);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -112,7 +114,7 @@ main {
   border-radius: 999px;
   background: #fff;
   color: #555;
-  font-size: 0.8rem;
+  font-size: var(--font-xs);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -137,7 +139,7 @@ main {
 
 .filter-divider {
   color: #ccc;
-  font-size: 1.1rem;
+  font-size: var(--font-lg);
   align-self: center;
   margin: 0 4px;
 }
@@ -148,7 +150,7 @@ main {
   border-radius: 999px;
   background: #fff;
   color: #555;
-  font-size: 0.8rem;
+  font-size: var(--font-xs);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -180,7 +182,7 @@ main {
 }
 
 .card-counter {
-  font-size: 1rem;
+  font-size: var(--font-base);
   font-weight: 600;
   color: #555;
 }
@@ -191,7 +193,7 @@ main {
   border-radius: 999px;
   background: #fff;
   color: #555;
-  font-size: 0.9rem;
+  font-size: var(--font-sm);
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -254,7 +256,7 @@ main {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
   font-weight: 700;
   letter-spacing: 0.3px;
   margin-bottom: 20px;
@@ -431,7 +433,7 @@ main {
   border-radius: 50%;
   border: 2px solid #dde1e7;
   background: #fff;
-  font-size: 1.3rem;
+  font-size: var(--font-xl);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -457,7 +459,7 @@ main {
 footer {
   text-align: center;
   padding: 14px 16px;
-  font-size: 0.8rem;
+  font-size: var(--font-xs);
   color: #999;
   background: #fff;
   border-top: 1px solid #eee;
@@ -469,14 +471,11 @@ footer {
     --font-base: 0.88rem;
     --font-sm: 0.82rem;
     --font-lg: 0.95rem;
-  }
-
-  header h1 {
-    font-size: 1.1rem;
+    --font-xs: 0.76rem;
+    --font-xl: 1.05rem;
   }
 
   .filter-btn {
-    font-size: 0.8rem;
     padding: 7px 12px;
   }
 
