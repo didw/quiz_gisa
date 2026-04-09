@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "category": "위험관리 및 BCP",
+    "front": "SLE (Single Loss Expectancy)",
+    "back": "단일예상손실액. 공식: 자산가치(AV) × 노출계수(EF). 1회 보안 사고 시 예상되는 손실액."
+  },
+  {
+    "id": 2,
+    "category": "위험관리 및 BCP",
+    "front": "ALE (Annual Loss Expectancy)",
+    "back": "연간예상손실액. 공식: SLE × 연간발생률(ARO)."
+  },
+  {
+    "id": 3,
+    "category": "위험관리 및 BCP",
+    "front": "ROI (Return on Investment) - 보안투자 수익률 공식",
+    "back": "(통제 전 ALE - 통제 후 ALE - 통제비용) / 통제비용"
+  },
+  {
+    "id": 4,
+    "category": "위험관리 및 BCP",
+    "front": "정보보안의 3요소 (CIA Triad)",
+    "back": "기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)"
+  },
+  {
+    "id": 5,
+    "category": "위험관리 및 BCP",
+    "front": "잔여 위험 (Residual Risk)",
+    "back": "보안 통제를 적용한 후에도 조직에 여전히 남아있는 위험"
+  },
+  {
+    "id": 6,
+    "category": "위험관리 및 BCP",
+    "front": "위험 관리의 구성요소 3가지",
+    "back": "자산(Asset), 위협(Threat), 취약점(Vulnerability)"
+  },
+  {
+    "id": 7,
+    "category": "위험관리 및 BCP",
+    "front": "위험 대응(처리) 전략 4가지",
+    "back": "위험 감소(Mitigation), 위험 회피(Avoidance), 위험 전가(Transfer), 위험 수용(Acceptance)"
+  },
+  {
+    "id": 8,
+    "category": "위험관리 및 BCP",
+    "front": "정량적 위험 분석 방식",
+    "back": "위험을 금액, 수치 등 수학적/통계적으로 평가하는 방식 (과거 데이터 필수)"
+  },
+  {
+    "id": 9,
+    "category": "위험관리 및 BCP",
+    "front": "델파이 기법 (Delphi Method)",
+    "back": "전문가 집단의 의견을 익명으로 반복 수렴하여 위험을 평가하는 정성적 위험 분석 기법"
+  },
+  {
+    "id": 10,
+    "category": "위험관리 및 BCP",
+    "front": "BCP 5단계 중 BIA(사업 영향 평가)의 주요 목적",
+    "back": "핵심 업무 식별 및 RTO(복구목표시간), RPO(복구목표시점) 산정"
+  },
+  {
+    "id": 11,
+    "category": "위험관리 및 BCP",
+    "front": "RTO (Recovery Time Objective)",
+    "back": "업무 중단 시점부터 시스템을 복구하여 재가동할 때까지 허용되는 '최대 목표 시간'"
+  },
+  {
+    "id": 12,
+    "category": "위험관리 및 BCP",
+    "front": "RPO (Recovery Point Objective)",
+    "back": "업무 중단 시 데이터 손실을 허용할 수 있는 '최대 목표 시점(백업 데이터의 최신성)'"
+  },
+  {
+    "id": 13,
+    "category": "위험관리 및 BCP",
+    "front": "Mirror Site (미러 사이트)",
+    "back": "주 센터와 동일하게 구축하여 실시간 동기화. RTO = 0 (즉시 복구)"
+  },
+  {
+    "id": 14,
+    "category": "위험관리 및 BCP",
+    "front": "Hot Site (핫 사이트)",
+    "back": "주 센터와 동일한 장비/통신망 보유. 수 시간 내 복구 가능"
+  },
+  {
+    "id": 15,
+    "category": "위험관리 및 BCP",
+    "front": "Warm Site (웜 사이트)",
+    "back": "중요 장비만 보유하고 주기적으로 백업. 복구에 수 일 ~ 수 주 소요"
+  },
+  {
+    "id": 16,
+    "category": "위험관리 및 BCP",
+    "front": "Cold Site (콜드 사이트)",
+    "back": "전력/통신 등 최소한의 인프라만 갖춘 장소. 복구에 수 주 ~ 수 개월 소요"
+  },
+  {
+    "id": 17,
+    "category": "위험관리 및 BCP",
+    "front": "기밀성 보장을 위한 대표 기술",
+    "back": "데이터 암호화, 접근 통제(Access Control)"
+  },
+  {
+    "id": 18,
+    "category": "위험관리 및 BCP",
+    "front": "무결성 보장을 위한 대표 기술",
+    "back": "해시(Hash), 전자서명(Digital Signature), MAC(메시지 인증 코드)"
+  },
+  {
+    "id": 19,
+    "category": "위험관리 및 BCP",
+    "front": "가용성 보장을 위한 대표 기술",
+    "back": "데이터 백업, 시스템 이중화(Redundancy), DDoS 방어 장비(Anti-DDoS)"
+  },
+  {
+    "id": 20,
+    "category": "위험관리 및 BCP",
+    "front": "BCP (Business Continuity Planning)의 정의",
+    "back": "재난 발생 시 비즈니스 연속성을 유지하기 위한 종합적인 계획"
+  },
+  {
+    "id": 21,
+    "category": "시스템 보안",
+    "front": "SUID (Set-UID)",
+    "back": "권한 값 4000. 파일 실행 시 '파일 소유자'의 권한으로 프로세스가 실행됨 (권한 상승 위험)"
+  },
+  {
+    "id": 22,
+    "category": "시스템 보안",
+    "front": "SGID (Set-GID)",
+    "back": "권한 값 2000. 파일 실행 시 '파일 그룹'의 권한으로 프로세스가 실행됨"
+  },
+  {
+    "id": 23,
+    "category": "시스템 보안",
+    "front": "Sticky Bit",
+    "back": "권한 값 1000. 디렉터리에 설정 시 누구나 파일 생성은 가능하나, 삭제는 소유자와 root만 가능 (/tmp)"
+  },
+  {
+    "id": 24,
+    "category": "시스템 보안",
+    "front": "root 소유의 SUID 파일을 찾는 리눅스 명령어",
+    "back": "find / -user root -perm -4000"
+  },
+  {
+    "id": 25,
+    "category": "시스템 보안",
+    "front": "리눅스 로그: utmp 파일",
+    "back": "현재 시스템에 로그인한 사용자 상태 정보 저장 (who, w, users 명령어)"
+  },
+  {
+    "id": 26,
+    "category": "시스템 보안",
+    "front": "리눅스 로그: wtmp 파일",
+    "back": "성공한 로그인/로그아웃 및 시스템 부팅/종료 기록 (last 명령어)"
+  },
+  {
+    "id": 27,
+    "category": "시스템 보안",
+    "front": "리눅스 로그: btmp 파일",
+    "back": "실패한 로그인 시도 기록 (lastb 명령어)"
+  },
+  {
+    "id": 28,
+    "category": "시스템 보안",
+    "front": "리눅스 로그: lastlog 파일",
+    "back": "각 사용자별로 가장 최근에 접속 성공한 시간 기록 (lastlog 명령어)"
+  },
+  {
+    "id": 29,
+    "category": "시스템 보안",
+    "front": "/etc/shadow 파일의 역할",
+    "back": "사용자의 암호화된 패스워드 및 패스워드 에이징(만료) 정보 저장"
+  },
+  {
+    "id": 30,
+    "category": "시스템 보안",
+    "front": "리눅스 패스워드 정책 설정 파일",
+    "back": "/etc/login.defs (비밀번호 최대/최소 사용기간 등 설정)"
+  },
+  {
+    "id": 31,
+    "category": "시스템 보안",
+    "front": "리눅스 계정을 잠그는(Lock) 명령어",
+    "back": "usermod -L [계정명] 또는 passwd -l [계정명]"
+  },
+  {
+    "id": 32,
+    "category": "시스템 보안",
+    "front": "윈도우 위험 그룹: Power Users",
+    "back": "일반 사용자보다 높으나 관리자보다 낮은 권한. 레거시 앱 실행 권한이 있어 권한 상승 악용 위험."
+  },
+  {
+    "id": 33,
+    "category": "시스템 보안",
+    "front": "윈도우 위험 그룹: Backup Operators",
+    "back": "파일/디렉터리의 보안 권한 설정을 무시하고 백업 및 복원을 위해 접근 가능한 그룹"
+  },
+  {
+    "id": 34,
+    "category": "시스템 보안",
+    "front": "Null Session 취약점",
+    "back": "인증 없이 윈도우 IPC$ 공유 등에 접근하여 시스템 정보(사용자 목록 등)를 수집하는 취약점"
+  },
+  {
+    "id": 35,
+    "category": "시스템 보안",
+    "front": "NetBIOS 및 SMB 포트 비활성화 이유 (TCP 139, 445)",
+    "back": "시스템 정보 유출 방지 및 랜섬웨어(WannaCry 등)의 네트워크 전파 차단"
+  },
+  {
+    "id": 36,
+    "category": "시스템 보안",
+    "front": "Telnet, FTP 프로토콜의 근본적인 취약점",
+    "back": "아이디, 비밀번호 등 통신 내용이 '평문(Plain Text)'으로 전송되어 스니핑에 취약함"
+  },
+  {
+    "id": 37,
+    "category": "시스템 보안",
+    "front": "Telnet과 FTP를 대체해야 하는 보안 프로토콜",
+    "back": "Telnet -> SSH (TCP 22) / FTP -> SFTP 또는 FTPS 적용"
+  },
+  {
+    "id": 38,
+    "category": "시스템 보안",
+    "front": "lsof (List Open Files) 명령어",
+    "back": "시스템에서 현재 열려있는 파일 목록과 해당 파일을 사용 중인 프로세스를 확인하는 명령어"
+  },
+  {
+    "id": 39,
+    "category": "시스템 보안",
+    "front": "리눅스 파일 무결성 점검 도구",
+    "back": "Tripwire (트립와이어) - 파일의 해시값을 비교하여 변경/변조 여부 탐지"
+  },
+  {
+    "id": 40,
+    "category": "시스템 보안",
+    "front": "hosts.equiv 및 .rhosts 파일의 위험성",
+    "back": "r-command(rsh, rlogin 등) 사용 시 비밀번호 없이 원격 접속을 허용하는 신뢰 관계 설정 파일로 스푸핑 공격에 취약"
+  },
+  {
+    "id": 41,
+    "category": "네트워크 보안",
+    "front": "IPsec: AH (Authentication Header)",
+    "back": "데이터 인증과 무결성을 제공하며, **기밀성(암호화)은 제공하지 않음**"
+  },
+  {
+    "id": 42,
+    "category": "네트워크 보안",
+    "front": "IPsec: ESP (Encapsulating Security Payload)",
+    "back": "데이터 인증, 무결성과 함께 **기밀성(데이터 암호화)**을 모두 제공함"
+  },
+  {
+    "id": 43,
+    "category": "네트워크 보안",
+    "front": "IPsec: 전송 모드 (Transport Mode)",
+    "back": "원본 IP 헤더는 그대로 두고 페이로드(데이터)만 보호하는 모드 (End-to-End 통신)"
+  },
+  {
+    "id": 44,
+    "category": "네트워크 보안",
+    "front": "IPsec: 터널 모드 (Tunnel Mode)",
+    "back": "원본 패킷 전체를 암호화하고 새로운 IP 헤더를 추가하는 모드 (VPN Gateway 간 통신)"
+  },
+  {
+    "id": 45,
+    "category": "네트워크 보안",
+    "front": "IDS 탐지: 오용 탐지 (Signature-based)",
+    "back": "알려진 공격의 시그니처(패턴)와 비교하여 탐지. 오탐(FP)은 낮으나 미탐(FN)이 높음."
+  },
+  {
+    "id": 46,
+    "category": "네트워크 보안",
+    "front": "IDS 탐지: 이상 탐지 (Anomaly-based)",
+    "back": "정상 행위 프로파일에서 벗어난 트래픽을 탐지. 알려지지 않은 공격 탐지가 가능하나 오탐(FP)이 높음."
+  },
+  {
+    "id": 47,
+    "category": "네트워크 보안",
+    "front": "False Positive (오탐)",
+    "back": "정상적인 트래픽을 공격으로 잘못 판단하여 알람을 발생시키는 현상"
+  },
+  {
+    "id": 48,
+    "category": "네트워크 보안",
+    "front": "False Negative (미탐)",
+    "back": "실제 악의적인 공격을 탐지하지 못하고 무사과 시키는 보안상 가장 치명적인 상태"
+  },
+  {
+    "id": 49,
+    "category": "네트워크 보안",
+    "front": "Snort 룰 옵션: content",
+    "back": "패킷의 페이로드(내용)에 특정 문자열이나 헥사(Hex) 값이 존재하는지 매칭 검사"
+  },
+  {
+    "id": 50,
+    "category": "네트워크 보안",
+    "front": "Snort 룰 옵션: nocase",
+    "back": "content 키워드로 문자열을 검사할 때 영문 대소문자를 구분하지 않음"
+  },
+  {
+    "id": 51,
+    "category": "네트워크 보안",
+    "front": "Promiscuous Mode (무차별 모드)",
+    "back": "자신을 목적지로 하지 않는 네트워크 패킷도 모두 수신하여 CPU로 올리는 NIC 모드 (스니핑의 필수 조건)"
+  },
+  {
+    "id": 52,
+    "category": "네트워크 보안",
+    "front": "ARP Spoofing",
+    "back": "공격자의 MAC 주소를 기본 게이트웨이 등의 MAC 주소로 위조하여 같은 네트워크 대역의 트래픽을 가로채는 공격"
+  },
+  {
+    "id": 53,
+    "category": "네트워크 보안",
+    "front": "TCP Session Hijacking",
+    "back": "클라이언트와 서버 간 연결된 세션의 TCP Sequence Number를 가로채어 권한을 탈취하는 공격"
+  },
+  {
+    "id": 54,
+    "category": "네트워크 보안",
+    "front": "TCP SYN Flooding",
+    "back": "TCP 3-Way Handshake 과정에서 출발지 IP를 위조하여 SYN 패킷만 대량 발송, 서버의 Backlog Queue를 고갈시키는 공격"
+  },
+  {
+    "id": 55,
+    "category": "네트워크 보안",
+    "front": "DNS Spoofing (DNS Cache Poisoning)",
+    "back": "클라이언트의 DNS 질의에 대해 조작된 IP 주소를 응답하여 악성 사이트(파밍 사이트)로 유도하는 공격"
+  },
+  {
+    "id": 56,
+    "category": "네트워크 보안",
+    "front": "VLAN (Virtual LAN) 구성의 보안상 이점",
+    "back": "논리적으로 브로드캐스트 도메인을 분리하여 불필요한 트래픽을 차단하고 스니핑 공격을 제한함"
+  },
+  {
+    "id": 57,
+    "category": "네트워크 보안",
+    "front": "SNMP v3의 주요 보안 개선점",
+    "back": "이전 버전(평문 전송)과 달리 메시지 인증, 데이터 암호화, 강화된 접근 통제 제공"
+  },
+  {
+    "id": 58,
+    "category": "네트워크 보안",
+    "front": "IKE (Internet Key Exchange)",
+    "back": "IPsec 통신을 위해 보안 연관(SA)을 협상하고 비밀 키를 교환하는 프로토콜 (UDP 500 포트)"
+  },
+  {
+    "id": 59,
+    "category": "네트워크 보안",
+    "front": "Port Mirroring (포트 미러링)",
+    "back": "네트워크 스위치의 특정 포트로 지나가는 트래픽을 복사하여 모니터링 포트(IDS 장비 등)로 전달하는 기술"
+  },
+  {
+    "id": 60,
+    "category": "네트워크 보안",
+    "front": "TCP Flag 중 RST (Reset)",
+    "back": "비정상적인 세션을 강제로 연결 종료할 때 사용하는 컨트롤 플래그"
+  },
+  {
+    "id": 61,
+    "category": "웹/애플리케이션 보안",
+    "front": "파일 업로드 취약점",
+    "back": "게시판 등에 확장자 검증이 누락되어, 공격자가 서버 제어권 획득을 위한 웹쉘(Web Shell) 스크립트를 업로드/실행하는 취약점"
+  },
+  {
+    "id": 62,
+    "category": "웹/애플리케이션 보안",
+    "front": "파일 업로드 - 이중 확장자 우회",
+    "back": "'shell.php.jpg'처럼 확장자를 두 번 사용하여 검증 로직을 속이고 서버의 파싱 취약점으로 스크립트를 실행시키는 기법"
+  },
+  {
+    "id": 63,
+    "category": "웹/애플리케이션 보안",
+    "front": "파일 업로드 - Null Byte (%00) 우회",
+    "back": "'shell.php%00.jpg' 형태로 문자열 끝을 의미하는 널 바이트를 삽입해 검증기를 속이는 우회 기법"
+  },
+  {
+    "id": 64,
+    "category": "웹/애플리케이션 보안",
+    "front": "Stored XSS (저장형 XSS)",
+    "back": "악성 스크립트가 DB 등 서버에 저장된 후, 사용자가 해당 게시물을 조회할 때 브라우저에서 실행되는 공격"
+  },
+  {
+    "id": 65,
+    "category": "웹/애플리케이션 보안",
+    "front": "Reflected XSS (반사형 XSS)",
+    "back": "URL 파라미터 등에 악성 스크립트를 포함시켜, 서버가 즉시 응답 페이지에 이를 반사(출력)하여 실행되는 공격"
+  },
+  {
+    "id": 66,
+    "category": "웹/애플리케이션 보안",
+    "front": "CSRF (Cross-Site Request Forgery)",
+    "back": "희생자가 이미 인증된 상태를 악용하여, 공격자가 의도한 행위(비밀번호 변경, 송금 등)를 서버에 요청하게 만드는 공격"
+  },
+  {
+    "id": 67,
+    "category": "웹/애플리케이션 보안",
+    "front": "쿠키 보안 속성: HttpOnly",
+    "back": "자바스크립트(document.cookie)를 통한 쿠키 접근을 차단하여 XSS를 이용한 세션 하이재킹을 방어함"
+  },
+  {
+    "id": 68,
+    "category": "웹/애플리케이션 보안",
+    "front": "쿠키 보안 속성: Secure",
+    "back": "암호화된 HTTPS 통신 구간에서만 브라우저가 서버로 쿠키를 전송하도록 설정"
+  },
+  {
+    "id": 69,
+    "category": "웹/애플리케이션 보안",
+    "front": "SQL Injection",
+    "back": "입력값 검증 부재로 조작된 SQL 쿼리문이 DB로 전달되어 인가되지 않은 데이터를 조회, 변조, 삭제하는 공격"
+  },
+  {
+    "id": 70,
+    "category": "웹/애플리케이션 보안",
+    "front": "Blind SQL Injection",
+    "back": "DB 오류 메시지가 노출되지 않을 때, 참/거짓 반응이나 쿼리 지연 시간(Time-based)을 통해 데이터를 유추하는 공격"
+  },
+  {
+    "id": 71,
+    "category": "웹/애플리케이션 보안",
+    "front": "SSRF (Server-Side Request Forgery)",
+    "back": "공격자가 취약한 웹 서버를 속여, 서버가 직접 내부망 시스템이나 외부 자원으로 악성 요청을 보내게 하는 공격"
+  },
+  {
+    "id": 72,
+    "category": "웹/애플리케이션 보안",
+    "front": "HTTP Request Smuggling",
+    "back": "프록시(Front)와 웹 서버(Back) 간의 HTTP 헤더 해석 차이(Content-Length vs Transfer-Encoding)를 악용하는 공격"
+  },
+  {
+    "id": 73,
+    "category": "웹/애플리케이션 보안",
+    "front": "HTTP 응답 분할 (CRLF Injection)",
+    "back": "입력값에 개행 문자(CRLF: \\r\\n)를 삽입하여 HTTP 응답 헤더와 본문을 조작하는 공격"
+  },
+  {
+    "id": 74,
+    "category": "웹/애플리케이션 보안",
+    "front": "Directory Traversal (경로 조작)",
+    "back": "입력값에 '../' 문자를 삽입하여 웹 루트 상위 디렉터리의 중요 시스템 파일(/etc/passwd 등)에 접근하는 공격"
+  },
+  {
+    "id": 75,
+    "category": "웹/애플리케이션 보안",
+    "front": "LFI (Local File Inclusion)",
+    "back": "서버 내부에 위치한 악성 파일이나 시스템 파일을 애플리케이션 코드로 포함시켜 실행하는 취약점"
+  },
+  {
+    "id": 76,
+    "category": "웹/애플리케이션 보안",
+    "front": "웹쉘 (Web Shell)",
+    "back": "웹을 통해 시스템 운영체제 명령어를 원격으로 실행할 수 있도록 만들어진 스크립트 기반의 악성 파일"
+  },
+  {
+    "id": 77,
+    "category": "웹/애플리케이션 보안",
+    "front": "시큐어코딩: 입력데이터 검증 및 표현",
+    "back": "SQL 인젝션, XSS 등을 방어하기 위해 외부 입력값을 안전한 형태로 필터링하거나 인코딩하는 보안 원칙"
+  },
+  {
+    "id": 78,
+    "category": "웹/애플리케이션 보안",
+    "front": "SW 보안약점진단: 설계 단계 산출물",
+    "back": "보안 설계 요구사항 명세서, 보안 설계서"
+  },
+  {
+    "id": 79,
+    "category": "웹/애플리케이션 보안",
+    "front": "SW 보안약점진단: 구현 단계 산출물",
+    "back": "소스코드 보안약점 진단결과 보고서, 이행 점검 보고서"
+  },
+  {
+    "id": 80,
+    "category": "웹/애플리케이션 보안",
+    "front": "Parameter Tampering (파라미터 변조)",
+    "back": "상품 가격, 권한 레벨 등 클라이언트-서버 간에 전달되는 파라미터 값을 프록시 툴로 조작하여 부당한 이득을 취하는 공격"
+  },
+  {
+    "id": 81,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보처리방침 필수 포함 항목 1 (목적/보유)",
+    "back": "개인정보의 처리 목적, 처리 및 보유 기간"
+  },
+  {
+    "id": 82,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보처리방침 필수 포함 항목 2 (제3자)",
+    "back": "개인정보의 제3자 제공에 관한 사항 (해당되는 경우)"
+  },
+  {
+    "id": 83,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보처리방침 필수 포함 항목 3 (위탁)",
+    "back": "개인정보 처리 업무의 위탁에 관한 사항 (해당되는 경우)"
+  },
+  {
+    "id": 84,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보처리방침 필수 포함 항목 4 (정보주체 권리)",
+    "back": "정보주체와 법정대리인의 권리·의무 및 그 행사방법에 관한 사항"
+  },
+  {
+    "id": 85,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보처리방침 필수 포함 항목 5 (파기)",
+    "back": "처리하는 개인정보의 항목, 개인정보 파기 절차 및 방법"
+  },
+  {
+    "id": 86,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "고유식별정보의 종류 (4가지)",
+    "back": "주민등록번호, 여권번호, 운전면허번호, 외국인등록번호"
+  },
+  {
+    "id": 87,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "민감정보의 정의",
+    "back": "사상, 신념, 건강, 성생활, 유전자검사 결과, 범죄경력 등 정보주체의 사생활을 현저히 침해할 우려가 있는 정보"
+  },
+  {
+    "id": 88,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보 파기 기한",
+    "back": "보유기간 경과 또는 처리 목적 달성 시 '지체 없이(정당한 사유 없는 한 5일 이내)' 파기"
+  },
+  {
+    "id": 89,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보 최소 수집의 원칙",
+    "back": "서비스 제공에 필요한 최소한의 정보만 수집해야 하며, 필수 정보 외 동의 거부를 이유로 서비스 제공을 거부할 수 없음"
+  },
+  {
+    "id": 90,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "비밀번호 작성 규칙: 2종류 조합",
+    "back": "영문 대소문자, 숫자, 특수문자 중 2종류 이상을 조합할 경우 최소 10자리 이상"
+  },
+  {
+    "id": 91,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "비밀번호 작성 규칙: 3종류 조합",
+    "back": "영문 대소문자, 숫자, 특수문자 중 3종류 이상을 조합할 경우 최소 8자리 이상"
+  },
+  {
+    "id": 92,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보 영향평가 (PIA) 목적",
+    "back": "개인정보 파일 운용 시스템 구축/변경 시 정보주체 권리 침해 위험을 사전에 분석하고 개선 대책 수립"
+  },
+  {
+    "id": 93,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보 영향평가 (PIA) 의무 대상: 민감정보 기준",
+    "back": "5만 명 이상의 정보주체에 관한 민감정보 또는 고유식별정보 처리 시스템"
+  },
+  {
+    "id": 94,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보 영향평가 (PIA) 의무 대상: 일반정보 기준",
+    "back": "100만 명 이상의 정보주체에 관한 개인정보 처리 시스템"
+  },
+  {
+    "id": 95,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "물리적 보호조치: 통제구역 (서버실 등) 보안 대책",
+    "back": "생체 인증 등 다중 인증 출입통제, 인가자만 출입, 외부인 동반 입실(에스코트) 의무화"
+  },
+  {
+    "id": 96,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "물리적 보호조치: 출입기록 관리",
+    "back": "통제구역 출입 이력을 시스템 또는 대장에 기록하고 장기간 보존 및 정기적인 검토 수행"
+  },
+  {
+    "id": 97,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "접근권한 부여의 원칙: '최소 권한의 원칙(Need to Know)'",
+    "back": "업무 수행에 필요한 범위 내에서 필수적인 최소한의 권한만을 부여하여 권한 남용을 방지"
+  },
+  {
+    "id": 98,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "CISO (정보보호 최고책임자) 역할",
+    "back": "조직의 정보보안 정책 수립, 위험 관리 및 보안 사고 대응 업무를 총괄하는 임원"
+  },
+  {
+    "id": 99,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "ISMS-P 인증 제도",
+    "back": "기업의 정보보호 및 개인정보보호 관리체계가 기준에 적합하게 운영되는지 심사하여 인증을 부여하는 제도"
+  },
+  {
+    "id": 100,
+    "category": "개인정보 / ISMS-P / 법규",
+    "front": "개인정보 유출 시 통지 기한",
+    "back": "유출되었음을 알게 된 때부터 '지체 없이(정당한 사유가 없는 한 72시간 이내)' 정보주체에게 통지"
+  }
+]

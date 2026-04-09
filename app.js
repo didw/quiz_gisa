@@ -4,6 +4,7 @@ let filteredCards = [];
 let currentIndex = 0;
 let isFlipped = false;
 let currentCategory = '전체';
+let currentType = '전체';
 
 // DOM references
 const cardEl = document.getElementById('card');
@@ -18,6 +19,7 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const shuffleBtn = document.getElementById('shuffleBtn');
 const filterBtns = document.querySelectorAll('.filter-btn');
+const typeBtns = document.querySelectorAll('.type-btn');
 
 // Load data
 fetch('data.json')
@@ -27,7 +29,7 @@ fetch('data.json')
   })
   .then(data => {
     allCards = Array.isArray(data) ? data : data.cards;
-    applyFilter(currentCategory);
+    applyFilters();
   })
   .catch(err => {
     cardFrontContent.innerHTML = '<span style="color:#e74c3c;">데이터를 불러올 수 없습니다.<br>data.json 파일을 확인해주세요.</span>';
@@ -49,10 +51,12 @@ function renderCard() {
 
   const card = filteredCards[currentIndex];
   const cat = card.category || '';
+  const type = card.type || '';
 
-  // Category badges
+  // Category badges with type
+  const badgeText = type ? `${cat} · ${type}` : cat;
   [categoryBadge, categoryBadgeBack].forEach(el => {
-    el.textContent = cat;
+    el.textContent = badgeText;
     el.setAttribute('data-cat', cat);
   });
 
@@ -60,8 +64,9 @@ function renderCard() {
   cardFrontEl.setAttribute('data-cat', cat);
   cardBackEl.setAttribute('data-cat', cat);
 
-  // Front: question
-  cardFrontContent.textContent = card.front || '';
+  // Front: render markdown (for scenario-based questions with bold/newlines)
+  const rawFront = card.front || '';
+  cardFrontContent.innerHTML = marked.parse(rawFront);
 
   // Back: answer rendered as markdown
   const rawAnswer = card.back || '';
@@ -126,19 +131,20 @@ function shuffleCards() {
   goTo(0);
 }
 
-// Category filter
-function applyFilter(category) {
-  currentCategory = category;
+// Combined filter (category + type)
+function applyFilters() {
+  filteredCards = allCards.filter(c => {
+    const catMatch = currentCategory === '전체' || c.category === currentCategory;
+    const typeMatch = currentType === '전체' || c.type === currentType;
+    return catMatch && typeMatch;
+  });
 
-  if (category === '전체') {
-    filteredCards = [...allCards];
-  } else {
-    filteredCards = allCards.filter(c => c.category === category);
-  }
-
-  // Update active button
+  // Update active buttons
   filterBtns.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.category === category);
+    btn.classList.toggle('active', btn.dataset.category === currentCategory);
+  });
+  typeBtns.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.type === currentType);
   });
 
   goTo(0);
@@ -154,9 +160,20 @@ nextBtn.addEventListener('click', goNext);
 // Shuffle button
 shuffleBtn.addEventListener('click', shuffleCards);
 
-// Filter buttons
+// Category filter buttons
 filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => applyFilter(btn.dataset.category));
+  btn.addEventListener('click', () => {
+    currentCategory = btn.dataset.category;
+    applyFilters();
+  });
+});
+
+// Type filter buttons
+typeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentType = btn.dataset.type;
+    applyFilters();
+  });
 });
 
 // Keyboard shortcuts

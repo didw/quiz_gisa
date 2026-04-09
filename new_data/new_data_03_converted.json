@@ -1,0 +1,704 @@
+{
+  "cards": [
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "1회 보안 사고 발생 시 예상되는 손실액(자산가치 × 노출계수)은?",
+      "back": "SLE (단일예상손실액)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "연간 예상되는 총 손실액(SLE × 연간발생률)은?",
+      "back": "ALE (연간예상손실액)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "정보보안의 3요소(CIA)는?",
+      "back": "기밀성(Confidentiality), 무결성(Integrity), 가용성(Availability)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "위험관리의 3가지 핵심 구성요소는?",
+      "back": "자산(Asset), 위협(Threat), 취약점(Vulnerability)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "보안 대책(통제)을 적용한 후에도 여전히 남아있는 위험은?",
+      "back": "잔여 위험(Residual Risk)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "위험 처리 전략 4가지는?",
+      "back": "위험 수용, 위험 감소, 위험 회피, 위험 전가"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "화재, 지진 등 재해 발생 시 비즈니스를 지속하기 위한 종합적인 계획은?",
+      "back": "BCP (사업연속성계획)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "BCP 프로세스 중 업무 중단에 따른 손실을 평가하고 복구 우선순위를 정하는 분석은?",
+      "back": "BIA (업무영향분석)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "업무 중단 시점부터 시스템을 복구하여 재가동할 때까지 허용되는 최대 목표 시간은?",
+      "back": "RTO (복구목표시간)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "업무 중단 시 데이터 손실을 허용할 수 있는 최대 목표 시점은?",
+      "back": "RPO (복구목표시점)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "주 센터와 동일하게 구축되어 실시간 동기화되며 RTO가 0에 가까운 재해복구센터는?",
+      "back": "미러 사이트(Mirror Site)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "주 센터와 동일한 장비를 갖추고 데이터는 주기적으로 백업하며 수 시간 내 복구 가능한 센터는?",
+      "back": "핫 사이트(Hot Site)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "최소한의 전력, 통신망 등 물리적 인프라만 갖춘 재해복구센터는?",
+      "back": "콜드 사이트(Cold Site)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "과거 데이터를 바탕으로 수학적, 통계적으로 위험을 도출하는 분석 기법은?",
+      "back": "정량적 위험분석"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "전문가 집단의 의견을 익명으로 반복 수렴하여 평가하는 정성적 위험분석 기법은?",
+      "back": "델파이 기법(Delphi Method)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "정보보호 통제를 우회하여 자산에 손실을 발생시킬 수 있는 시스템의 약점은?",
+      "back": "취약점"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "메시지의 무결성과 인증을 제공하지만, 부인방지는 제공하지 않는 기술은?",
+      "back": "MAC (메시지 인증 코드)"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "메시지의 무결성, 인증, 부인방지를 모두 제공하는 기술은?",
+      "back": "전자서명"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "대칭키 암호화의 키 분배 문제를 해결하기 위해 고안된 암호 방식은?",
+      "back": "공개키(비대칭키) 암호 방식"
+    },
+    {
+      "category": "위험관리",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "접근통제 정책 중 주체의 비밀취급인가(보안 등급)를 기반으로 접근을 통제하는 모델은?",
+      "back": "MAC (강제적 접근통제)"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "파일 실행 시 소유자의 권한으로 실행되게 하는 리눅스 특수 권한 비트는?",
+      "back": "SUID (Set-UID)"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "파일 실행 시 그룹의 권한으로 실행되게 하는 리눅스 특수 권한 비트는?",
+      "back": "SGID (Set-GID)"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "디렉터리에 설정 시 누구나 쓰기 가능하지만, 삭제는 파일 소유자와 root만 가능하게 하는 권한은?",
+      "back": "Sticky bit"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "root 소유의 SUID 파일을 검색하는 리눅스 명령어(옵션 포함)는?",
+      "back": "find / -user root -perm -4000"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "리눅스에서 현재 시스템에 접속 중인 사용자 정보를 담고 있는 로그 파일은?",
+      "back": "utmp"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "리눅스에서 사용자의 성공한 로그인/로그아웃 기록을 담는 로그 파일(last 명령어 사용)은?",
+      "back": "wtmp"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "리눅스에서 실패한 로그인 시도 기록을 담는 로그 파일(lastb 명령어 사용)은?",
+      "back": "btmp"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "사용자별 마지막 로그인 시간을 기록하는 리눅스 로그 파일은?",
+      "back": "lastlog"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "리눅스에서 암호화된 패스워드와 패스워드 만료 정보가 저장되는 파일은?",
+      "back": "/etc/shadow"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "리눅스 패스워드 에이징(최대/최소 사용기간 등) 정책을 기본 설정하는 파일은?",
+      "back": "/etc/login.defs"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "비밀번호 없이 r-command 원격 접속을 허용하여 스푸핑에 취약한 설정 파일 두 가지는?",
+      "back": "/etc/hosts.equiv, .rhosts"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "윈도우에서 관리자 권한은 없으나 레거시 앱 실행 권한이 있어 권한 상승 위험이 있는 그룹은?",
+      "back": "Power Users"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "윈도우에서 보안 권한을 무시하고 파일 백업/복원 접근이 가능한 특수 그룹은?",
+      "back": "Backup Operators"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "인증 없이 윈도우 IPC$ 공유 등에 접근해 시스템 정보를 수집하는 취약점은?",
+      "back": "널 세션(Null Session) 취약점"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "윈도우 파일 공유에 사용되며 랜섬웨어 전파 경로가 되어 비활성화가 권장되는 두 가지 포트는?",
+      "back": "TCP 139, 445 (NetBIOS, SMB)"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "Telnet과 FTP 프로토콜을 대체해야 하는 가장 큰 이유는 무엇인가?",
+      "back": "통신 내용이 평문(Plain Text)으로 전송되어 스니핑에 취약함"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "Telnet을 대체할 수 있는 보안 프로토콜과 포트 번호는?",
+      "back": "SSH, TCP 22"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "시스템에서 열려 있는 파일과 해당 프로세스를 확인하는 리눅스 명령어는?",
+      "back": "lsof"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "파일의 해시값을 비교하여 변경/변조 여부를 탐지하는 리눅스 무결성 점검 도구는?",
+      "back": "Tripwire"
+    },
+    {
+      "category": "시스템 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "윈도우 로컬 보안 정책(패스워드 정책 등)을 설정하는 명령어는?",
+      "back": "secpol.msc"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IPsec에서 데이터 인증과 무결성만 제공하고 기밀성(암호화)은 제공하지 않는 프로토콜은?",
+      "back": "AH (Authentication Header)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IPsec에서 데이터 인증, 무결성과 함께 기밀성(암호화)까지 제공하는 프로토콜은?",
+      "back": "ESP (Encapsulating Security Payload)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IPsec에서 보안 연관(SA)을 협상하고 키를 교환하는 프로토콜은?",
+      "back": "IKE"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IPsec 모드 중 원본 IP 헤더는 유지하고 페이로드(데이터)만 보호하는 모드는?",
+      "back": "전송 모드(Transport Mode)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IPsec 모드 중 원본 패킷 전체를 암호화하고 새로운 IP 헤더를 추가하는 모드는?",
+      "back": "터널 모드(Tunnel Mode)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IDS(침입탐지시스템)가 정상 트래픽을 공격으로 잘못 판단하는 현상은?",
+      "back": "오탐(False Positive)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "IDS가 실제 악의적인 공격을 탐지하지 못하고 통과시키는 현상은?",
+      "back": "미탐(False Negative)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "알려진 공격의 시그니처와 비교하여 탐지하는 방식(오탐이 낮음)은?",
+      "back": "오용 탐지(지식 기반 탐지)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "정상 행위의 프로파일을 벗어난 트래픽을 탐지하는 방식(알려지지 않은 공격 탐지 가능)은?",
+      "back": "이상 탐지(행위 기반 탐지)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "Snort 룰에서 패킷의 페이로드(내용) 문자열을 검사하는 옵션 키워드는?",
+      "back": "content"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "Snort 룰에서 영문 대소문자를 구분하지 않고 검사하게 하는 키워드는?",
+      "back": "nocase"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "목적지가 자신이 아닌 패킷도 모두 수신하게 하는 랜카드 동작 모드(스니핑 필수 조건)는?",
+      "back": "무차별 모드(Promiscuous Mode)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "공격자의 MAC 주소를 게이트웨이 등의 MAC 주소로 위조하여 트래픽을 가로채는 공격은?",
+      "back": "ARP Spoofing"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "인증된 TCP 연결의 시퀀스 넘버를 조작하여 세션을 가로채는 공격은?",
+      "back": "TCP Session Hijacking"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "출발지 IP를 위조하여 서버에 SYN 패킷만 대량 발송해 Backlog Queue를 고갈시키는 공격은?",
+      "back": "TCP SYN Flooding"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "클라이언트의 질의에 조작된 IP를 응답하여 악성 파밍 사이트로 유도하는 공격은?",
+      "back": "DNS Spoofing (Cache Poisoning)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "메시지 인증 및 암호화를 지원하여 기존 평문 전송의 취약점을 개선한 SNMP 버전은?",
+      "back": "SNMPv3"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "네트워크 스위치의 특정 포트 트래픽을 복사하여 IDS 등 모니터링 포트로 전달하는 기술은?",
+      "back": "포트 미러링(Port Mirroring)"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "출발지 IP를 목적지 IP와 동일하게 위조하여 시스템이 자기 자신에게 응답하게 만드는 공격은?",
+      "back": "Land Attack"
+    },
+    {
+      "category": "네트워크 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "비정상적인 세션을 강제로 종료할 때 사용하는 TCP 제어 플래그는?",
+      "back": "RST (Reset)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "입력값 검증이 누락된 게시판에 공격자가 악성 스크립트를 삽입하여 사용자의 브라우저에서 실행되게 하는 공격은?",
+      "back": "XSS (Cross-Site Scripting)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "XSS 공격 중 악성 스크립트가 DB에 저장되어 게시물을 조회할 때마다 실행되는 형태는?",
+      "back": "저장형(Stored) XSS"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "사용자가 자신의 의지와 무관하게 공격자가 의도한 행위(수정, 삭제, 송금 등)를 서버에 요청하게 만드는 공격은?",
+      "back": "CSRF (Cross-Site Request Forgery)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "XSS를 통한 쿠키 탈취를 막기 위해 자바스크립트로 쿠키에 접근할 수 없도록 하는 속성은?",
+      "back": "HttpOnly"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "암호화된 HTTPS 통신 구간에서만 서버로 쿠키를 전송하도록 설정하는 속성은?",
+      "back": "Secure"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "입력값 검증 부재로 조작된 데이터베이스 쿼리가 실행되게 하는 공격은?",
+      "back": "SQL Injection"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "DB 에러 메시지가 노출되지 않을 때 참/거짓 반응이나 응답 지연 시간(Sleep)을 이용해 데이터를 유추하는 공격은?",
+      "back": "Blind SQL Injection"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "확장자 검증을 우회하여 시스템 명령을 실행할 수 있는 웹쉘(Web shell)을 서버에 올리는 취약점은?",
+      "back": "파일 업로드 취약점"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "파일 업로드 시 'shell.php%00.jpg' 형태로 문자열 끝을 인식시켜 확장자 검증을 우회하는 기법은?",
+      "back": "Null Byte 우회"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "경로 조작 문자(../)를 삽입하여 웹 루트 상위의 중요 파일(/etc/passwd 등)에 접근하는 공격은?",
+      "back": "디렉터리 트래버설(Directory Traversal)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "공격자가 취약한 웹 서버를 속여, 서버가 직접 내부망 시스템으로 악성 요청을 보내게 하는 공격은?",
+      "back": "SSRF (Server-Side Request Forgery)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "프록시(Front)와 웹 서버(Back) 간의 HTTP 헤더(Content-Length 등) 해석 차이를 악용하는 공격은?",
+      "back": "HTTP Request Smuggling"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "입력값에 개행 문자(\\r\\n)를 삽입하여 HTTP 응답 헤더와 본문을 조작하는 공격은?",
+      "back": "HTTP 응답 분할 (CRLF Injection)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "웹 서버 내부에 위치한 악성 파일이나 시스템 파일을 애플리케이션 코드로 포함시켜 실행하는 취약점은?",
+      "back": "LFI (Local File Inclusion)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "클라이언트와 서버 간에 전달되는 상품 가격, 수량 등의 값을 프록시 툴로 조작하는 공격은?",
+      "back": "파라미터 변조(Parameter Tampering)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "파라미터 변조 공격을 방어하기 위한 가장 근본적인 대책은?",
+      "back": "서버 측에서 입력값을 재검증(Server-side validation)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "자바 기반 로깅 유틸리티에서 발생한 원격 코드 실행(RCE) 취약점의 명칭은?",
+      "back": "Log4Shell (Log4j 취약점)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "XML 문서 파싱 시 외부 엔티티(Entity) 참조를 제한하지 않아 발생하는 취약점은?",
+      "back": "XXE (XML External Entity)"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "SW 보안약점진단 시 '설계 단계'의 주요 산출물 두 가지는?",
+      "back": "보안 설계 요구사항 명세서, 보안 설계서"
+    },
+    {
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "SW 보안약점진단 시 '구현 단계'의 주요 산출물 두 가지는?",
+      "back": "소스코드 보안약점 진단결과 보고서, 이행 점검 보고서"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "정보통신망법 기준 ISMS 의무 대상자 중 정보통신서비스 부문 전년도 매출액 기준은?",
+      "back": "100억 원 이상"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "정보통신망법 기준 ISMS 의무 대상자 중 전년도 직전 3개월간 정보통신서비스 일일평균 이용자 수 기준은?",
+      "back": "100만 명 이상"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "조직의 정보보안 정책 수립 및 관리를 총괄하는 '정보보호 최고책임자'의 영문 약어는?",
+      "back": "CISO"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "정보주체를 고유하게 구별하기 위해 부여된 '고유식별정보' 4가지는?",
+      "back": "주민등록번호, 여권번호, 운전면허번호, 외국인등록번호"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "사상, 신념, 노동조합 가입, 건강, 성생활 등 사생활을 현저히 침해할 우려가 있는 정보는?",
+      "back": "민감정보"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보 유출을 인지한 경우 정보주체에게 통지해야 하는 법정 기한은?",
+      "back": "지체 없이 (정당한 사유가 없는 한 72시간 이내)"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보 보유기간 경과 또는 목적 달성 시 파기해야 하는 법정 기한은?",
+      "back": "지체 없이 (정당한 사유가 없는 한 5일 이내)"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "서비스 제공을 위해 필요한 최소한의 개인정보만 수집해야 한다는 원칙은?",
+      "back": "개인정보 최소 수집의 원칙"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보처리시스템의 비밀번호를 2종류 문자(영문, 숫자, 특수문자 등) 조합으로 구성 시 최소 길이는?",
+      "back": "10자리 이상"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보처리시스템의 비밀번호를 3종류 문자 조합으로 구성 시 최소 길이는?",
+      "back": "8자리 이상"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "공공기관이 의무적으로 개인정보 영향평가(PIA)를 수행해야 하는 '민감정보 또는 고유식별정보'의 정보주체 수 기준은?",
+      "back": "5만 명 이상"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "공공기관이 의무적으로 개인정보 영향평가(PIA)를 수행해야 하는 '일반 개인정보파일'의 정보주체 수 기준은?",
+      "back": "100만 명 이상"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보처리시스템의 접근권한 부여 시 준수해야 하는 가장 핵심적인 보안 원칙은?",
+      "back": "최소 권한의 원칙 (Need to Know)"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "퇴사자나 부서 이동자의 시스템 접근 권한은 어떻게 처리해야 하는가?",
+      "back": "지체 없이 접근 권한을 변경 또는 말소"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "전산실(서버실) 등 통제구역 출입에 대한 ISMS-P 물리적 보호조치 필수 사항 두 가지는?",
+      "back": "인가자만 출입 허용, 출입 기록 작성 및 정기적 검토"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "비밀번호 저장 시 반드시 적용해야 하는 암호화 방식은?",
+      "back": "일방향(단방향) 암호화 (해시 함수 사용)"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보처리방침에 반드시 포함되어야 하는 항목 중 개인정보의 '목적'과 관련된 내용은?",
+      "back": "개인정보의 처리 목적 및 보유 기간"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "개인정보처리방침에 반드시 포함되어야 하는 항목 중 외부 업체 활용과 관련된 두 가지는?",
+      "back": "제3자 제공에 관한 사항, 처리 업무 위탁에 관한 사항"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "악성코드 감염 방지 및 외부 해킹으로부터 내부망을 보호하기 위해 업무망과 인터넷망을 분리하는 조치는?",
+      "back": "망분리 (물리적/논리적 망분리)"
+    },
+    {
+      "category": "법규 및 관리체계",
+      "subcategory": "",
+      "type": "단답형",
+      "front": "시스템의 보안 취약점 등 정보보호 관리체계를 심사하여 기준에 적합한 경우 부여하는 국내 대표 인증 제도는?",
+      "back": "ISMS-P 인증 제도"
+    }
+  ]
+}
