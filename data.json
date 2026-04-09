@@ -320,7 +320,7 @@
       "category": "웹/애플리케이션 보안",
       "subcategory": "XSS",
       "front": "HttpOnly 쿠키 플래그의 역할과 한계는?",
-      "back": "**HttpOnly 역할**:\n- Set-Cookie 헤더에 HttpOnly 속성 추가 시\n- 클라이언트 자바스크립트(`document.cookie`)를 통한 **쿠키 접근 브라우저 차원 차단**\n- XSS를 통한 **직접적인 세션 하이재킹 방지**에 효과적\n\n**한계 (HttpOnly로 막을 수 없는 것)**:\n- **XST(Cross-Site Tracing)**: HTTP TRACE 메소드 악용으로 우회 탈취\n- **CSRF(사이트 간 요청 위조)**: 트랜잭션 변조\n- 피싱 페이지로의 강제 리다이렉트\n\n**근본 대응**: 모든 입출력값에 **HTML 엔티티 치환** (`<` → `&lt;`) 필수\n\n※ HttpOnly는 **쿠키 탈취를 방지**할 뿐, **XSS 취약점 자체를 제거하는 것은 아니다.** XSS를 근본적으로 막으려면 입출력 검증(HTML 엔티티 치환 등)이 필수이다.",
+      "back": "**HttpOnly 역할**:\n- Set-Cookie에 HttpOnly 속성 추가 시 `document.cookie` 접근 **브라우저 차원 차단**\n- XSS를 통한 **직접적 세션 쿠키 탈취 방지**에 효과적\n\n**한계 (막을 수 없는 것)**:\n- **XST**(HTTP TRACE 악용)로 우회 탈취\n- **CSRF**: 트랜잭션 변조\n- 피싱 페이지 강제 리다이렉트\n\n**핵심**: HttpOnly는 쿠키 탈취 방지일 뿐, **XSS 자체를 제거하지 않음** → 입출력 HTML 엔티티 치환 필수",
       "type": "서술형",
       "frequency": "최빈출"
     },
