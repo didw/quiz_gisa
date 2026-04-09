@@ -136,6 +136,7 @@ main {
 .type-btn[data-type="단답형"].active { background: #16a085; border-color: #16a085; }
 .type-btn[data-type="서술형"].active { background: #8e44ad; border-color: #8e44ad; }
 .type-btn[data-type="실무형"].active { background: #d35400; border-color: #d35400; }
+.type-btn[data-type="계산형"].active { background: #2980b9; border-color: #2980b9; }
 
 .filter-divider {
   color: #ccc;
