@@ -23,6 +23,20 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 const typeBtns = document.querySelectorAll('.type-btn');
 const freqBtns = document.querySelectorAll('.freq-btn');
 
+// Sanitize HTML output - strip dangerous tags while keeping markdown-generated ones
+function sanitizeHtml(html) {
+  const allowed = new Set(['p','strong','em','ul','ol','li','table','thead','tbody','tr','th','td',
+    'h1','h2','h3','h4','h5','h6','br','hr','a','code','pre','blockquote','span','div','del','sup','sub']);
+  const div = document.createElement('div');
+  div.innerHTML = html;
+  div.querySelectorAll('*').forEach(el => {
+    if (!allowed.has(el.tagName.toLowerCase())) {
+      el.replaceWith(document.createTextNode(el.textContent));
+    }
+  });
+  return div.innerHTML;
+}
+
 // Load data
 fetch('data.json')
   .then(res => {
@@ -68,11 +82,11 @@ function renderCard() {
 
   // Front: render markdown (for scenario-based questions with bold/newlines)
   const rawFront = card.front || '';
-  cardFrontContent.innerHTML = marked.parse(rawFront);
+  cardFrontContent.innerHTML = sanitizeHtml(marked.parse(rawFront));
 
   // Back: answer rendered as markdown
   const rawAnswer = card.back || '';
-  cardBackContent.innerHTML = marked.parse(rawAnswer);
+  cardBackContent.innerHTML = sanitizeHtml(marked.parse(rawAnswer));
 
   updateCounter();
 }

