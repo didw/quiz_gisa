@@ -24,7 +24,7 @@
       "subcategory": "정량적 위험분석",
       "front": "SLE(Single Loss Expectancy)란 무엇이며 공식은?",
       "back": "**SLE(단일 예상 손실액)**: 특정 위협이 **단 한 번** 발생했을 때 자산에 미치는 재무적 손실액\n\n> **SLE = 자산가치(AV) × 노출계수(EF)**\n\n- **AV(Asset Value)**: 자산의 금전적 가치\n- **EF(Exposure Factor)**: 위협 발생 시 자산이 입는 피해 비율(%)\n\n예) 자산 가치 1억 원, EF = 30% → SLE = 3,000만 원",
-      "type": "서술형",
+      "type": "단답형",
       "frequency": "최빈출"
     },
     {
@@ -60,7 +60,7 @@
       "subcategory": "BCP",
       "front": "BCP(비즈니스 연속성 계획) 5단계 방법론을 순서대로 나열하시오.",
       "back": "**BCP 5단계 (KISA 가이드라인):**\n\n1. **프로젝트 범위 설정 및 기획** - 정책 수립, 경영진 승인, 위원회 구성\n2. **사업영향평가(BIA)** - 핵심 업무 식별, RTO·RPO·MTPD 결정\n3. **복구 전략 개발** - BIA 결과 기반 최적 복구 대안 도출\n4. **복구 계획 수립** - DRP 문서 작성, 비상 연락망, 역할·책임 명문화\n5. **테스트 및 유지보수** - 도상 훈련, 시뮬레이션, 문서 갱신\n\n> 암기: 기획 → BIA → 전략 → 계획 → 테스트",
-      "type": "서술형",
+      "type": "단답형",
       "frequency": "최빈출"
     },
     {
@@ -177,7 +177,7 @@
       "subcategory": "IPsec",
       "front": "IPsec 프로토콜이 제공하는 보안 기능 4가지는?",
       "back": "IPsec은 **네트워크 계층(OSI 3계층)**에서 IP 패킷에 대해 다음 4가지 보안 기능 제공:\n\n1. **기밀성(Confidentiality)**: 데이터 암호화\n2. **무결성(Integrity)**: 데이터 변조 방지\n3. **인증(Authentication)**: 데이터 원천 인증\n4. **재전송 공격 방지(Anti-replay)**: 패킷 재사용 공격 차단\n\n세부 프로토콜: **AH** (인증만), **ESP** (암호화 + 선택적 인증)",
-      "type": "서술형",
+      "type": "단답형",
       "frequency": "최빈출"
     },
     {
@@ -402,7 +402,7 @@
       "subcategory": "개인정보보호법 수집·이용",
       "front": "개인정보 수집·이용 동의 시 필수 고지 항목 4가지는? (개인정보보호법 )",
       "back": "**개인정보 수집·이용 동의 시 필수 고지 항목 (4가지)**:\n\n1. **개인정보의 수집·이용 목적**\n2. **수집하려는 개인정보의 항목**\n3. **개인정보의 보유 및 이용 기간**\n4. **동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익이 있는 경우 그 불이익의 구체적인 내용**\n\n**위반 사례**: 동의 거부 시 불이익 고지 누락, 동의 여부 선택 항목란 미제공 → 위반",
-      "type": "서술형",
+      "type": "단답형",
       "frequency": "최빈출"
     },
     {
@@ -411,7 +411,7 @@
       "subcategory": "개인정보보호법 제3자 제공",
       "front": "개인정보 제3자 제공 동의 시 필수 고지 항목 5가지는? (개인정보보호법 )",
       "back": "**개인정보 제3자 제공 동의 시 필수 고지 항목 (5가지)**:\n\n1. **개인정보를 제공받는 자** (구체적 기관명/기업명)\n2. **개인정보를 제공받는 자의 개인정보 이용 목적**\n3. **제공하는 개인정보의 항목**\n4. **개인정보를 제공받는 자의 개인정보 보유 및 이용 기간**\n5. **동의를 거부할 권리가 있다는 사실 및 동의 거부에 따른 불이익이 있는 경우 그 불이익의 구체적인 내용**\n\n> 수집·이용 동의(4가지) 대비 **\"제공받는 자\"와 \"이용 목적\" 항목이 추가** (총 5가지)",
-      "type": "서술형",
+      "type": "단답형",
       "frequency": "최빈출"
     },
     {
@@ -492,7 +492,7 @@
       "subcategory": "DNS 보안",
       "front": "dig 명령어를 이용한 DNS Zone Transfer 공격 예시와 방어 BIND 설정은?",
       "back": "**Zone Transfer 공격 (정찰)**:\n```\ndig @dns.target.com target.com AXFR\n```\n- AXFR 타입 질의로 모든 도메인 레코드 다운로드 시도\n\n**방어 설정 (BIND named.conf)**:\n```\nzone \"target.com\" {\n    type master;\n    file \"target.com.zone\";\n    allow-transfer { 192.168.1.2; };  // Slave DNS IP만 허용\n};\n```\n\n**유출 정보**: A 레코드(IP), MX 레코드(메일 서버), CNAME, 서브도메인 전체\n→ 공격자의 **인프라 정찰 지도** 완성",
-      "type": "서술형",
+      "type": "실무형",
       "frequency": "최빈출"
     },
     {
@@ -609,7 +609,7 @@
       "subcategory": "개인정보보호법 통지",
       "front": "현행 개인정보보호법상 정보주체의 기본 권리는?",
       "back": "1. **열람 요구권**\n2. **전송요구권**\n3. **정정·삭제 요구권**\n4. **처리정지 요구권** 및 동의 철회권\n5. **자동화된 결정에 대한 거부·설명 요구권**\n\n※ 손해배상청구는 별도의 구제수단으로 보는 편이 정확하다.",
-      "type": "서술형",
+      "type": "단답형",
       "frequency": "최빈출"
     },
     {
@@ -813,7 +813,7 @@
     {
       "category": "위험관리",
       "subcategory": "접근통제 원칙 1",
-      "type": "서술형",
+      "type": "단답형",
       "front": "**상황:** 신규 입사자에게 업무망 접근 권한을 부여할 때, 해당 업무 수행에 필수적인 최소한의 권한만을 부여했다.\n\n**문제:** 적용된 보안 원칙의 명칭을 서술하시오.",
       "back": "**최소 권한의 원칙** (Principle of Least Privilege)\n\n- **정의**: 사용자에게 업무 수행에 **필수적인 최소한의 권한만** 부여하는 보안 원칙\n- **효과**: 권한 남용 방지, 내부자 위협 최소화, 침해 발생 시 피해 범위 제한\n- **적용 예시**: 신규 입사자에게 전체 시스템 접근 권한이 아닌, 해당 부서 업무 시스템만 접근 허용",
       "id": 91,
@@ -822,7 +822,7 @@
     {
       "category": "위험관리",
       "subcategory": "접근통제 원칙 2",
-      "type": "서술형",
+      "type": "단답형",
       "front": "**상황:** 개발자가 운영 서버의 DB 데이터를 직접 수정할 수 없도록, 개발과 운영 권한을 분리하여 다른 담당자에게 배정했다.\n\n**문제:** 적용된 보안 원칙의 명칭을 서술하시오.",
       "back": "**직무 분리의 원칙** (Separation of Duties, SoD)\n\n- **정의**: 하나의 업무 프로세스를 **2인 이상이 분담**하여, 단독으로 부정행위를 수행할 수 없도록 하는 보안 원칙\n- **효과**: 내부 부정·횡령 방지, 오류 검출 가능성 향상\n- **적용 예시**: 개발자는 운영 DB 직접 수정 불가, 운영자는 소스코드 변경 불가",
       "id": 92,
@@ -894,7 +894,7 @@
     {
       "category": "시스템 보안",
       "subcategory": "리눅스 계정 관리 2",
-      "type": "실무형",
+      "type": "서술형",
       "front": "**상황:** 사용자 암호가 저장되는 /etc/shadow 파일의 두 번째 필드가 \\* 또는 !! 로 설정되어 있다.\n\n**문제:** 이 설정이 의미하는 바를 서술하시오.",
       "back": "**패스워드가 잠겨있어(Locked)** 해당 계정으로 직접 로그인이 불가능함을 의미\n\n**상세**:\n- `*`: 시스템 계정(daemon, bin 등)으로 원래 로그인 불가\n- `!!`: 패스워드 미설정 또는 관리자가 잠금 처리\n- 잠금 해제: `passwd -u [계정명]`",
       "id": 100,
@@ -930,7 +930,7 @@
     {
       "category": "시스템 보안",
       "subcategory": "서비스 보안 - r-command",
-      "type": "실무형",
+      "type": "서술형",
       "front": "**상황:** 서버 점검 중 /etc/hosts.equiv 파일에 + + (모든 호스트, 모든 사용자 허용)가 설정된 것을 발견했다.\n\n**문제:** 이 설정의 보안상 위협을 서술하시오.",
       "back": "**위험**: 인증 없이 원격 접속(rlogin, rsh 등)이 허용되어 **IP 스푸핑을 통한 시스템 장악** 위험\n\n**`+ +` 설정의 의미**: 모든 호스트의 모든 사용자에게 무인증 접근 허용 (최악의 설정)\n\n**대응**:\n1. `+ +` 설정 **즉시 제거**\n2. 파일 권한을 `600`으로 제한 (소유자만 읽기/쓰기)\n3. r-command 서비스 비활성화 → **SSH로 대체**",
       "id": 104,
@@ -957,7 +957,7 @@
     {
       "category": "시스템 보안",
       "subcategory": "PAM 모듈",
-      "type": "실무형",
+      "type": "단답형",
       "front": "**상황:** 리눅스에서 su 명령어를 특정 그룹(wheel)에 속한 사용자만 사용할 수 있도록 제한하려고 한다.\n\n**문제:** 이를 설정하기 위해 사용하는 리눅스의 장착형 인증 모듈의 영문 약어를 쓰시오.",
       "back": "**PAM** (Pluggable Authentication Modules, 장착형 인증 모듈)\n\n**정의**: 리눅스에서 인증 방식을 모듈화하여 서비스별로 유연하게 적용할 수 있는 프레임워크\n\n**활용 예시**: `su` 명령어를 wheel 그룹만 사용하도록 `/etc/pam.d/su`에서 `pam_wheel.so` 모듈 설정\n\n**보안 효과**: 특정 서비스의 인증 정책을 코드 수정 없이 모듈 교체만으로 변경 가능",
       "id": 107,
@@ -1002,7 +1002,7 @@
     {
       "category": "시스템 보안",
       "subcategory": "NTP 보안",
-      "type": "실무형",
+      "type": "단답형",
       "front": "**상황:** 공격자가 출발지 IP를 대상 서버로 위조한 후, 대량의 NTP 질의를 보내 대상 서버에 응답 트래픽을 집중시키는 공격을 수행했다.\n\n**문제:** 이와 같은 증폭 공격(Amplification Attack)에 악용되는 NTP의 취약한 명령어 옵션은?",
       "back": "**monlist** (MON_GETLIST)\n\n- NTP 서버가 최근 접속한 클라이언트 목록을 대량의 응답 패킷으로 반환하는 명령\n- 소량의 요청으로 **수백 배 증폭된 응답** 유발 → DRDoS 공격에 악용\n- 대응: NTP 서버에서 `disable monitor` 설정 또는 NTPv4.2.7 이상으로 업데이트",
       "id": 112,
@@ -1011,7 +1011,7 @@
     {
       "category": "시스템 보안",
       "subcategory": "파일 권한 설정",
-      "type": "단답형",
+      "type": "서술형",
       "front": "**상황:** `/etc/shadow` 파일이 일반 사용자에게 읽히는 상태다.\n\n**문제:** 올바른 보안 상태를 서술하시오.",
       "back": "**소유자: root, 권한: 000 또는 400 또는 640**\n\n- 핵심: **일반 사용자 읽기(Other Read) 금지**\n- `/etc/shadow`에는 해시된 패스워드가 저장되므로, 읽기 허용 시 오프라인 패스워드 크래킹 공격 가능",
       "id": 113,
@@ -1155,7 +1155,7 @@
     {
       "category": "네트워크 보안",
       "subcategory": "DNS 보안",
-      "type": "서술형",
+      "type": "실무형",
       "front": "**상황:** 공격자가 DNS 서버의 재귀적 질의(Recursive Query) 설정을 악용하여, 외부의 임의의 도메인에 대한 질의를 허용하는 취약점을 이용했다.\n\n**문제:** 방어하기 위해 named.conf 파일에서 적용해야 할 옵션과 제한 대상을 서술하시오.",
       "back": "`allow-recursion` 옵션을 사용하여 **내부 IP 대역에서만** 재귀적 질의를 허용하도록 제한\n\n**설정 예시** (`named.conf`):\n```\noptions { allow-recursion { 192.168.1.0/24; }; };\n```\n\n**위험**: 제한 없을 시 → DNS 캐시 포이즈닝, DNS 증폭 DDoS 공격에 악용\n**추가 대응**: `allow-transfer`로 Zone Transfer도 Slave DNS IP만 허용",
       "id": 129,
@@ -1218,7 +1218,7 @@
     {
       "category": "웹/애플리케이션 보안",
       "subcategory": "XSS 대응 방안 2",
-      "type": "실무형",
+      "type": "단답형",
       "front": "**상황:** XSS 공격이 성공하더라도 해커가 자바스크립트를 이용해 세션 쿠키값(document.cookie)에 접근하지 못하도록 서버 응답 헤더에 설정해야 한다.\n\n**문제:** 설정해야 할 쿠키 보안 속성의 명칭을 쓰시오.",
       "back": "**HttpOnly**\n\n**정의**: 쿠키에 설정하는 보안 속성으로, 클라이언트 측 자바스크립트(`document.cookie`)를 통한 쿠키 접근을 **브라우저 차원에서 차단**\n\n**효과**: XSS 공격을 통한 **세션 쿠키 탈취 방지**\n\n**한계**: XSS 취약점 자체를 제거하는 것은 아님 → CSRF, 피싱 등은 여전히 가능. **입출력 검증이 근본 대책**",
       "id": 136,
@@ -1400,7 +1400,7 @@
       "subcategory": "최고책임자 지정",
       "type": "단답형",
       "front": "**상황:** 일정 규모 이상의 기업은 조직의 정보보안 정책을 총괄하고 사고에 대응하는 책임자를 임원급으로 지정해야 한다.\n\n**문제:** 정보보호 최고책임자의 영문 약어를 쓰시오.",
-      "back": "**CISO** (Chief Information Security Officer, 정보보호 최고책임자)\n\n**정의**: 조직의 정보보호 정책 수립, 보안 관리체계 운영, 침해사고 대응을 **총괄하는 임원급 책임자**\n\n**법적 의무**: 일정 규모 이상 기업은 CISO를 **임원급으로 지정**해야 함 (정보통신망법)\n\n**역할**: 보안 예산 확보, 보안 조직 관리, 경영진 보고, 인증(ISMS-P) 추진",
+      "back": "**CISO** (Chief Information Security Officer, 정보보호 최고책임자)\n\n**정의**: 조직의 정보보호 정책 수립, 보안 관리체계 운영, 침해사고 대응을 **총괄하는 임원급 책임자**\n\n**법적 의무**: 일정 규모 이상 기업은 CISO를 **임원급으로 지정**해야 함 (정보통신망법)\n\n**CISO의 주요 역할과 책임 4가지**:\n1. **정보보호 계획의 수립·시행 및 개선**\n2. **정보보호 실태와 관행의 정기적인 감사 및 개선**\n3. **정보보호 위험의 식별·평가 및 정보보호 대책 마련**\n4. **정보보호 교육과 모의훈련 계획의 수립 및 시행**\n\n**추가 역할**: 보안 예산 확보, 보안 조직 관리, 경영진 보고, 인증(ISMS-P) 추진",
       "id": 156,
       "frequency": "최빈출"
     },
@@ -1497,7 +1497,7 @@
     {
       "category": "법규 및 관리체계",
       "subcategory": "ISMS-P 물리적 보안 - 통제구역",
-      "type": "서술형",
+      "type": "단답형",
       "front": "**상황:** 가장 중요한 정보자산이 있는 서버실의 출입 통제를 위해 ISMS-P 인증 심사에 대비해야 한다.\n\n**문제:** 인가받지 않은 외부인(유지보수 인력 등)이 서버실에 출입해야 할 경우의 필수 보호 대책을 서술하시오.",
       "back": "**에스코트(동반 입실) 의무**\n\n**정의**: ISMS-P 기준 통제구역(서버실 등)에 **외부인 출입 시 반드시 인가된 내부 직원이 동반**해야 하는 물리적 보안 조치\n\n**추가 요구사항**:\n- 출입 기록 작성 및 정기 검토\n- 생체 인증 등 다중 인증 출입 통제\n- CCTV 모니터링",
       "id": 167,
@@ -1506,7 +1506,7 @@
     {
       "category": "법규 및 관리체계",
       "subcategory": "접근권한 관리 - 퇴사자",
-      "type": "서술형",
+      "type": "단답형",
       "front": "**상황:** 데이터베이스 관리 권한을 가진 핵심 직원이 금일 퇴사하였다.\n\n**문제:** ISMS-P 인증 기준에 따른 해당 직원의 권한 회수 시점을 서술하시오.",
       "back": "**지체 없이 접근 권한 변경 또는 말소**\n\n**정의**: ISMS-P 인증 기준에 따라 퇴사·부서 이동 시 **해당 직원의 시스템 접근 권한을 즉시 변경/삭제**해야 하는 의무\n\n**위험**: 방치 시 퇴사자 계정을 통한 내부 정보 유출, 불법 접근 발생\n\n**점검 사항**: 권한 변경 기록 유지, 주기적 미사용 계정 점검, 자동 계정 만료 설정",
       "id": 168,
@@ -1561,7 +1561,7 @@
       "id": 174,
       "category": "시스템 보안",
       "subcategory": "r-command 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "`hosts.equiv` 및 `.rhosts` 파일의 보안 위험과 대응 방안은?",
       "back": "**위험**: `r-command`(rlogin, rsh)를 위한 신뢰 관계 설정 파일로, IP 스푸핑 공격에 극도로 취약\n\n**대응 방안**:\n- 소유자 외 쓰기 권한 제거\n- `+` 설정(모든 호스트 허용) 금지\n- r-command 서비스 자체를 비활성화하고 SSH로 대체"
@@ -1586,7 +1586,7 @@
     },
     {
       "category": "침해사고 분석 및 대응",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "MITRE ATT&CK 프레임워크란 무엇이며, 구성 요소를 설명하시오.",
       "back": "**MITRE ATT&CK** (Adversarial Tactics, Techniques & Common Knowledge)\n\n**정의**: 실제 사이버 공격에서 관찰된 **공격자의 전술(Tactics)과 기법(Techniques)**을 체계적으로 분류한 지식 기반 프레임워크\n\n**구성**: 전술(What) → 기법(How) → 절차(Detail)\n\n**활용**: 위협 인텔리전스, 레드팀 훈련, 보안 솔루션 탐지율 평가, 침해 분석 시 공격 기법 매핑",
@@ -1595,7 +1595,7 @@
     },
     {
       "category": "침해사고 분석 및 대응",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "ESM(Enterprise Security Management)과 SIEM(Security Information & Event Management)의 차이는?",
       "back": "**ESM** (통합보안관리):\n- 방화벽, IDS/IPS, VPN 등 **이기종 보안장비의 로그를 통합 수집·관리**\n- 실시간 모니터링 및 정책 관리 중심\n\n**SIEM** (보안정보 및 이벤트 관리):\n- ESM + **로그 간 상관관계 분석(Correlation)** + 위협 인텔리전스 연동\n- 다양한 소스의 로그를 **정규화·상관분석**하여 고도화된 위협 탐지\n\n**관계**: SIEM은 ESM의 발전형으로 이해",
@@ -1613,7 +1613,7 @@
     },
     {
       "category": "침해사고 분석 및 대응",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "악성코드의 주요 유형(바이러스, 웜, 트로이목마, 랜섬웨어, 루트킷)의 특징을 비교하시오.",
       "back": "| 유형 | 자기복제 | 숙주 필요 | 핵심 특징 |\n|---|---|---|---|\n| **바이러스** | O | O | 정상 파일에 기생, 실행 시 감염 |\n| **웜(Worm)** | O | X | 네트워크로 **자체 전파**, 숙주 불필요 |\n| **트로이목마** | X | X | 정상 프로그램으로 **위장**, 백도어 설치 |\n| **랜섬웨어** | △ | X | 파일 **암호화** 후 금전 요구 |\n| **루트킷** | X | X | 커널/시스템 레벨에서 **자신을 은닉** |",
@@ -1631,7 +1631,7 @@
     },
     {
       "category": "침해사고 분석 및 대응",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "NAC(Network Access Control)의 정의와 주요 기능은?",
       "back": "**NAC** (네트워크 접근 제어)\n\n**정의**: 네트워크에 접속하는 단말의 **보안 상태를 검증**하고, 정책에 부합하지 않는 단말의 접근을 **차단·격리**하는 보안 솔루션\n\n**주요 기능**:\n1. **인증(Authentication)** - 사용자/단말 신원 확인 (802.1X)\n2. **검역(Quarantine)** - 보안 패치 미적용, 백신 미설치 단말 격리\n3. **권한 부여** - 보안 수준에 따라 VLAN/접근 범위 차등 할당\n4. **모니터링** - 접속 후 지속적 상태 점검",
@@ -1667,7 +1667,7 @@
     },
     {
       "category": "침해사고 분석 및 대응",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "CVE와 CWE의 차이점은?",
       "back": "**CVE** (Common Vulnerabilities and Exposures):\n- 공개된 **특정 소프트웨어의 알려진 취약점**에 부여되는 고유 식별 번호\n- 예: CVE-2021-44228 (Log4Shell)\n\n**CWE** (Common Weakness Enumeration):\n- 소프트웨어의 **보안 약점 유형을 분류**한 목록 (추상적 분류 체계)\n- 예: CWE-89 (SQL Injection), CWE-79 (XSS)\n\n**관계**: CWE는 약점의 **유형**, CVE는 약점이 실제로 발현된 **개별 사례**",
@@ -1703,7 +1703,7 @@
     },
     {
       "category": "시스템 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "접근통제의 3가지 유형(MAC, DAC, RBAC)과 대표 보안 모델을 비교하시오.",
       "back": "| 유형 | 결정 주체 | 특징 | 대표 모델 |\n|---|---|---|---|\n| **MAC** | **시스템**(중앙) | 보안 등급 기반, 관리자도 변경 불가 | Bell-LaPadula, Biba |\n| **DAC** | **소유자** | 소유자가 임의 권한 부여 | Unix rwx, Windows ACL |\n| **RBAC** | **역할**(직무) | 역할에 권한 부여, 사용자에 역할 할당 | 기업 ERP, 클라우드 IAM |\n\n**시험 포인트**: MAC은 군/정부(높은 보안), DAC는 일반 OS, RBAC는 기업 환경",
@@ -1712,7 +1712,7 @@
     },
     {
       "category": "네트워크 보안",
-      "type": "실무형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "TCP 헤더의 6개 제어 플래그(Control Flags)를 나열하고 각 기능을 설명하시오.",
       "back": "| 플래그 | 기능 |\n|---|---|\n| **SYN** | 연결 수립 요청 (3-way handshake 시작) |\n| **ACK** | 확인 응답 (수신 확인) |\n| **FIN** | 연결 정상 종료 요청 |\n| **RST** | 연결 강제 종료 (비정상 세션 끊기) |\n| **PSH** | 수신 데이터를 즉시 상위 계층으로 전달 |\n| **URG** | 긴급 데이터 존재 표시 |\n\n**시험 빈출**: SYN Flooding(SYN), 세션 하이재킹(ACK Storm), 포트 스캔(SYN→RST)",
@@ -1721,7 +1721,7 @@
     },
     {
       "category": "네트워크 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "제로 트러스트(Zero Trust) 보안 모델의 핵심 원칙과 구성 요소를 설명하시오.",
       "back": "**제로 트러스트** (Zero Trust)\n\n**핵심 원칙**: \"Never Trust, Always Verify\" — 내부/외부 구분 없이 **모든 접근을 검증**\n\n**구성 요소**:\n1. **강력한 인증**: 다중 인증(MFA), 지속적 인증\n2. **최소 권한**: 필요한 리소스에만 최소한의 접근 허용\n3. **마이크로 세그멘테이션**: 네트워크를 세분화하여 측면 이동(Lateral Movement) 차단\n4. **지속적 모니터링**: 모든 트래픽·행위를 실시간 분석\n\n※ 기존 경계 보안(Perimeter Security)의 한계를 보완하는 차세대 보안 아키텍처",
@@ -1730,7 +1730,7 @@
     },
     {
       "category": "네트워크 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "양자 암호(Quantum Cryptography)의 기본 개념: QKD와 PQC의 차이는?",
       "back": "**QKD** (Quantum Key Distribution, 양자 키 분배):\n- 양자역학 원리(불확정성)를 이용하여 **도청 불가능한 암호키 교환**\n- 도청 시도 시 양자 상태 붕괴 → 도청 **즉시 탐지** 가능\n\n**PQC** (Post-Quantum Cryptography, 양자내성 암호):\n- 양자 컴퓨터의 공격에도 **안전한 수학적 암호 알고리즘**\n- 기존 RSA/ECC를 대체할 격자(Lattice) 기반 등 새로운 암호 체계\n\n**차이**: QKD는 물리적 키 교환, PQC는 수학적 알고리즘 교체",
@@ -1739,7 +1739,7 @@
     },
     {
       "category": "웹/애플리케이션 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "하트블리드(Heartbleed) 취약점의 발생 원리와 영향은?",
       "back": "**Heartbleed** (CVE-2014-0160)\n\n**정의**: OpenSSL 라이브러리의 **Heartbeat 확장 기능** 구현 오류로 발생한 메모리 정보 유출 취약점\n\n**발생 원리**: Heartbeat 요청 시 **페이로드 길이를 검증하지 않아**, 서버 메모리의 최대 64KB를 무단 읽기 가능\n\n**위협**: 서버의 **비밀키, 세션 토큰, 사용자 비밀번호** 등 민감 데이터 유출\n\n**대응**: OpenSSL **1.0.1g 이상**으로 업데이트, SSL 인증서 및 비밀키 재발급",
@@ -1748,7 +1748,7 @@
     },
     {
       "category": "네트워크 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "최빈출",
       "front": "Land Attack의 공격 원리와 대응 방안은?",
       "back": "**Land Attack**\n\n**정의**: 출발지 IP와 목적지 IP를 **동일하게 위조**하여 패킷을 전송, 시스템이 **자기 자신에게 응답**하게 만드는 DoS 공격\n\n**위협**: 무한 루프 형태의 자기 참조로 시스템 자원 고갈 → 서비스 마비\n\n**대응**:\n1. 방화벽에서 **출발지 IP = 목적지 IP** 패킷 차단\n2. OS 패치 적용 (최신 OS는 대부분 자체 방어)\n3. **Ingress Filtering**: 외부에서 내부 IP로 위장한 패킷 차단",
@@ -1766,7 +1766,7 @@
     },
     {
       "category": "시스템 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "Race Condition(경쟁 조건) 취약점의 발생 원리와 대응 방안은?",
       "back": "**Race Condition** (경쟁 조건, TOCTOU)\n\n**정의**: 둘 이상의 프로세스가 **공유 자원에 동시 접근**할 때, 접근 순서에 따라 결과가 달라지는 취약점\n\n**위협**: 임시 파일 생성 시점과 사용 시점 사이에 공격자가 **심볼릭 링크**로 대체 → 권한 상승\n\n**대응**:\n1. **원자적(Atomic) 연산** 사용\n2. 임시 파일 생성 시 **예측 불가능한 파일명** 사용\n3. 파일 사용 전 **소유자/권한 재검증**",
@@ -1793,7 +1793,7 @@
     },
     {
       "category": "시스템 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "좀비 프로세스(Zombie Process)란 무엇이며 대응 방법은?",
       "back": "**좀비 프로세스** (상태: Z)\n\n**정의**: 자식 프로세스가 종료되었으나 부모 프로세스가 **wait() 시스템 콜로 종료 상태를 회수하지 않아** 프로세스 테이블에 남아있는 상태\n\n**위험**: 대량 발생 시 **PID 고갈** → 새 프로세스 생성 불가\n\n**확인**: `ps aux | grep Z`\n\n**대응**: 부모 프로세스에 `SIGCHLD` 시그널 전송, 부모가 응답 없으면 부모 프로세스 종료(kill)",
@@ -1802,7 +1802,7 @@
     },
     {
       "category": "네트워크 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "MAC Flooding(스위치 재밍) 공격의 원리와 대응 방안은?",
       "back": "**MAC Flooding** (스위치 재밍)\n\n**정의**: 스위치의 **MAC Address Table을 가짜 MAC으로 가득 채워** 오버플로우 유발 → 스위치가 **허브처럼 모든 포트로 브로드캐스트** → 스니핑 가능\n\n**대응**:\n1. 스위치에서 **Port Security** 설정 (포트당 MAC 수 제한)\n2. **802.1X** 인증 적용\n3. **Dynamic ARP Inspection** 활성화",
@@ -1811,7 +1811,7 @@
     },
     {
       "category": "네트워크 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "Ping of Death 공격의 원리와 대응 방안은?",
       "back": "**Ping of Death**\n\n**정의**: IP 패킷의 최대 크기(65,535 바이트)를 **초과하는 비정상 ICMP 패킷**을 전송하여 시스템의 버퍼 오버플로우를 유발하는 DoS 공격\n\n**위협**: 수신 시스템 크래시, 재부팅, 서비스 마비\n\n**대응**:\n1. OS 최신 패치 적용 (현대 OS는 대부분 방어)\n2. 방화벽에서 **비정상 크기 ICMP 패킷 차단**\n3. IDS/IPS에서 탐지 룰 적용",
@@ -1829,7 +1829,7 @@
     },
     {
       "category": "웹/애플리케이션 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "전자서명(Digital Signature)의 원리와 제공하는 보안 기능은?",
       "back": "**전자서명 원리**:\n1. 송신자가 메시지의 **해시값을 생성**\n2. 해시값을 송신자의 **개인키(Private Key)로 암호화** → 전자서명\n3. 수신자가 송신자의 **공개키(Public Key)로 복호화** → 해시값 비교\n\n**제공 기능**:\n- **무결성**: 메시지 변조 여부 확인\n- **인증**: 송신자 신원 확인\n- **부인 방지(Non-repudiation)**: 송신 사실 부인 불가\n\n**비교**: MAC(메시지 인증 코드)는 무결성+인증만 제공, **부인방지 미제공**",
@@ -1847,7 +1847,7 @@
     },
     {
       "category": "웹/애플리케이션 보안",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "스테가노그래피(Steganography)란 무엇이며 암호화와의 차이는?",
       "back": "**스테가노그래피** (Steganography)\n\n**정의**: 이미지, 오디오 등 정상 파일 속에 비밀 정보를 **숨겨서** 전달하는 정보 은닉 기술\n\n**암호화와의 차이**:\n- **암호화**: 메시지 내용을 **알 수 없게** 변환 (존재는 알 수 있음)\n- **스테가노그래피**: 메시지의 **존재 자체를 숨김**\n\n**탐지**: 통계적 분석(스테고 분석), 파일 크기 이상 탐지",
@@ -1856,7 +1856,7 @@
     },
     {
       "category": "침해사고 분석 및 대응",
-      "type": "단답형",
+      "type": "서술형",
       "frequency": "일반",
       "front": "DLP(Data Loss Prevention)의 정의와 주요 기능은?",
       "back": "**DLP** (Data Loss Prevention, 정보유출방지)\n\n**정의**: 조직의 중요 데이터가 내부에서 **외부로 유출되는 것을 탐지·차단**하는 보안 솔루션\n\n**주요 기능**:\n1. **네트워크 DLP**: 이메일, 웹, FTP 등 네트워크 경로 감시\n2. **엔드포인트 DLP**: USB, 프린터, 클립보드 등 단말기 경로 통제\n3. **스토리지 DLP**: 서버/DB 내 중요 데이터 식별·분류\n\n**탐지 방식**: 키워드 매칭, 정규식, 지문(Fingerprint), 머신러닝",
@@ -1880,6 +1880,771 @@
       "back": "| 구분 | 처리 위탁 | 제3자 제공 |\n|---|---|---|\n| **목적** | 위탁자의 업무 처리 **대행** | 제공받는 자의 **자체 목적** 활용 |\n| **관계** | 위탁자-수탁자 (계약 관계) | 개인정보처리자-제3자 |\n| **동의** | 별도 동의 불필요 (처리방침 공개) | **정보주체 동의 필수** |\n| **감독** | 위탁자가 수탁자 **관리·감독 의무** | 제공 이후 제공받는 자가 책임 |\n| **예시** | 배송 대행, 콜센터 위탁 | 마케팅 제휴사에 정보 제공 |\n\n**시험 포인트**: 위탁=대행(동의 불필요), 제공=자체이용(동의 필수)",
       "id": 209,
       "subcategory": ""
+    },
+    {
+      "id": 210,
+      "category": "시스템 보안",
+      "subcategory": "Windows 레지스트리",
+      "front": "Windows 시스템에서 악성코드가 자동 실행을 위해 주로 악용하는 레지스트리 경로(Run Key) 2가지를 쓰시오.",
+      "back": "**Windows 자동실행 레지스트리 경로:**\n\n| 경로 | 적용 범위 |\n|---|---|\n| **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run** | 모든 사용자 |\n| **HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run** | 현재 사용자 |\n\n- **RunOnce**: 1회 실행 후 자동 삭제 (같은 경로 하위)\n- 점검: `reg query HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run`\n- 추가 자동실행 위치: 시작 프로그램 폴더, 서비스, 예약 작업(Task Scheduler)",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 211,
+      "category": "시스템 보안",
+      "subcategory": "Windows 이벤트 로그",
+      "front": "Windows 보안 이벤트 로그에서 다음 이벤트 ID의 의미를 쓰시오.\n\n(A) 4624  (B) 4625  (C) 4634  (D) 4648",
+      "back": "| 이벤트 ID | 의미 |\n|---|---|\n| **4624** | 성공적 로그온(Successful Logon) |\n| **4625** | 로그온 실패(Failed Logon) |\n| **4634** | 로그오프(Logoff) |\n| **4648** | 명시적 자격 증명을 사용한 로그온(Explicit Credentials) |\n\n- **무차별 대입 공격 탐지**: 4625 이벤트가 단시간에 대량 발생 여부 확인\n- **4672**: 특수 권한 할당(관리자 로그온 시)\n- 확인: 이벤트 뷰어 → Windows 로그 → 보안",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 212,
+      "category": "시스템 보안",
+      "subcategory": "세션 타임아웃",
+      "front": "리눅스에서 사용자 세션이 일정 시간 미활동 시 자동 로그아웃되도록 설정하는 환경변수와 설정 파일은?",
+      "back": "**환경변수**: `TMOUT` (초 단위)\n\n**설정 방법**:\n```bash\n# /etc/profile 또는 /etc/profile.d/timeout.sh\nexport TMOUT=600    # 600초(10분) 후 자동 로그아웃\nreadonly TMOUT      # 사용자가 unset 못하도록 읽기전용 설정\n```\n\n- KISA 권장: **600초(10분)** 이내\n- `readonly TMOUT` 미설정 시 사용자가 `unset TMOUT`으로 해제 가능\n- SSH 세션: `/etc/ssh/sshd_config`에서 `ClientAliveInterval 300`, `ClientAliveCountMax 0` 설정으로 추가 통제",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 213,
+      "category": "시스템 보안",
+      "subcategory": "파일 시스템",
+      "front": "리눅스 파일 시스템에서 inode의 역할을 설명하고, 하드링크(Hard Link)와 심볼릭링크(Symbolic Link)의 차이를 비교하시오.",
+      "back": "**inode**: 파일의 메타데이터(소유자, 권한, 크기, 타임스탬프, 데이터 블록 위치 등)를 저장하는 자료구조. 파일명은 **디렉토리 엔트리**에 별도 저장\n\n| 구분 | 하드링크 | 심볼릭링크 |\n|---|---|---|\n| **inode** | 원본과 동일한 inode 공유 | 별도의 inode 생성 |\n| **원본 삭제 시** | 접근 가능 (링크 카운트 유지) | 깨짐 (Dangling Link) |\n| **다른 파일시스템** | 불가 | 가능 |\n| **디렉토리 링크** | 불가 | 가능 |\n| **생성 명령** | `ln 원본 링크` | `ln -s 원본 링크` |\n\n- `ls -i`: inode 번호 확인\n- `ls -l`: 링크 카운트(두 번째 필드) 확인",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 214,
+      "category": "시스템 보안",
+      "subcategory": "PAM 계정 잠금",
+      "front": "리눅스 PAM(Pluggable Authentication Module)을 이용하여 로그인 5회 실패 시 계정을 10분간 잠금하는 설정 방법을 서술하시오.",
+      "back": "**설정 파일**: `/etc/pam.d/system-auth` (또는 `/etc/pam.d/common-auth`)\n\n**pam_faillock 모듈** (CentOS 8+, pam_tally2 대체):\n```\nauth required pam_faillock.so preauth deny=5 unlock_time=600\nauth required pam_faillock.so authfail deny=5 unlock_time=600\naccount required pam_faillock.so\n```\n\n| 옵션 | 의미 |\n|---|---|\n| **deny=5** | 5회 실패 시 계정 잠금 |\n| **unlock_time=600** | 600초(10분) 후 자동 해제 |\n| **preauth** | 인증 전 잠금 상태 확인 |\n| **authfail** | 인증 실패 시 카운트 증가 |\n\n- 수동 해제: `faillock --user 사용자명 --reset`\n- 구버전: `pam_tally2.so deny=5 unlock_time=600`",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 215,
+      "category": "시스템 보안",
+      "subcategory": "보안 설정 파일 권한",
+      "front": "리눅스 주요 보안 설정 파일의 KISA 권장 권한과 소유자를 서술하시오.",
+      "back": "| 파일 | 권장 권한 | 소유자 | 설명 |\n|---|---|---|---|\n| **/etc/passwd** | 644 | root:root | 계정 정보(읽기 허용) |\n| **/etc/shadow** | 400 | root:root | 패스워드 해시(root만 읽기) |\n| **/etc/group** | 644 | root:root | 그룹 정보 |\n| **/etc/hosts.allow** | 644 | root:root | TCP Wrapper 허용 |\n| **/etc/hosts.deny** | 644 | root:root | TCP Wrapper 거부 |\n| **/etc/crontab** | 600 | root:root | 크론 설정 |\n| **/etc/rsyslog.conf** | 644 | root:root | 로그 설정 |\n| **/etc/login.defs** | 644 | root:root | 패스워드 정책 |\n\n- world-writable 파일 점검: `find / -perm -2 -type f`\n- 소유자 없는 파일 점검: `find / -nouser -o -nogroup`",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 216,
+      "category": "네트워크 보안",
+      "subcategory": "SSL/TLS 취약점",
+      "front": "다음 SSL/TLS 취약점의 명칭을 쓰시오.\n\n(A) TLS 1.0의 CBC 모드 IV 예측 가능성을 악용한 MITM 공격\n(B) SSL 3.0의 패딩 오라클 취약점을 이용한 공격\n(C) OpenSSL Heartbeat 확장의 메모리 읽기 취약점",
+      "back": "| 취약점 | 설명 |\n|---|---|\n| **(A) BEAST** | Browser Exploit Against SSL/TLS. TLS 1.0 CBC 모드의 IV 예측 가능성 악용 |\n| **(B) POODLE** | Padding Oracle On Downgraded Legacy Encryption. SSL 3.0 다운그레이드 강제 후 패딩 오라클 공격 |\n| **(C) Heartbleed** | CVE-2014-0160. OpenSSL Heartbeat 확장에서 경계값 미검증으로 서버 메모리 64KB씩 유출 |\n\n**대응**: TLS 1.2 이상 사용, SSL 3.0 비활성화, OpenSSL 최신 패치 적용",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 217,
+      "category": "네트워크 보안",
+      "subcategory": "SSL Pinning",
+      "front": "SSL Pinning(Certificate Pinning)의 개념과 목적, 적용 대상을 설명하시오.",
+      "back": "**SSL Pinning(인증서 고정)**: 클라이언트(앱)가 서버의 **공개키 또는 인증서**를 사전에 내장(고정)하여, HTTPS 통신 시 서버가 제시하는 인증서와 비교 검증하는 기법\n\n**목적**: 신뢰된 CA에서 발급한 **위조 인증서를 이용한 MITM 공격** 방지\n\n**적용 대상**: 주로 **모바일 앱** 보안에서 활용\n- 앱이 서버의 공개키 해시를 내장 → 프록시 도구(Burp Suite 등)를 이용한 HTTPS 도청 차단\n\n**한계**: 인증서 갱신 시 앱 업데이트 필요, 서버 키 교체 시 구버전 앱 호환성 문제\n\n> 2025년 1회 정보보안기사 실기 기출 출제",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 218,
+      "category": "네트워크 보안",
+      "subcategory": "IDS vs IPS",
+      "front": "IDS(침입탐지시스템)와 IPS(침입방지시스템)의 동작 방식, 네트워크 구성 위치, 장단점을 비교하시오.",
+      "back": "| 구분 | IDS | IPS |\n|---|---|---|\n| **동작** | 탐지만 수행(수동적) | 탐지 + **차단**(능동적) |\n| **구성** | 탭/미러 포트 연결(**Out-of-Band**) | 네트워크 **인라인(In-Line)** |\n| **트래픽 영향** | 지연 없음 | 약간의 지연 발생 |\n| **차단 능력** | 불가 (관리자 알림만) | 실시간 차단 가능 |\n| **장애 시** | 네트워크 영향 없음 | 네트워크 단절 위험 |\n| **장애 대응** | - | Fail-Open / Fail-Close 설정 |\n\n- **Fail-Open**: 장애 시 모든 트래픽 허용 (가용성 우선)\n- **Fail-Close**: 장애 시 모든 트래픽 차단 (보안 우선)\n- 공통: 시그니처 기반 + 이상행위 기반 탐지 지원",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 219,
+      "category": "네트워크 보안",
+      "subcategory": "SYN Flood 대응",
+      "front": "TCP SYN Flood 공격의 원리를 설명하고, SYN Cookie를 포함한 대응 방안 4가지를 서술하시오.",
+      "back": "**원리**: 공격자가 출발지 IP를 위조한 대량의 SYN 패킷 전송 → 서버의 **Backlog Queue**가 SYN_RECEIVED 상태의 반개방(Half-Open) 연결로 가득 참 → 정상 연결 불가\n\n**대응 방안**:\n\n1. **SYN Cookie**: SYN+ACK의 시퀀스 번호에 연결 정보를 암호화하여 인코딩 → Backlog Queue에 저장하지 않음 → ACK 수신 시 역산하여 검증\n   - `sysctl -w net.ipv4.tcp_syncookies=1`\n\n2. **Backlog Queue 크기 증가**:\n   - `sysctl -w net.ipv4.tcp_max_syn_backlog=8192`\n\n3. **SYN_RECEIVED 타임아웃 단축**:\n   - `sysctl -w net.ipv4.tcp_synack_retries=1`\n\n4. **First SYN Drop**: 첫 SYN 패킷을 의도적으로 드롭 → 정상 클라이언트는 재전송, 위조 IP는 재전송 안 함",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 220,
+      "category": "네트워크 보안",
+      "subcategory": "SSL/TLS Handshake",
+      "front": "SSL/TLS Handshake의 전체 과정을 단계별로 서술하시오.",
+      "back": "**SSL/TLS Handshake 과정**:\n\n1. **Client Hello**: 지원 암호 스위트 목록, 클라이언트 랜덤값, TLS 버전 전송\n2. **Server Hello**: 선택된 암호 스위트, 서버 랜덤값, 세션 ID 응답\n3. **Server Certificate**: 서버의 X.509 인증서 전송 (공개키 포함)\n4. **Server Key Exchange** (필요 시): DHE/ECDHE 파라미터 전송\n5. **Server Hello Done**: 서버 측 협상 완료 알림\n6. **Client Key Exchange**: Pre-Master Secret을 서버 공개키로 암호화 전송\n7. **양측 키 생성**: Pre-Master Secret + 양측 랜덤값 → **Master Secret** → 세션키(대칭키) 도출\n8. **Change Cipher Spec**: 이후 암호화 통신으로 전환 알림\n9. **Finished**: 핸드셰이크 무결성 검증 메시지 교환\n\n> 핵심: **비대칭키**로 대칭키를 안전하게 교환 → **대칭키**로 실제 데이터 암호화",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 221,
+      "category": "네트워크 보안",
+      "subcategory": "DDoS vs DRDoS",
+      "front": "DDoS(분산 서비스 거부)와 DRDoS(분산 반사 서비스 거부) 공격의 차이를 비교하고, DRDoS에 악용되는 프로토콜 3가지와 대응 방안을 서술하시오.",
+      "back": "| 구분 | DDoS | DRDoS |\n|---|---|---|\n| **공격 구조** | 봇넷이 직접 타겟 공격 | 반사 서버(Reflector) 경유 |\n| **IP 위조** | 봇 자체 IP 사용 | 타겟 IP로 위조(Spoofing) |\n| **증폭** | 없음 | 응답 > 요청 (증폭 효과) |\n| **추적** | 봇넷 추적 가능 | 반사 서버만 보임, 추적 어려움 |\n\n**악용 프로토콜과 증폭률**:\n| 프로토콜 | 증폭률 | 악용 방식 |\n|---|---|---|\n| **DNS** | 28~54배 | ANY 쿼리로 대량 응답 유발 |\n| **NTP** | 556배 | monlist 명령으로 최근 접속 목록 요청 |\n| **SSDP** | 30배 | UPnP 검색 요청 |\n\n**대응**: (1) Ingress Filtering(BCP38), (2) Unicast RPF, (3) 반사 서버 설정 강화, (4) 클린 파이프 서비스",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 222,
+      "category": "네트워크 보안",
+      "subcategory": "iptables 방화벽",
+      "front": "**상황:** 다음 요구사항에 맞는 iptables 방화벽 규칙을 작성하시오.\n\n1) 기본 정책: 모든 인바운드 트래픽 차단(Default Deny)\n2) 외부에서 웹 서비스(80, 443)만 허용\n3) SSH(22)는 관리자 IP(192.168.1.100)에서만 허용\n4) 이미 수립된 연결(ESTABLISHED, RELATED)의 응답은 허용\n5) 루프백 인터페이스 허용",
+      "back": "```bash\n#!/bin/bash\niptables -F                    # 기존 규칙 초기화\niptables -P INPUT DROP         # 기본 정책: 인바운드 차단\niptables -P FORWARD DROP       # 포워딩 차단\niptables -P OUTPUT ACCEPT      # 아웃바운드 허용\n\n# 루프백 허용\niptables -A INPUT -i lo -j ACCEPT\n\n# 수립된 연결 허용\niptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\n\n# SSH: 관리자 IP만 허용\niptables -A INPUT -p tcp -s 192.168.1.100 --dport 22 -j ACCEPT\n\n# 웹 서비스 허용\niptables -A INPUT -p tcp --dport 80 -j ACCEPT\niptables -A INPUT -p tcp --dport 443 -j ACCEPT\n```\n\n**핵심 옵션**: `-P`(기본 정책), `-A`(규칙 추가), `-m state`(상태 추적), `--dport`(목적지 포트), `-j`(타겟 액션), `-s`(출발지 IP), `-i lo`(루프백 인터페이스)",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 223,
+      "category": "네트워크 보안",
+      "subcategory": "패킷 분석",
+      "front": "**상황:** 다음 tcpdump 출력 결과를 분석하고, (A) 어떤 공격인지, (B) 판단 근거를 서술하시오.\n\n```\n14:23:01 IP 10.0.0.1.12345 > 192.168.1.10.80: Flags [S], seq 1000\n14:23:01 IP 10.0.0.2.23456 > 192.168.1.10.80: Flags [S], seq 2000\n14:23:01 IP 10.0.0.3.34567 > 192.168.1.10.80: Flags [S], seq 3000\n... (초당 수천 건의 SYN 패킷, 출발지 IP 모두 다름)\n```",
+      "back": "**(A) TCP SYN Flood 공격** (DDoS)\n\n**(B) 판단 근거**:\n1. 다수의 **서로 다른 출발지 IP**에서 동시 발생 → **IP 스푸핑** 의심\n2. 모든 패킷이 **SYN 플래그([S])만** 설정 → 3-Way Handshake 완료 의도 없음\n3. 목적지가 **단일 서버**(192.168.1.10)의 **80 포트에 집중**\n4. **초당 수천 건**의 비정상적 연결 시도\n\n**확인 명령어**: `netstat -an | grep SYN_RECV | wc -l` → 반개방 연결 수 확인\n\n**대응**: SYN Cookie 활성화, Backlog Queue 확대, 방화벽에서 Rate Limiting 설정",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 224,
+      "category": "네트워크 보안",
+      "subcategory": "라우터 ACL",
+      "front": "**상황:** 다음 요구사항에 맞는 라우터 ACL(Access Control List) 규칙을 작성하시오.\n\n1) 외부에서 내부 웹서버(192.168.1.10)의 HTTP(80)만 허용\n2) 내부 네트워크(192.168.1.0/24)에서 외부로 모든 통신 허용\n3) 나머지 모든 트래픽 차단(로그 기록)",
+      "back": "```\naccess-list 100 permit tcp any host 192.168.1.10 eq 80\naccess-list 100 permit tcp 192.168.1.0 0.0.0.255 any\naccess-list 100 deny ip any any log\n\ninterface FastEthernet0/0\n ip access-group 100 in\n```\n\n**핵심 개념**:\n- **와일드카드 마스크**: `0.0.0.255` = 서브넷 마스크 `255.255.255.0`의 반전 (/24)\n- **eq 80**: 목적지 포트 80 지정\n- **host**: 단일 호스트 (`0.0.0.0` 와일드카드)\n- **deny ip any any log**: 암묵적 거부(implicit deny)를 명시적으로 작성 + 로그 기록\n- **ip access-group 100 in**: 인터페이스에 인바운드 방향으로 적용",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 225,
+      "category": "네트워크 보안",
+      "subcategory": "Snort 룰 작성",
+      "front": "**상황:** 웹 서버($HOME_NET)에 대한 SQL Injection 공격을 탐지하는 Snort 룰을 작성하고, 각 옵션의 의미를 설명하시오.",
+      "back": "```\nalert tcp any any -> $HOME_NET 80 (\n  msg:\"SQL Injection - UNION SELECT\";\n  content:\"union\"; nocase;\n  content:\"select\"; nocase; distance:0; within:20;\n  flow:to_server,established;\n  sid:1000001; rev:1;\n)\n```\n\n**옵션 설명**:\n| 옵션 | 의미 |\n|---|---|\n| **content:\"union\"; nocase** | 대소문자 무시하고 \"union\" 문자열 매칭 |\n| **distance:0** | 이전 content 매칭 후 **0바이트 이후**부터 검색 시작 |\n| **within:20** | 이전 content 매칭 후 **20바이트 이내**에서 검색 |\n| **flow:to_server,established** | 서버 방향, 수립된 TCP 세션만 |\n| **sid:1000001** | 룰 고유 ID (사용자 정의는 1,000,000 이상) |\n| **rev:1** | 룰 버전(수정 시 증가) |",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 226,
+      "category": "네트워크 보안",
+      "subcategory": "ARP Spoofing 분석",
+      "front": "**상황:** 다음 ARP 테이블과 패킷 캡처 결과를 보고 물음에 답하시오.\n\n```\n[ARP 테이블]\nIP: 192.168.1.1   MAC: AA:BB:CC:DD:EE:01 (게이트웨이)\nIP: 192.168.1.100 MAC: AA:BB:CC:DD:EE:01\n\n[패킷 캡처]\nARP Reply: 192.168.1.1 is-at AA:BB:CC:DD:EE:99 (반복 전송)\n```\n\n1) 어떤 공격이 진행 중인가?\n2) ARP 테이블에서 비정상적인 점은?\n3) 대응 방안 3가지를 서술하시오.",
+      "back": "**1) ARP Spoofing (ARP Cache Poisoning) 공격**\n\n**2) 비정상 징후**: 게이트웨이(192.168.1.1)와 다른 호스트(192.168.1.100)의 **MAC 주소가 동일**(AA:BB:CC:DD:EE:01) → 공격자가 자신의 MAC으로 ARP 테이블을 변조한 상태. 패킷 캡처에서 게이트웨이 IP에 대한 **위조 MAC의 ARP Reply가 반복 전송**됨\n\n**3) 대응 방안**:\n1. **정적 ARP 등록**: `arp -s 192.168.1.1 [실제 게이트웨이 MAC]`\n2. **ARP 모니터링 도구**: ARPWatch, ARPGuard로 ARP 변경 감시\n3. **스위치 Dynamic ARP Inspection(DAI)** 활성화: DHCP Snooping 바인딩 테이블과 ARP 패킷 비교\n4. **VLAN 분리**로 브로드캐스트 도메인 축소",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 227,
+      "category": "위험관리",
+      "subcategory": "Kerberos 인증",
+      "front": "Kerberos 인증 시스템의 핵심 구성요소(KDC, AS, TGS, TGT)의 역할과 인증 흐름을 설명하시오.",
+      "back": "**구성요소**:\n| 요소 | 역할 |\n|---|---|\n| **KDC** (Key Distribution Center) | 인증의 핵심 서버, AS와 TGS로 구성 |\n| **AS** (Authentication Server) | 사용자 최초 인증 담당, TGT 발급 |\n| **TGS** (Ticket Granting Server) | TGT 검증 후 서비스 티켓(ST) 발급 |\n| **TGT** (Ticket Granting Ticket) | AS가 발급한 티켓, TGS에 제시 |\n\n**인증 흐름**:\n1. 사용자 → **AS**: 인증 요청 (ID + 패스워드 해시)\n2. AS → 사용자: **TGT** 발급 (세션키 포함)\n3. 사용자 → **TGS**: TGT 제시 + 서비스 요청\n4. TGS → 사용자: **ST(Service Ticket)** 발급\n5. 사용자 → **서비스 서버**: ST 제시 → 서비스 접근\n\n> 대칭키 기반, 싱글 사인온(SSO) 구현의 대표적 프로토콜",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 228,
+      "category": "위험관리",
+      "subcategory": "암호 알고리즘 분류",
+      "front": "다음 암호 알고리즘을 대칭키와 비대칭키로 분류하시오.\n\nDES, RSA, AES, ECC, 3DES, ElGamal, ARIA, Diffie-Hellman",
+      "back": "| 분류 | 알고리즘 | 특징 |\n|---|---|---|\n| **대칭키(비밀키)** | **DES**(64bit, 실질56bit), **3DES**, **AES**(128/192/256bit), **ARIA**(국산) | 동일 키로 암복호화, 빠른 속도, 키 분배 문제 |\n| **비대칭키(공개키)** | **RSA**(소인수분해), **ECC**(타원곡선), **ElGamal**(이산대수) | 공개키/개인키 쌍, 느린 속도, 키 분배 용이 |\n| **키 교환** | **Diffie-Hellman** | 이산대수 기반 키 합의 프로토콜 (암호화 아닌 키 교환 전용) |\n\n**하이브리드 암호**: 실무에서 비대칭키로 대칭키를 교환 → 대칭키로 데이터 암호화 (예: TLS)\n\n**블록 암호 운영 모드**: ECB, CBC, CFB, OFB, CTR",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 229,
+      "category": "위험관리",
+      "subcategory": "해시 함수",
+      "front": "암호학적 해시 함수의 3가지 안전성 속성(역상 저항성, 제2역상 저항성, 충돌 저항성)을 설명하시오.",
+      "back": "| 속성 | 정의 |\n|---|---|\n| **역상 저항성** (Preimage Resistance) | 해시값 h가 주어졌을 때, H(m)=h인 입력 m을 찾는 것이 계산적으로 불가능 (**일방향성**) |\n| **제2역상 저항성** (Second Preimage Resistance) | 입력 m₁이 주어졌을 때, H(m₁)=H(m₂)인 **다른** 입력 m₂를 찾는 것이 불가능 (**약한 충돌 저항성**) |\n| **충돌 저항성** (Collision Resistance) | H(m₁)=H(m₂)인 서로 다른 두 입력 m₁, m₂를 찾는 것이 불가능 (**강한 충돌 저항성**) |\n\n**대표 알고리즘**:\n| 알고리즘 | 출력 | 안전성 |\n|---|---|---|\n| MD5 | 128bit | 취약 (충돌 발견됨) |\n| SHA-1 | 160bit | 취약 (충돌 발견됨) |\n| **SHA-256/384/512** | 256/384/512bit | 안전 |\n| **SHA-3** (Keccak) | 가변 | 안전 |",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 230,
+      "category": "위험관리",
+      "subcategory": "위험 처리 전략",
+      "front": "위험 평가 결과에 따른 4가지 위험 처리(대응) 전략을 설명하고, 각각의 적용 사례를 제시하시오.",
+      "back": "| 전략 | 정의 | 사례 |\n|---|---|---|\n| **위험 감소** (Reduction/Mitigation) | 보안 통제를 구현하여 위험 수준을 낮춤 | 방화벽 도입, 암호화 적용, 패치 관리 |\n| **위험 수용** (Acceptance) | 잔여 위험이 DoA 이내일 때 경영진이 수용 | 피해액 < 대응 비용인 경우 |\n| **위험 전가** (Transfer) | 제3자에게 위험을 이전 | 보험 가입, 아웃소싱, SLA 계약 |\n| **위험 회피** (Avoidance) | 위험을 발생시키는 활동 자체를 중단 | 고위험 시스템 폐기, 해당 사업 철수 |\n\n- **선택 기준**: 위험 수준(ALE)과 대응 비용의 비교 분석\n- **잔여 위험(Residual Risk)**: 대책 적용 후에도 남아있는 위험\n- **경영진의 최종 승인** 필요 (특히 위험 수용 시)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 231,
+      "category": "위험관리",
+      "subcategory": "AAA 프레임워크",
+      "front": "AAA(Authentication, Authorization, Accounting) 프레임워크의 3가지 구성요소를 설명하고, RADIUS와 TACACS+를 비교하시오.",
+      "back": "**AAA 구성요소**:\n| 요소 | 역할 |\n|---|---|\n| **인증(Authentication)** | 사용자 신원 확인 (ID/PW, 인증서, 생체인증 등) |\n| **인가(Authorization)** | 인증된 사용자에게 허용된 권한 부여 |\n| **계정관리(Accounting)** | 사용자 활동 기록, 과금, 감사 추적 |\n\n**RADIUS vs TACACS+ 비교**:\n| 구분 | RADIUS | TACACS+ |\n|---|---|---|\n| **전송** | UDP (1812/1813) | TCP (49) |\n| **AAA 분리** | 인증+인가 결합 | 인증/인가/계정 **분리** |\n| **암호화** | 비밀번호만 암호화 | **전체 패킷** 암호화 |\n| **주 용도** | 네트워크 접근(VPN, Wi-Fi) | 네트워크 장비 관리(라우터, 스위치) |\n| **개발** | IETF 표준 | Cisco 개발 |",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 232,
+      "category": "위험관리",
+      "subcategory": "접근통제 모델",
+      "front": "Chinese Wall(Brewer-Nash) 모델과 Clark-Wilson 모델의 목적, 핵심 원리, 적용 사례를 각각 설명하시오.",
+      "back": "**Chinese Wall (Brewer-Nash) 모델**:\n- **목적**: 이해충돌(Conflict of Interest) 방지\n- **원리**: 사용자가 하나의 기업 데이터에 접근하면, 같은 이해충돌 클래스의 **다른 기업 데이터에 접근 불가** (동적 접근통제)\n- **적용**: 컨설팅 회사, 투자은행에서 경쟁사 정보 접근 차단\n\n**Clark-Wilson 모델**:\n- **목적**: 상업적 환경에서 **무결성** 보장\n- **핵심 개념**:\n  - **CDI**(Constrained Data Item): 무결성 보호 대상 데이터\n  - **UDI**(Unconstrained Data Item): 비제약 데이터\n  - **TP**(Transformation Procedure): 데이터 변경 절차\n  - **IVP**(Integrity Verification Procedure): 무결성 검증\n- **원리**: 모든 데이터 변경은 **TP를 통해서만** 가능, **직무 분리** 적용\n- **적용**: 금융 거래, 회계 시스템",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 233,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "HTTP 보안 헤더",
+      "front": "다음 HTTP 보안 응답 헤더의 명칭과 역할을 쓰시오.\n\n(A) 클릭재킹 방지를 위해 iframe 내 페이지 로드를 제한\n(B) 로드 가능한 리소스의 출처를 제한하여 XSS 방어\n(C) MIME 타입 스니핑 방지",
+      "back": "| 헤더 | 역할 | 설정 예시 |\n|---|---|---|\n| **(A) X-Frame-Options** | 클릭재킹(Clickjacking) 방어 | `DENY`, `SAMEORIGIN` |\n| **(B) Content-Security-Policy** | XSS 근본 방어, 리소스 출처 제한 | `script-src 'self'` |\n| **(C) X-Content-Type-Options** | MIME 타입 추측 방지 | `nosniff` |\n\n**추가 보안 헤더**:\n- **Strict-Transport-Security (HSTS)**: HTTPS 강제 (`max-age=31536000`)\n- **X-XSS-Protection**: 브라우저 XSS 필터 (`1; mode=block`)\n- **쿠키 속성**: `HttpOnly`(JS 접근 차단), `Secure`(HTTPS만), `SameSite`(CSRF 방어)",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 234,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "DNS 보안",
+      "front": "DNSSEC(DNS Security Extensions)의 개념, 보호 대상 공격, 핵심 메커니즘을 설명하시오.",
+      "back": "**DNSSEC**: DNS 응답의 **무결성**과 **출처 인증**을 보장하기 위해 **전자서명**을 활용하는 보안 확장\n\n**보호 대상**: DNS Cache Poisoning(캐시 변조) 공격\n\n**핵심 레코드**:\n| 레코드 | 역할 |\n|---|---|\n| **RRSIG** | DNS 레코드에 대한 전자서명 |\n| **DNSKEY** | 서명 검증용 공개키 |\n| **DS** | 위임 서명자(상위 도메인에서 하위 공개키 검증) |\n| **NSEC/NSEC3** | 도메인 부재 증명 |\n\n**동작**: 권한 DNS 서버가 응답에 RRSIG 첨부 → 리졸버가 DNSKEY로 서명 검증\n\n**한계**: 기밀성(암호화) 미제공, DoS 방어 불가\n- 기밀성 보완: **DNS over HTTPS(DoH)**, **DNS over TLS(DoT)**",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 235,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "이메일 보안",
+      "front": "이메일 발신자 인증을 위한 SPF, DKIM, DMARC의 역할과 차이를 설명하시오.",
+      "back": "| 프로토콜 | 인증 방식 | DNS 레코드 |\n|---|---|---|\n| **SPF** | 발송 서버 **IP** 검증 | TXT: `v=spf1 ip4:203.0.113.0/24 -all` |\n| **DKIM** | 이메일 헤더에 **전자서명** → 공개키로 검증 | TXT: 공개키 게시 |\n| **DMARC** | SPF/DKIM 결과에 따른 **처리 정책** 결정 | TXT: `v=DMARC1; p=reject` |\n\n**SPF**: 발신 IP가 도메인의 허용 목록에 있는지 확인. `-all`(Hard Fail), `~all`(Soft Fail)\n**DKIM**: 발신 서버가 메일에 서명 → 수신 서버가 DNS 공개키로 검증 → 변조 탐지\n**DMARC**: SPF+DKIM 검증 실패 시 처리 정책(`none`/`quarantine`/`reject`) + 보고서 수신\n\n> 3가지를 **함께 적용**해야 완전한 이메일 인증 (2024년 이후 출제 빈도 증가)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 236,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "디렉토리 리스팅",
+      "front": "디렉토리 리스팅(Directory Listing) 취약점의 위험성과 Apache, Nginx에서의 대응 방법을 쓰시오.",
+      "back": "**위험성**: 디렉토리에 기본 페이지(index.html)가 없을 때 **파일 목록이 노출** → 소스코드, 설정파일, 백업파일 등 중요 정보 유출\n\n**대응 방법**:\n| 웹서버 | 설정 |\n|---|---|\n| **Apache** | `Options -Indexes` (httpd.conf 또는 .htaccess) |\n| **Nginx** | `autoindex off;` (기본값이 off) |\n| **IIS** | '디렉터리 검색' 기능 비활성화 |\n\n**추가 조치**:\n- 불필요한 파일(`.bak`, `.old`, `.sql`, `.log`, `.swp`) 웹 디렉토리에서 제거\n- 웹 루트 외부에 중요 설정 파일 배치\n- 정기적인 웹 취약점 스캐닝으로 노출 점검",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 237,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "CSRF 방어",
+      "front": "CSRF(Cross-Site Request Forgery) 공격의 방어 기법 4가지를 설명하시오.",
+      "back": "**1. CSRF Token (Synchronizer Token Pattern)**:\n- 서버가 랜덤 토큰을 세션에 저장하고 폼에 hidden 필드로 포함\n- 요청 시 토큰 일치 검증 → **가장 확실한 방어**\n\n**2. SameSite Cookie 속성**:\n- `SameSite=Strict`: 타 사이트 요청 시 쿠키 미전송\n- `SameSite=Lax`: GET 요청은 허용, POST 차단\n\n**3. Referer/Origin 헤더 검증**:\n- HTTP 요청의 Referer 또는 Origin 헤더가 **동일 도메인**인지 확인\n\n**4. Double Submit Cookie**:\n- CSRF 토큰을 쿠키와 요청 파라미터에 **동시 전송** → 서버에서 두 값 일치 검증\n- 세션 서버 불필요 (stateless 가능)\n\n**추가**: 중요 기능에 **재인증**(비밀번호 확인, CAPTCHA) 적용",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 238,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "세션 관리 보안",
+      "front": "쿠키(Cookie)와 세션(Session)의 차이를 비교하고, 세션 관리를 위한 보안 대책 5가지를 서술하시오.",
+      "back": "**쿠키 vs 세션**:\n| 구분 | 쿠키 | 세션 |\n|---|---|---|\n| **저장 위치** | 클라이언트(브라우저) | 서버 |\n| **형태** | 문자열(key=value) | 객체 |\n| **용량** | 4KB 제한 | 서버 리소스에 의존 |\n| **보안** | 변조 위험 높음 | 상대적 안전 |\n| **연결** | 세션 ID를 쿠키에 담아 전달 | 세션 ID로 사용자 식별 |\n\n**세션 보안 대책**:\n1. 세션 ID를 **128bit 이상 랜덤**하게 생성\n2. 로그인 성공 시 **세션 ID 재발급** (Session Fixation 방지)\n3. **세션 타임아웃** 설정 (기본 30분, 중요 시스템 10분)\n4. 쿠키에 **HttpOnly**(JS 접근 차단), **Secure**(HTTPS만), **SameSite** 속성 설정\n5. 로그아웃 시 **서버 측 세션 완전 무효화** (`session.invalidate()`)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 239,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "DB 암호화",
+      "front": "데이터베이스 암호화의 4가지 방식(API, Plug-in, TDE, 파일암호화)의 동작 원리와 장단점을 비교하시오.",
+      "back": "| 방식 | 동작 원리 | 장점 | 단점 |\n|---|---|---|---|\n| **API** | 애플리케이션에서 암복호화 API 호출 후 DB에 암호문 저장 | 성능 우수, DB 독립적 | 앱 수정 필요 |\n| **Plug-in** | DB 서버에 암복호화 플러그인 설치 | 앱 수정 불필요 | DB 부하, DB 종속 |\n| **TDE** | DB 엔진 자체에서 데이터파일 통째로 암호화 | 앱/쿼리 수정 불필요, 파일 탈취 방어 | DB 메모리에서는 복호화 상태, 컬럼 단위 제어 불가 |\n| **파일/블록** | OS 또는 스토리지 레벨에서 암호화 | DB 종류 무관 | 세밀한 접근 제어 불가 |\n\n**개인정보 암호화 기준** (ISMS-P):\n- **비밀번호**: 일방향 해시(SHA-256 + Salt)\n- **고유식별정보**: 양방향 암호화(AES-256 등)\n- **전송 구간**: SSL/TLS 적용",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 240,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "시큐어코딩 - SQL Injection",
+      "front": "**상황:** 다음 Java 코드의 SQL Injection 취약점을 식별하고, PreparedStatement를 사용하여 안전한 코드로 수정하시오.\n\n```java\nString id = request.getParameter(\"id\");\nString pw = request.getParameter(\"pw\");\nString sql = \"SELECT * FROM users WHERE id='\" + id + \"' AND pw='\" + pw + \"'\";\nStatement stmt = conn.createStatement();\nResultSet rs = stmt.executeQuery(sql);\n```",
+      "back": "**취약점**: 외부 입력값(id, pw)이 검증 없이 SQL 쿼리에 **직접 결합(동적 쿼리)**\n- 공격: id에 `admin' --` 입력 → `WHERE id='admin' --' AND pw=''` → 패스워드 검증 우회\n\n**수정 코드**:\n```java\nString sql = \"SELECT * FROM users WHERE id=? AND pw=?\";\nPreparedStatement pstmt = conn.prepareStatement(sql);\npstmt.setString(1, id);\npstmt.setString(2, pw);\nResultSet rs = pstmt.executeQuery();\n```\n\n**핵심**:\n- `?` 바인드 변수 → 입력값이 **SQL 구문이 아닌 데이터**로만 처리\n- `setString()`이 자동으로 특수문자 이스케이프\n- **Statement** → **PreparedStatement** 교체가 SQL Injection의 근본 대응",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 241,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "Apache 보안 설정",
+      "front": "**상황:** 다음 Apache httpd.conf 설정에서 보안상 미흡한 항목 5가지를 식별하고 올바르게 수정하시오.\n\n```\nServerTokens Full\nServerSignature On\nOptions Indexes FollowSymLinks\nAllowOverride All\nTraceEnable On\n```",
+      "back": "| # | 현재 설정 | 수정 | 이유 |\n|---|---|---|---|\n| 1 | `ServerTokens Full` | **`ServerTokens Prod`** | 서버 버전/OS/모듈 정보 노출 차단 |\n| 2 | `ServerSignature On` | **`ServerSignature Off`** | 에러 페이지에 서버 정보 노출 방지 |\n| 3 | `Options Indexes FollowSymLinks` | **`Options -Indexes -FollowSymLinks`** | 디렉토리 리스팅 + 심볼릭링크 추적 방지 |\n| 4 | `AllowOverride All` | **`AllowOverride None`** | .htaccess 통한 설정 변경 차단 |\n| 5 | `TraceEnable On` | **`TraceEnable Off`** | HTTP TRACE 메서드 비활성화(XST 공격 방지) |\n\n**추가 권장 설정**:\n- `LimitRequestBody 10485760` (요청 크기 10MB 제한)\n- `Header always set X-Frame-Options SAMEORIGIN`\n- `FileETag None` (ETag를 통한 inode 노출 방지)",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 242,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "시큐어코딩 - XSS",
+      "front": "**상황:** 다음 Java 서블릿 코드의 XSS 취약점을 식별하고, HTML Entity 인코딩을 적용하여 수정하시오.\n\n```java\nString name = request.getParameter(\"name\");\nout.println(\"<h1>환영합니다, \" + name + \"님!</h1>\");\n```",
+      "back": "**취약점**: 사용자 입력(name)이 **검증/인코딩 없이 HTML에 직접 출력** → Reflected XSS\n- 공격: name에 `<script>alert(document.cookie)</script>` 입력 시 스크립트 실행\n\n**수정 코드**:\n```java\nString name = request.getParameter(\"name\");\n// HTML Entity 인코딩\nname = name.replace(\"&\", \"&amp;\")\n           .replace(\"<\", \"&lt;\")\n           .replace(\">\", \"&gt;\")\n           .replace(\"\\\"\", \"&quot;\")\n           .replace(\"'\", \"&#x27;\");\nout.println(\"<h1>환영합니다, \" + name + \"님!</h1>\");\n```\n\n**5대 특수문자 치환 필수**: `<` `>` `\"` `'` `&`\n\n**라이브러리 활용**: `ESAPI.encoder().encodeForHTML(name)`\n\n> 핵심: **출력 시점**에서 인코딩 적용(Output Encoding)",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 243,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "DNS Zone 파일",
+      "front": "**상황:** 다음 DNS Zone 파일을 분석하고 물음에 답하시오.\n\n```\n$TTL 86400\n@  IN  SOA  ns1.algisa.com. admin.algisa.com. (\n            2024010101 ; Serial\n            3600       ; Refresh\n            604800     ; Expire\n            86400 )    ; Minimum TTL\n   IN  NS   ns1.algisa.com.\n   IN  MX  10 mail.algisa.com.\n   IN  A    203.0.113.10\n   IN  TXT  \"v=spf1 ( ? )\"\n```\n\n1) SOA 레코드에서 관리자 이메일 주소는?\n2) MX 레코드의 10은 무엇을 의미하는가?\n3) SPF 레코드의 빈칸에 들어갈 내용을 작성하시오. (조건: 203.0.113.0/24만 허용, 나머지 거부)",
+      "back": "**1)** `admin@algisa.com` (SOA에서 `@`를 `.`으로 표기)\n\n**2)** MX **우선순위(Priority)**. 값이 작을수록 우선 사용. 여러 MX 레코드 시 부하분산/장애대응\n\n**3)** `v=spf1 ip4:203.0.113.0/24 -all`\n\n| SPF 구문 | 의미 |\n|---|---|\n| `ip4:203.0.113.0/24` | 해당 IP 대역 서버 허용 |\n| `-all` | 나머지 모두 **거부(Hard Fail)** |\n| `~all` | Soft Fail (스팸 분류) |\n| `+all` | 모두 허용 (**절대 사용 금지**) |\n\n**주요 DNS 레코드 유형**: A(IPv4), AAAA(IPv6), MX(메일), CNAME(별칭), NS(네임서버), TXT(텍스트), SOA(권한 시작)",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 244,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "웹 로그 분석",
+      "front": "**상황:** 다음 Apache 접근로그에서 공격 유형을 3가지 이상 식별하시오.\n\n```\n10.0.0.1 [09/Apr] \"GET /admin/config.php\" 200 5432\n10.0.0.1 [09/Apr] \"GET /../../etc/passwd\" 400 326\n10.0.0.1 [09/Apr] \"GET /login?id=admin'%20OR%201=1--\" 200 1024\n10.0.0.1 [09/Apr] \"GET /search?q=<script>alert(1)</script>\" 200 856\n10.0.0.1 [09/Apr] \"GET / HTTP/1.0\" 200 5234 \"Nikto/2.1.5\"\n```",
+      "back": "**공격 분석**:\n\n| # | 로그 | 공격 유형 | 상태 |\n|---|---|---|---|\n| 1 | `/admin/config.php` → 200 | **관리자 페이지 직접 접근** | 접근 제한 없음(위험) |\n| 2 | `/../../etc/passwd` → 400 | **Directory Traversal(경로 조작)** | 차단됨 |\n| 3 | `id=admin' OR 1=1--` → 200 | **SQL Injection** | 성공 가능성(위험) |\n| 4 | `q=<script>alert(1)</script>` → 200 | **Reflected XSS** | 취약 가능성 |\n| 5 | User-Agent: `Nikto/2.1.5` | **자동화 취약점 스캐닝** | 정찰 단계 |\n\n**대응**: WAF 도입, 관리자 페이지 IP 제한, 입력값 검증/인코딩, User-Agent 기반 스캐너 차단",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 245,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "디지털 포렌식 원칙",
+      "front": "디지털 포렌식의 5대 원칙(정당성, 재현, 신속성, 연계보관성, 무결성)을 각각 설명하시오.",
+      "back": "| 원칙 | 설명 |\n|---|---|\n| **정당성** (Legitimacy) | 증거가 **적법한 절차**를 통해 수집되어야 법적 효력을 가짐 |\n| **재현** (Reproducibility) | 동일한 환경과 조건에서 **같은 결과를 재현**할 수 있어야 함 |\n| **신속성** (Promptness) | 증거의 **휘발성**을 고려하여 즉시 수집 (메모리, 네트워크 상태 등) |\n| **연계보관성** (Chain of Custody) | 증거 수집~법정 제출까지 **취급 이력을 빈틈없이 문서화** (누가, 언제, 어디서, 무엇을) |\n| **무결성** (Integrity) | 수집된 증거가 **변조되지 않았음** 입증. **해시값**(MD5, SHA-256)으로 원본과 사본의 동일성 검증 |\n\n> 법적 증거 능력 확보를 위해 5대 원칙을 모두 준수해야 함",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 246,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "Cyber Kill Chain",
+      "front": "록히드 마틴(Lockheed Martin)의 Cyber Kill Chain 7단계를 순서대로 나열하고 각 단계를 설명하시오.",
+      "back": "| 단계 | 명칭 | 활동 |\n|---|---|---|\n| 1 | **정찰** (Reconnaissance) | 타겟 정보 수집 (이메일, SNS, 포트스캔) |\n| 2 | **무기화** (Weaponization) | 취약점 exploit + 악성코드 결합하여 공격 도구 제작 |\n| 3 | **배달** (Delivery) | 이메일 첨부, 웹사이트, USB 등으로 전달 |\n| 4 | **익스플로잇** (Exploitation) | 취약점 이용하여 코드 실행 |\n| 5 | **설치** (Installation) | 백도어, 웹쉘 등 지속적 접근 수단 설치 |\n| 6 | **명령 및 제어** (C2) | 원격 제어 채널 구축 |\n| 7 | **목표 행동** (Actions on Objectives) | 데이터 유출, 파괴, 랜섬웨어 실행 |\n\n> **활용**: 각 단계별 탐지/방어 포인트를 설정하여 **공격 체인을 조기 차단**\n> MITRE ATT&CK과 연계하여 세부 기법(Technique) 분류 가능",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 247,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "IDS 탐지 방식",
+      "front": "IDS의 오용탐지(Misuse Detection)와 이상탐지(Anomaly Detection)의 원리, 장단점을 비교하시오.",
+      "back": "| 구분 | 오용탐지 (시그니처 기반) | 이상탐지 (행위 기반) |\n|---|---|---|\n| **원리** | 알려진 공격 패턴(시그니처)과 **매칭** | 정상 행위 프로파일 학습 → **이탈 시 이상 판정** |\n| **오탐(FP)** | 낮음 | **높음** |\n| **미탐(FN)** | **높음** (신종 공격 탐지 불가) | 낮음 |\n| **제로데이** | 탐지 불가 | **탐지 가능** |\n| **DB 관리** | 시그니처 DB 지속 업데이트 필요 | 정상 프로파일 학습/유지 필요 |\n| **대표** | Snort | 통계적 분석, 머신러닝 기반 |\n\n- **오탐(False Positive)**: 정상을 공격으로 오판\n- **미탐(False Negative)**: 공격을 정상으로 오판\n- **혼합형(Hybrid)**: 두 방식 결합하여 상호 보완",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 248,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "iptables 구조",
+      "front": "iptables의 3가지 기본 체인(INPUT, OUTPUT, FORWARD)과 주요 옵션을 설명하시오.",
+      "back": "**기본 체인**:\n| 체인 | 역할 |\n|---|---|\n| **INPUT** | 외부 → 서버로 유입되는 트래픽 |\n| **OUTPUT** | 서버 → 외부로 유출되는 트래픽 |\n| **FORWARD** | 서버를 경유하는 트래픽 (라우팅) |\n\n**주요 옵션**:\n| 옵션 | 의미 | 예시 |\n|---|---|---|\n| `-A [체인]` | 규칙 추가(Append) | `-A INPUT` |\n| `-P [체인] [정책]` | 기본 정책 | `-P INPUT DROP` |\n| `-j [타겟]` | 매칭 시 동작 | `ACCEPT, DROP, REJECT, LOG` |\n| `-p [프로토콜]` | 프로토콜 지정 | `tcp, udp, icmp` |\n| `-s / -d` | 출발지/목적지 IP | `-s 10.0.0.0/24` |\n| `--dport / --sport` | 목적지/출발지 포트 | `--dport 80` |\n| `-m state --state` | 상태 추적 | `ESTABLISHED,RELATED` |\n| `-i / -o` | 입출력 인터페이스 | `-i lo` |",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 249,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "악성코드 분석",
+      "front": "악성코드 분석에서 정적 분석(Static)과 동적 분석(Dynamic)의 방법과 도구를 비교하시오.",
+      "back": "| 구분 | 정적 분석 | 동적 분석 |\n|---|---|---|\n| **방법** | 악성코드를 **실행하지 않고** 파일 자체를 분석 | 격리 환경(샌드박스)에서 **실행하며** 행위 관찰 |\n| **분석 대상** | PE 헤더, 문자열, 디스어셈블리, 패킹 여부 | 파일/레지스트리 변경, 네트워크 통신, 프로세스 생성 |\n| **도구** | IDA Pro, Ghidra, PEiD, strings, YARA | Cuckoo Sandbox, Process Monitor, Wireshark, Regshot |\n| **장점** | 안전(실행 불필요), 코드 전체 파악 | 실제 행위 파악, 난독화 무관 |\n| **단점** | 난독화/패킹 시 분석 어려움 | 안티-VM 탐지, 분석 환경 의존, 시간 소요 |\n\n> 실무: 정적 분석으로 전체 구조 파악 → 동적 분석으로 행위 확인 (순차 수행)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 250,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "침해사고 대응 절차",
+      "front": "KISA 침해사고 대응 7단계의 각 단계별 수행 활동을 상세히 서술하시오.",
+      "back": "| 단계 | 명칭 | 핵심 활동 |\n|---|---|---|\n| 1 | **사전 준비** | 대응 계획 수립, CERT 팀 구성, 도구 준비, 교육·훈련 |\n| 2 | **탐지** | IDS/IPS, SIEM 모니터링, 로그 분석, 이상 징후 식별 |\n| 3 | **초기 대응** | 사고 범위 파악, 관련 부서 통보, 증거 보존 착수, 초기 격리 |\n| 4 | **대응 전략 수립** | 총체적 분석 기반 전략 결정, 법적 조치 여부, 언론 대응 계획 |\n| 5 | **사고 조사** | 디지털 포렌식, 침투 경로 분석, 피해 범위 확정, 공격자 식별 |\n| 6 | **보고서 작성** | 사고 경위, 영향 범위, 대응 내역, 재발 방지 대책 문서화 |\n| 7 | **복구 및 해결** | 시스템 복구, 취약점 패치, 모니터링 강화, 재발 방지 이행 |\n\n> 정보통신망법에 따라 침해사고 발생 시 **KISA에 신고 의무**",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 251,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "디지털 포렌식 절차",
+      "front": "디지털 포렌식의 수행 절차와 각 단계의 핵심 활동, 증거 무결성 확보 방법을 서술하시오.",
+      "back": "**포렌식 절차**:\n\n1. **준비**: 분석 환경 구축, 도구 검증(EnCase, FTK, Autopsy), 법적 권한 확보\n\n2. **증거 수집**: 휘발성 순서에 따른 수집 (레지스터 → 메모리 → 네트워크 → 디스크)\n   - **비트스트림 이미징**: `dd if=/dev/sda of=image.dd bs=4096` 으로 원본 복제\n   - **Write Blocker** 사용으로 원본 변조 방지\n\n3. **증거 보관**: **Chain of Custody** 문서 작성 (취급자, 일시, 장소, 행위 기록), 봉인 보관\n\n4. **분석**: 타임라인 분석, 삭제 파일 복구, 로그/레지스트리 분석, 네트워크 아티팩트\n\n5. **보고**: 분석 결과 문서화, 증거 목록, 분석 방법론, 결론\n\n**무결성 확보**: 수집 즉시 **해시값**(MD5 + SHA-256) 생성 → 분석 전후 해시 비교 → 법정 제출 시 동일성 입증",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 252,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "Snort 룰 옵션",
+      "front": "Snort 룰의 주요 옵션(content, pcre, offset, depth, distance, within, flow, threshold)의 기능을 설명하시오.",
+      "back": "| 옵션 | 기능 |\n|---|---|\n| **content:\"문자열\"** | 페이로드에서 특정 문자열 매칭 (핵심 옵션) |\n| **nocase** | content 대소문자 구분 안 함 |\n| **offset:N** | 페이로드 시작에서 **N바이트 이후**부터 매칭 시작 |\n| **depth:N** | 페이로드 시작에서 **N바이트까지만** 매칭 범위 제한 |\n| **distance:N** | 이전 content 매칭 후 **N바이트 이후**부터 다음 매칭 시작 |\n| **within:N** | 이전 content 매칭 후 **N바이트 이내**에서 다음 매칭 |\n| **pcre:\"/정규식/\"** | 정규표현식 고급 패턴 매칭 (예: `/union\\s+select/i`) |\n| **flow:방향,상태** | `to_server`/`to_client` + `established`/`stateless` |\n| **threshold** | 이벤트 발생 빈도 조절: `type limit/threshold/both, track by_src/by_dst, count N, seconds T` |\n\n> offset/depth는 **절대 위치**, distance/within은 **상대 위치** 지정",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 253,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "CERT/CSIRT",
+      "front": "CERT/CSIRT의 조직 구성, 주요 역할, 법적 신고 의무를 서술하시오.",
+      "back": "**조직 구성**: 팀장(총괄), 침해분석팀(포렌식/로그), 기술지원팀(패치/복구), 대외협력팀(유관기관/언론)\n\n**주요 역할**:\n| 단계 | 활동 |\n|---|---|\n| **사전 대응** | 취약점 점검, 모의훈련, 보안 교육, 위협 인텔리전스 수집 |\n| **사고 탐지/분석** | 모니터링, 로그 분석, 침해 원인·경로 분석 |\n| **사고 대응** | 긴급 격리, 증거 수집, 시스템 복구 |\n| **사후 관리** | 재발 방지, 보고서 작성, 교훈 반영 |\n\n**법적 신고 의무**:\n- **정보통신망법 제48조의3**: 침해사고 발생 시 **KISA**(한국인터넷진흥원)에 신고\n- **개인정보 유출 시**: **72시간 내** 개인정보보호위원회 및 정보주체에게 통지\n- 1,000명 이상 유출 시 KISA에도 신고\n\n> 국내: KrCERT/CC(KISA), 금융CERT, 국방CERT 등 분야별 운영",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 254,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "악성코드 유형 비교",
+      "front": "악성코드 주요 유형(바이러스, 웜, 트로이목마, 랜섬웨어, 루트킷, 백도어)의 특징과 전파 방식을 비교하시오.",
+      "back": "| 유형 | 특징 | 전파 방식 |\n|---|---|---|\n| **바이러스** | 숙주 파일에 기생, 사용자 실행 시 감염 | 감염 파일 복사/실행 |\n| **웜** | **자가 복제**, 숙주 불필요 | 네트워크 취약점 자동 전파 |\n| **트로이목마** | 정상 프로그램으로 **위장**, 자가 복제 안 함 | 사용자 다운로드/실행 |\n| **랜섬웨어** | 파일/시스템 **암호화** 후 금전 요구 | 이메일, RDP, 취약점 |\n| **루트킷** | 커널/OS 레벨에서 **자신을 은닉** | 권한 상승 후 설치 |\n| **백도어** | 인증 우회하여 **재접근** 비밀 통로 | 초기 침투 후 설치 |\n\n**대표 사례**: WannaCry(웜+랜섬웨어), Mirai(IoT 봇넷), Emotet(트로이목마)\n\n**대응**: 백신(AV) + EDR + 네트워크 모니터링 + 정기 패치 + 백업",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 255,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "Snort 룰 작성",
+      "front": "**상황:** 공격자가 업로드한 PHP 웹쉘(cmd.php)에 접근하여 시스템 명령을 실행하는 행위를 탐지하는 Snort 룰을 작성하고 각 옵션을 설명하시오.",
+      "back": "```\nalert tcp any any -> $HOME_NET 80 (\n  msg:\"Webshell Access - cmd.php\";\n  flow:to_server,established;\n  content:\"GET\"; http_method;\n  content:\"/cmd.php\"; http_uri;\n  content:\"cmd=\"; http_uri;\n  sid:1000010; rev:1;\n  classtype:web-application-attack;\n)\n```\n\n**옵션 설명**:\n| 옵션 | 의미 |\n|---|---|\n| `flow:to_server,established` | 클라이언트→서버, 수립된 연결 |\n| `content:\"GET\"; http_method` | HTTP 메서드가 GET |\n| `content:\"/cmd.php\"; http_uri` | URI에 /cmd.php 포함 |\n| `content:\"cmd=\"; http_uri` | URI에 cmd= 파라미터 포함 (명령 실행) |\n| `classtype` | 공격 분류 (웹 애플리케이션 공격) |\n\n> 추가: c99, r57, b374k 등 유명 웹쉘 파일명도 탐지 규칙 추가 필요",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 256,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "iptables 실습",
+      "front": "**상황:** 다음 요구사항에 맞는 iptables 규칙을 작성하시오.\n\n- 웹(80,443), DNS(53/udp) 서비스 운영\n- 외부 SSH 접근 완전 차단\n- ICMP Ping은 초당 1회로 제한(DoS 방지)\n- 기본 정책: DROP",
+      "back": "```bash\n#!/bin/bash\niptables -F\niptables -X\niptables -P INPUT DROP\niptables -P FORWARD DROP\niptables -P OUTPUT ACCEPT\n\n# 루프백 허용\niptables -A INPUT -i lo -j ACCEPT\n\n# 수립된 연결 허용\niptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT\n\n# 웹 서비스\niptables -A INPUT -p tcp --dport 80 -j ACCEPT\niptables -A INPUT -p tcp --dport 443 -j ACCEPT\n\n# DNS\niptables -A INPUT -p udp --dport 53 -j ACCEPT\n\n# SSH 차단 (로깅)\niptables -A INPUT -p tcp --dport 22 -j LOG --log-prefix \"SSH_BLOCKED: \"\niptables -A INPUT -p tcp --dport 22 -j DROP\n\n# ICMP Rate Limiting\niptables -A INPUT -p icmp --icmp-type echo-request \\\n  -m limit --limit 1/s --limit-burst 4 -j ACCEPT\niptables -A INPUT -p icmp --icmp-type echo-request -j DROP\n```\n\n**핵심**: `-m limit --limit 1/s`(초당 1회), `--limit-burst 4`(초기 버스트 허용), `LOG` 타겟(차단 전 로깅)",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 257,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "웹쉘 코드 분석",
+      "front": "**상황:** 다음 PHP 코드가 서버에서 발견되었다.\n\n```php\n<?php\n  @$cmd = $_GET['cmd'];\n  if($cmd) {\n    echo \"<pre>\" . shell_exec($cmd) . \"</pre>\";\n  }\n?>\n```\n\n(A) 이 코드의 기능 (B) 웹쉘 여부 판단 (C) 대응 방안을 서술하시오.",
+      "back": "**(A) 기능**: GET 파라미터(`cmd`)를 `shell_exec()`으로 **OS 명령어 실행** 후 결과 출력. `@`는 에러 억제\n\n**(B) 웹쉘 확정**. 원격에서 시스템 명령을 자유롭게 실행하는 전형적 **One-Line 웹쉘**\n- 예: `cmd.php?cmd=cat /etc/passwd` → 시스템 파일 열람\n\n**(C) 대응**:\n1. 해당 파일 **즉시 삭제** 및 웹 서버 재시작\n2. 접근로그에서 해당 파일 **호출 이력 분석** (공격자 IP, 실행 명령어)\n3. **파일 업로드 취약점** 점검 및 패치 (업로드 경로 실행 권한 제거)\n4. 추가 웹쉘 검색:\n```bash\nfind /var/www -name \"*.php\" -exec grep -l \\\n  \"shell_exec\\|system\\|passthru\\|exec(\" {} \\;\n```\n5. 시스템 전체 **무결성 점검** (변조 파일 확인)",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 258,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "DNS 공격 분석",
+      "front": "**상황:** 다음 DNS 쿼리 로그를 분석하시오.\n\n```\n10:23:01 192.168.1.50 -> 8.8.8.8 DNS Query: ANY algisa.com\n10:23:01 192.168.1.50 -> 8.8.8.8 DNS Query: ANY algisa.com\n10:23:02 192.168.1.50 -> 8.8.8.8 DNS Query: ANY algisa.com\n... (초당 수백 건, 출발지 IP 동일)\n```\n\n(A) 의심되는 공격 유형  (B) 판단 근거  (C) 대응 방안",
+      "back": "**(A) DNS Amplification DDoS 공격** (반사/증폭)\n\n**(B) 판단 근거**:\n1. **ANY 쿼리**: 모든 DNS 레코드 요청 → 응답이 쿼리 대비 **수십 배 증폭**\n2. 동일 도메인에 대한 **초당 수백 건** 반복 쿼리 (비정상)\n3. 192.168.1.50은 실제로는 **공격 대상의 위조 IP** (IP Spoofing)\n4. 공개 DNS(8.8.8.8)를 **반사 서버**로 악용\n\n**(C) 대응**:\n1. DNS 서버에서 **ANY 쿼리 차단** 또는 응답 크기 제한\n2. **Rate Limiting**: 동일 IP의 초당 쿼리 수 제한\n3. **Recursive Query** 허용 범위를 내부 IP로 제한\n4. **BCP38**(Ingress Filtering)으로 IP Spoofing 차단\n5. Response Rate Limiting(RRL) 적용",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 259,
+      "category": "법규 및 관리체계",
+      "subcategory": "ISMS-P 인증기준 구성",
+      "front": "ISMS-P 인증기준의 3개 영역과 각 영역의 통제 항목 수를 쓰시오.",
+      "back": "| 영역 | 항목 수 | 세부 내용 |\n|---|---|---|\n| **관리체계 수립 및 운영** | **16개** | 관리체계 기반 마련, 위험 관리, 관리체계 운영, 점검 및 개선 |\n| **보호대책 요구사항** | **64개** | 정책/조직, 인적보안, 외부자보안, 물리보안, 접근통제, 암호화, 정보시스템 도입/개발, 운영관리, 사고대응, IT재해복구 |\n| **개인정보 처리단계별 요구사항** | **21개** | 수집, 이용/제공, 보유/파기, 정보주체 권리보호 |\n\n- **총 101개** 항목\n- **ISMS**: (1)+(2) = **80개** 항목으로 인증\n- **ISMS-P**: (1)+(2)+(3) = **101개** 항목으로 인증 (개인정보 포함)\n- 인증기관: KISA, 인증위원회: 과기정통부/개인정보보호위원회",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 260,
+      "category": "법규 및 관리체계",
+      "subcategory": "안전성확보조치",
+      "front": "「개인정보의 안전성 확보조치 기준」(고시)의 주요 항목 6가지를 나열하고 핵심 내용을 설명하시오.",
+      "back": "| # | 항목 | 핵심 내용 |\n|---|---|---|\n| 1 | **내부 관리계획** | 개인정보 보호 조직, 교육, 점검 계획 수립·시행 |\n| 2 | **접근권한 관리** | 최소 권한 부여, 퇴직 시 즉시 회수, 권한 부여 기록 **3년 보관** |\n| 3 | **접근통제** | 불법 접근 차단(방화벽 등), 인터넷 홈페이지 취약점 점검 |\n| 4 | **개인정보 암호화** | 비밀번호: **일방향 해시**, 고유식별정보: **양방향 암호화**, 전송 구간: **SSL/TLS** |\n| 5 | **접속기록 보관·점검** | 최소 **1년** 보관 (5만 명 이상 고유식별정보: **2년**), **반기 1회** 이상 점검 |\n| 6 | **악성프로그램 방지** | 백신 설치·업데이트, OS 보안 패치 적용 |\n\n**추가**: 물리적 안전조치(잠금장치 등), 재해·재난 대비 안전조치(백업 등)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 261,
+      "category": "법규 및 관리체계",
+      "subcategory": "전자서명법",
+      "front": "전자서명법상 다음 용어를 정의하시오.\n\n(A) 전자서명  (B) 전자서명인증  (C) 인증서  (D) 2020년 개정의 핵심 변화",
+      "back": "**(A) 전자서명**: 서명자의 신원 확인 및 서명 사실을 나타내기 위해 전자문서에 첨부되거나 논리적으로 결합된 전자적 형태의 정보\n\n**(B) 전자서명인증**: 전자서명생성정보가 특정인에게 유일하게 속한다는 사실을 확인하고 증명하는 행위\n\n**(C) 인증서**: 전자서명생성정보가 특정인에게 유일하게 속한다는 사실을 확인·증명하는 전자적 정보\n\n**(D) 2020년 개정 핵심**:\n- **공인전자서명 제도 폐지**: 공인인증기관의 독점적 지위 해소\n- 모든 전자서명(공인/사설)의 **법적 효력 동등화**\n- 다양한 인증 수단(생체인증, 블록체인 기반 등) 활용 가능\n- 전자서명인증사업자 **평가·인정** 제도 도입",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 262,
+      "category": "법규 및 관리체계",
+      "subcategory": "가명정보 처리",
+      "front": "가명정보의 개념과 처리 절차(가명처리→적정성 검토→활용→결합), 안전조치를 서술하시오.",
+      "back": "**가명정보**: 추가 정보 없이는 특정 개인을 알아볼 수 없도록 처리된 정보 (개인정보보호법 적용, 익명정보는 적용 제외)\n\n**처리 절차**:\n1. **가명처리**: 식별자 삭제/대체 (해싱, 총계처리, 범주화, 마스킹 등)\n2. **적정성 검토**: K-익명성, L-다양성 등 적용하여 재식별 위험 평가\n3. **활용**: **통계작성, 과학적 연구, 공익적 기록보존** 목적만 허용 (마케팅 등 상업적 활용 금지)\n4. **결합**: 서로 다른 개인정보처리자 간 결합 시 **전문기관**을 통해서만 가능\n\n**안전조치**:\n- 가명정보 처리 기록 **3년 보관**\n- **재식별 금지** (위반 시 과태료/형사처벌)\n- 특정 개인 식별 시 즉시 처리 중지 및 해당 정보 **회수·파기**",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 263,
+      "category": "법규 및 관리체계",
+      "subcategory": "법률 비교",
+      "front": "개인정보보호법과 정보통신망법의 관계, 적용 범위, 주요 차이점을 비교하시오.",
+      "back": "**관계**: 개인정보보호법(일반법) vs 정보통신망법(특별법)\n\n> 2020년 **데이터 3법** 개정으로 정보통신망법의 개인정보 관련 조항 대부분이 개인정보보호법으로 **이관**\n\n| 구분 | 개인정보보호법 | 정보통신망법 |\n|---|---|---|\n| **적용 대상** | 공공+민간 **모든** 개인정보처리자 | 정보통신서비스 제공자(온라인 사업자) |\n| **관할** | 개인정보보호위원회 | 과기정통부, 방통위 |\n| **범위** | 오프라인+온라인 포괄 | 온라인(네트워크) 중심 |\n\n**정보통신망법 잔존 조항**:\n- 해킹·침해사고 대응 (제48조)\n- 스팸 규제\n- 청소년 보호\n- 악성프로그램 유포 금지\n\n**데이터 3법**: 개인정보보호법, 정보통신망법, 신용정보법 동시 개정(2020.8)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 264,
+      "category": "법규 및 관리체계",
+      "subcategory": "주요정보통신기반시설",
+      "front": "주요정보통신기반시설의 지정 기준, 취약점 분석·평가 의무, 보호대책 수립 절차를 서술하시오.",
+      "back": "**근거법**: 정보통신기반 보호법\n\n**지정 기준**: 중앙행정기관의 장이 소관 분야에서 전자적 침해 시 **국가안전보장·경제사회에 중대한 영향**을 미칠 시설을 지정\n\n**취약점 분석·평가**:\n- 관리기관은 **연 1회 이상** 수행 의무\n- KISA 「주요정보통신기반시설 기술적 취약점 분석·평가 가이드」 기준 적용\n- 자체 수행 또는 전문기관(KISA 등)에 의뢰\n\n**보호대책 수립**:\n1. 관리기관의 장이 분석·평가 결과를 바탕으로 **보호대책** 수립\n2. 관계 중앙행정기관의 장에게 **제출**\n3. **정보통신기반보호위원회**(국무총리 소속)가 보호계획 종합·조정\n\n**대상 예시**: 전력, 통신, 금융, 교통, 의료, 수자원 등 국가 핵심 인프라\n\n> 2023년 실기에서 해당 가이드 기반 문제 다수 출제",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 265,
+      "category": "법규 및 관리체계",
+      "subcategory": "ISMS-P PDCA",
+      "front": "ISMS-P 관리체계 수립 및 운영의 PDCA(Plan-Do-Check-Act) 사이클을 단계별로 설명하시오.",
+      "back": "**Plan (관리체계 기반 마련)**:\n- 경영진 참여 및 의사결정, 최고책임자 지정\n- 정보보호 정책 수립, 조직 구성, 범위 설정, 자산 식별\n\n**Do (위험 관리 + 관리체계 운영)**:\n- 위험 식별·분석·평가, 보호대책 선정·구현\n- 정책 시행, 교육/인식 제고, 기술적·물리적 보호조치 운영\n\n**Check (관리체계 점검)**:\n- **내부 감사** (연 1회 이상)\n- 관리체계 효과성 측정, 취약점 점검, 모의 침투 테스트\n- **경영진 검토** 보고\n\n**Act (관리체계 개선)**:\n- 부적합 사항 **시정조치·예방조치**\n- 보안 사고/변경 사항 반영하여 정책 업데이트\n- **지속적 개선**\n\n> 핵심: PDCA의 **지속적 순환**이 ISMS-P 인증의 핵심 (1회성이 아닌 상시적 관리체계)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 266,
+      "category": "시스템 보안",
+      "subcategory": "리눅스 계정 관리",
+      "front": "다음 설명의 옳고 그름(O/X)을 판단하시오.\n\n> 리눅스/유닉스 시스템에서 사용자 계정의 암호화된 패스워드는 `/etc/passwd` 파일에 저장된다.",
+      "back": "**X** (틀림)\n\n`/etc/passwd`에는 계정 기본 정보(사용자명, UID, GID, 홈 디렉터리, 쉘 등)가 저장되며, 실제 **암호화된 패스워드 해시는 `/etc/shadow`** 에 저장된다.\n\n| 파일 | 권한 | 저장 내용 |\n|---|---|---|\n| `/etc/passwd` | 644 (전체 읽기 가능) | 계정 정보 (패스워드 필드는 `x`로 표시) |\n| `/etc/shadow` | 600 (root만 접근) | 암호화된 패스워드 해시, 만료 정보 |\n\n> Shadow Password 시스템 도입 이전에는 `/etc/passwd`에 해시가 저장되었으나, 보안상 `/etc/shadow`로 분리되었다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 267,
+      "category": "시스템 보안",
+      "subcategory": "리눅스 계정 관리",
+      "front": "`/etc/passwd`와 `/etc/shadow` 파일의 각 필드 구조를 설명하고, Shadow Password 시스템의 도입 목적과 보안 효과를 서술하시오.",
+      "back": "**/etc/passwd 구조** (7개 필드, `:` 구분):\n```\nusername:x:UID:GID:comment:home_dir:shell\n```\n| 필드 | 설명 |\n|---|---|\n| username | 사용자 계정명 |\n| x | 패스워드 필드 (shadow 사용 시 `x`) |\n| UID | 사용자 ID (root=0) |\n| GID | 주 그룹 ID |\n| comment | 사용자 설명(GECOS) |\n| home_dir | 홈 디렉터리 경로 |\n| shell | 로그인 쉘 경로 |\n\n**/etc/shadow 구조** (9개 필드):\n```\nusername:$algo$salt$hash:lastchg:min:max:warn:inactive:expire:reserved\n```\n| 필드 | 설명 |\n|---|---|\n| $algo$salt$hash | 해시 알고리즘($6$=SHA-512), 솔트, 해시값 |\n| lastchg | 마지막 변경일 (1970.1.1 기준 일수) |\n| min/max | 최소/최대 사용 기간 |\n| warn | 만료 경고 기간 |\n| inactive | 비활성 유예 기간 |\n\n**Shadow Password 도입 목적**: `/etc/passwd`는 644 권한으로 모든 사용자가 읽을 수 있어, 패스워드 해시가 노출되면 오프라인 크래킹 공격에 취약하다. Shadow 시스템은 해시를 600 권한의 `/etc/shadow`로 분리하여 root만 접근 가능하게 함으로써 보안을 강화한다.",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 268,
+      "category": "네트워크 보안",
+      "subcategory": "DNS 보안",
+      "front": "중간자 공격(MITM)의 한 형태로, 공격자가 DNS 응답을 변조하거나 위조하여 사용자를 정상 사이트가 아닌 공격자가 의도한 사이트로 유도하는 공격 기법의 명칭을 쓰시오.",
+      "back": "**DNS 스푸핑(DNS Spoofing)**\n\n공격자가 DNS 이름 해석(Name Resolution) 과정을 조작하여, 사용자가 정상 서버에 접속한다고 믿게 만드는 공격이다.\n\n**주요 유형**:\n| 유형 | 설명 |\n|---|---|\n| **DNS Cache Poisoning** | DNS 서버의 캐시에 위조된 레코드를 주입 |\n| **로컬 DNS 스푸핑** | 같은 네트워크에서 ARP 스푸핑 후 DNS 응답 위조 |\n| **DNS 하이재킹** | DNS 서버 자체를 장악하거나 설정 변조 |\n\n**피해**: 피싱 페이지, 악성 서버, 위장 로그인 페이지 등으로 트래픽 유도 → 계정 탈취, 악성코드 배포",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 269,
+      "category": "네트워크 보안",
+      "subcategory": "DNS 보안",
+      "front": "DNS 스푸핑(DNS Spoofing) 공격의 원리를 유형별로 설명하고, 대응 방안을 서술하시오.",
+      "back": "**1. DNS Cache Poisoning**\n- 공격자가 DNS 서버에 대량의 위조 응답을 전송하여, 정상 응답보다 먼저 캐시에 저장되게 함\n- Transaction ID와 소스 포트를 추측하여 정상 응답처럼 위장\n- 캐시된 위조 레코드가 TTL 동안 유지되어 다수 사용자에게 영향\n\n**2. 로컬 DNS 스푸핑**\n- ARP 스푸핑으로 게이트웨이를 사칭한 후, DNS 쿼리를 가로채 위조 응답 전송\n- 같은 LAN 내에서 수행, Ettercap/Bettercap 등 도구 사용\n\n**3. DNS 하이재킹**\n- DNS 서버 자체의 설정을 변경하거나, 도메인 등록 정보를 탈취\n\n**대응 방안**:\n1. **DNSSEC 적용**: DNS 응답에 전자서명을 추가하여 위변조 검증\n2. **DNS over HTTPS(DoH) / DNS over TLS(DoT)**: DNS 쿼리 암호화\n3. **DNS 캐시 TTL 최소화** 및 랜덤 소스 포트 사용\n4. **내부 DNS 서버에 재귀적 질의 제한** 설정\n5. **호스트 파일(/etc/hosts) 보호** 및 주기적 점검\n6. **네트워크 구간 ARP 스푸핑 방지** (Static ARP, DAI 등)",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 270,
+      "category": "시스템 보안",
+      "subcategory": "리눅스 방화벽",
+      "front": "다음은 리눅스 방화벽에서 **ping 요청(ICMP echo request)** 을 차단하기 위한 `iptables` 설정이다. 빈칸 (A), (B), (C)에 들어갈 값을 쓰시오.\n\n```bash\niptables -A INPUT -p (A) --icmp-type (B) -j (C)\n```",
+      "back": "**(A) icmp**\n**(B) echo-request** (또는 숫자 `8`)\n**(C) DROP** (또는 REJECT)\n\n**각 옵션 설명**:\n| 옵션 | 의미 |\n|---|---|\n| `-A INPUT` | INPUT 체인에 규칙 추가(Append) |\n| `-p icmp` | 프로토콜을 ICMP로 지정 |\n| `--icmp-type echo-request` | ICMP 타입 8번(ping 요청) |\n| `-j DROP` | 패킷 폐기 (응답 없이 차단) |\n| `-j REJECT` | 거부 응답(ICMP unreachable) 후 차단 |\n\n**DROP vs REJECT**:\n- `DROP`: 응답 없이 폐기 → 공격자에게 정보 제공 안 함\n- `REJECT`: 거부 메시지 전송 → 정상 사용자에게 빠른 피드백\n\n**참고**: echo-reply(타입 0)는 응답, echo-request(타입 8)는 요청이다.",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 271,
+      "category": "시스템 보안",
+      "subcategory": "보안 점검 도구",
+      "front": "다음 설명에 알맞은 용어를 쓰시오.\n\n1. 시스템 파일이나 주요 설정 파일이 위·변조되었는지 점검하는 보안 속성 또는 점검 항목은 무엇인가?\n2. 네트워크 서비스의 취약점을 원격에서 자동으로 스캔·분석하는 대표적인 취약점 점검 도구의 이름을 쓰시오.",
+      "back": "1. **무결성(Integrity)** / 파일 무결성 점검\n2. **Nessus** (네서스)\n\n**파일 무결성 점검 도구**:\n| 도구 | 설명 |\n|---|---|\n| **Tripwire** | 파일 해시값 비교 방식의 호스트 기반 무결성 점검 도구 |\n| **AIDE** | Tripwire 대안 오픈소스 |\n| **OSSEC** | 호스트 기반 IDS + 무결성 점검 |\n\n**취약점 점검(스캐닝) 도구**:\n| 도구 | 설명 |\n|---|---|\n| **Nessus** | 상용 취약점 스캐너, CVE 기반 원격 점검 |\n| **OpenVAS** | Nessus 포크, 오픈소스 취약점 스캐너 |\n| **Nikto** | 웹 서버 전용 취약점 스캐너 |\n\n> 무결성 점검은 **사후 탐지**(변조 여부), 취약점 점검은 **사전 예방**(약점 식별) 목적이다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 272,
+      "category": "시스템 보안",
+      "subcategory": "윈도우 로그 관리",
+      "front": "다음 Windows 서비스 로그 파일명 또는 로그 관련 식별자에 해당하는 값을 쓰시오.\n\n1. IIS/HTTP 서비스 오류와 관련된 로그 디렉터리 또는 로그 식별자: (A)\n2. DHCP 서버 로그 파일 접두어 또는 관련 로그 이름: (B)",
+      "back": "**(A) HTTPERR**\n**(B) DhcpSrvLog**\n\n**Windows 주요 서비스 로그 위치**:\n| 서비스 | 로그 경로/파일 |\n|---|---|\n| **HTTP/IIS 오류** | `%SystemRoot%\\System32\\LogFiles\\HTTPERR\\` |\n| **IIS 접근 로그** | `%SystemRoot%\\System32\\LogFiles\\W3SVC1\\` |\n| **DHCP** | `%SystemRoot%\\System32\\dhcp\\DhcpSrvLog-*.log` |\n| **DNS** | `%SystemRoot%\\System32\\dns\\dns.log` |\n| **FTP** | `%SystemRoot%\\System32\\LogFiles\\MSFTPSVC1\\` |\n\n**이벤트 로그** (이벤트 뷰어):\n- **보안(Security)**: 로그온/로그오프, 감사 정책\n- **시스템(System)**: 서비스 시작/중지, 드라이버 오류\n- **응용 프로그램(Application)**: 앱 오류, 경고",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 273,
+      "category": "시스템 보안",
+      "subcategory": "윈도우 로그 관리",
+      "front": "Windows 시스템의 주요 이벤트 로그 유형(보안, 시스템, 응용 프로그램)과 서비스별 로그 파일 경로를 설명하고, 침해사고 분석 시 우선 점검해야 할 로그를 서술하시오.",
+      "back": "**이벤트 로그 3대 유형**:\n| 유형 | 파일 | 주요 내용 |\n|---|---|---|\n| **보안(Security)** | SecEvent.evt | 로그온 성공/실패, 권한 사용, 감사 정책 |\n| **시스템(System)** | SysEvent.evt | 서비스 시작/중지, 드라이버 로드, 시간 변경 |\n| **응용 프로그램(Application)** | AppEvent.evt | 응용 프로그램 오류, 경고, 정보 |\n\n**서비스별 로그 파일**:\n| 서비스 | 경로 | 기록 내용 |\n|---|---|---|\n| IIS 접근 | `LogFiles\\W3SVC1\\` | HTTP 요청(IP, URL, 상태코드, UA) |\n| HTTP 오류 | `LogFiles\\HTTPERR\\` | HTTP.sys 커널 수준 오류 |\n| DHCP | `dhcp\\DhcpSrvLog-*.log` | IP 할당/해제/갱신 |\n| DNS | `dns\\dns.log` | DNS 쿼리/응답 |\n\n**침해사고 분석 시 우선 점검**:\n1. **보안 로그**: 비인가 로그온 시도(4625), 권한 상승(4672), 계정 생성(4720)\n2. **IIS 로그**: 웹 공격 흔적(SQL Injection, XSS, 디렉터리 탐색)\n3. **HTTPERR**: 비정상 요청, 서비스 거부 공격 흔적\n4. **시스템 로그**: 서비스 변조, 예약 작업 등록 여부",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 274,
+      "category": "위험관리",
+      "subcategory": "암호학",
+      "front": "다음 설명에 해당하는 암호학적 도구의 명칭을 쓰시오.\n\n> 임의 길이의 입력값을 받아 고정 길이의 출력값으로 변환하며, 원문 복원이 목적이 아니라 무결성 검증이나 메시지 다이제스트 생성 등에 사용되는 방식",
+      "back": "**해시 함수(Hash Function)** / 일방향 해시 함수 / 암호학적 해시 함수\n\n**특성**:\n| 속성 | 설명 |\n|---|---|\n| **일방향성** | 해시값으로부터 원문 복원 불가 |\n| **고정 출력** | 입력 크기에 무관하게 일정 길이 출력 |\n| **충돌 저항성** | 같은 해시를 만드는 서로 다른 입력 찾기 어려움 |\n| **눈사태 효과** | 입력의 미세한 변화 → 출력이 크게 변화 |\n\n**대표 알고리즘**:\n| 알고리즘 | 출력 길이 | 비고 |\n|---|---|---|\n| MD5 | 128비트 | 취약, 사용 비권장 |\n| SHA-1 | 160비트 | 취약, 사용 비권장 |\n| **SHA-256** | 256비트 | 현재 권장 |\n| **SHA-512** | 512비트 | 고강도 |\n\n**활용**: 패스워드 저장, 전자서명, 파일 무결성 검증, 블록체인",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 275,
+      "category": "위험관리",
+      "subcategory": "위험관리 절차",
+      "front": "다음은 정보보호 위험 관리 절차를 순서대로 나열한 것이다. 빈칸 (A), (B), (C)에 들어갈 단계를 쓰시오.\n\n> 정보보호 정책 수립 → (A) → (B) → 정보보호 대책 선정 → 보호대책 구현 → (C)",
+      "back": "**(A) 위험 분석**\n**(B) 위험 평가**\n**(C) 사후 관리(모니터링 및 검토)**\n\n**위험 관리 6단계 전체**:\n| 단계 | 활동 |\n|---|---|\n| ① 정보보호 정책 수립 | 조직의 보안 목표·범위·책임 정의 |\n| ② **위험 분석** | 자산 식별, 위협·취약점 분석, 위험도 산정 |\n| ③ **위험 평가** | 수용 가능 수준과 비교하여 위험 우선순위 결정 |\n| ④ 정보보호 대책 선정 | 위험 처리 전략(감소·회피·전가·수용) 결정 |\n| ⑤ 보호대책 구현 | 선정된 통제를 실제 적용·배치 |\n| ⑥ **사후 관리** | 잔여 위험 모니터링, 효과성 검토, 정책 갱신 |\n\n> 위험 분석은 '무엇이 얼마나 위험한가'를 측정하는 것이고, 위험 평가는 '그 위험을 처리해야 하는가'를 판단하는 것이다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 276,
+      "category": "위험관리",
+      "subcategory": "위험관리 절차",
+      "front": "정보보호 위험 관리의 전체 절차(6단계)를 순서대로 나열하고, 각 단계의 핵심 활동을 서술하시오.",
+      "back": "**1단계: 정보보호 정책 수립**\n- 조직의 정보보호 목표, 범위, 역할과 책임을 정의\n- 경영진의 의지를 반영한 최상위 보안 문서 작성\n\n**2단계: 위험 분석(Risk Analysis)**\n- **자산 식별**: 보호 대상 자산 목록화 및 중요도 산정\n- **위협 식별**: 자산에 대한 잠재적 위협 파악\n- **취약점 분석**: 자산의 약점 및 노출 정도 분석\n- **위험도 산정**: 위험 = 자산가치 × 위협 × 취약점\n\n**3단계: 위험 평가(Risk Assessment)**\n- 산정된 위험을 조직의 수용 가능 기준(DoA)과 비교\n- 위험의 우선순위를 결정하여 처리 대상 선별\n\n**4단계: 정보보호 대책 선정**\n- 위험 처리 전략 결정:\n  - **위험 감소**: 통제 적용으로 위험 수준 낮춤\n  - **위험 회피**: 위험 유발 활동 중단\n  - **위험 전가**: 보험 가입, 외주 등으로 이전\n  - **위험 수용**: 잔여 위험을 경영진이 수용\n\n**5단계: 보호대책 구현**\n- 선정된 기술적·관리적·물리적 통제를 실제 적용\n\n**6단계: 사후 관리**\n- 잔여 위험 모니터링, 통제 효과성 검토, 정책 갱신\n- PDCA 사이클에 따른 지속적 개선",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 277,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "소프트웨어 보안 테스트",
+      "front": "정상적이지 않거나 예외적인 입력값, 임의의 값, 대량의 비정상 데이터를 프로그램에 반복 입력하여 오류, 충돌, 예외 처리 미비 등을 찾는 테스트 기법의 이름을 쓰시오.",
+      "back": "**퍼징(Fuzzing)** / 퍼즈 테스트(Fuzz Testing)\n\n**정의**: 무작위 또는 변형된 비정상 데이터를 소프트웨어에 대량 입력하여 예상치 못한 동작(크래시, 메모리 오류, 예외 처리 미비 등)을 유발하고 취약점을 찾는 **동적 보안 테스트 기법**\n\n**퍼징 유형**:\n| 유형 | 설명 |\n|---|---|\n| **Mutation-based** | 정상 입력을 변형(비트 플립, 경계값 등) |\n| **Generation-based** | 프로토콜/형식 규격에 맞게 생성 |\n| **Coverage-guided** | 코드 커버리지를 피드백으로 활용 |\n\n**대표 도구**: AFL, libFuzzer, Peach, Sulley\n\n**탐지 가능 취약점**: 버퍼 오버플로, 정수 오버플로, 포맷 스트링, Use-After-Free, Null Pointer Dereference 등",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 278,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "소프트웨어 보안 테스트",
+      "front": "퍼징(Fuzzing) 테스트의 유형(Mutation-based, Generation-based, Coverage-guided)을 각각 설명하고, 소프트웨어 개발 보안에서의 활용 방안을 서술하시오.",
+      "back": "**1. Mutation-based Fuzzing (변이 기반)**\n- 정상적인 입력 샘플(시드)을 수집한 뒤 비트 플립, 바이트 삽입/삭제, 경계값 치환 등으로 변형\n- 장점: 구현이 간단, 입력 형식 몰라도 적용 가능\n- 단점: 복잡한 입력 구조에서는 유효 입력 비율이 낮음\n\n**2. Generation-based Fuzzing (생성 기반)**\n- 프로토콜 명세나 파일 형식 규격을 모델링하여 테스트 입력을 생성\n- 장점: 구조화된 입력(HTTP, XML, PDF 등)에 효과적\n- 단점: 모델 작성에 시간 소요\n\n**3. Coverage-guided Fuzzing (커버리지 기반)**\n- 코드 커버리지를 실시간 측정하여, 새로운 경로를 탐색하는 입력을 우선 선택\n- 대표 도구: AFL, libFuzzer\n- 장점: 깊은 코드 경로까지 탐색 가능\n\n**개발 보안 활용 방안**:\n1. **CI/CD 파이프라인에 퍼징 통합**: 빌드마다 자동 퍼징 수행\n2. **입력 검증 로직 검증**: 경계값, 특수문자, 초과 길이 등에 대한 처리 확인\n3. **서드파티 라이브러리 검증**: 외부 컴포넌트의 안정성 사전 검증\n4. **취약점 재현**: 발견된 크래시 입력을 테스트 케이스로 보존",
+      "type": "서술형",
+      "frequency": "일반"
+    },
+    {
+      "id": 279,
+      "category": "시스템 보안",
+      "subcategory": "메일 서버 보안",
+      "front": "다음은 `sendmail`에서 스팸 메일 또는 오픈 릴레이를 차단하기 위해 사용하는 주요 파일들이다. 빈칸에 들어갈 파일명을 쓰시오.\n\n1. Sendmail의 메인 설정 파일: (1)\n2. 접근 제어 목록 원본 파일: (2)\n3. 접근 제어 DB 파일: (3)",
+      "back": "**(1) sendmail.cf**\n**(2) access**\n**(3) access.db**\n\n**sendmail 주요 설정 파일**:\n| 파일 | 역할 |\n|---|---|\n| `sendmail.cf` | 메인 설정 파일 (라우팅, 릴레이, 도메인 등) |\n| `access` | 접근 제어 규칙 텍스트 파일 (IP/도메인별 허용·차단) |\n| `access.db` | access를 해시 DB로 변환한 파일 (실제 참조) |\n| `local-host-names` | 수신 허용 도메인 목록 |\n| `aliases` | 메일 별칭 설정 |\n\n**access 파일 설정 예시**:\n```\nspammer.com      REJECT\n192.168.1        RELAY\nbaduser@         DISCARD\n```\n\n**DB 변환 명령**: `makemap hash /etc/mail/access < /etc/mail/access`\n\n**오픈 릴레이 방지**: `sendmail.cf`에서 `FEATURE(access_db)` 활성화 후, 허용된 IP/도메인만 RELAY 설정",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 280,
+      "category": "시스템 보안",
+      "subcategory": "메일 서버 보안",
+      "front": "sendmail 메일 서버의 주요 보안 설정 항목(오픈 릴레이 차단, 스팸 방지, 배너 정보 숨김 등)과 관련 설정 파일의 역할을 서술하시오.",
+      "back": "**1. 오픈 릴레이(Open Relay) 차단**\n- 인증되지 않은 외부 사용자가 메일 서버를 중계(relay)로 악용하는 것을 방지\n- `sendmail.cf`에서 `FEATURE(access_db)` 활성화\n- `/etc/mail/access` 파일에 허용 IP/도메인만 `RELAY`, 나머지 `REJECT` 설정\n- `makemap hash` 명령으로 `access.db` 생성\n\n**2. 스팸 메일 차단**\n- `access` 파일에서 스팸 발송 도메인/IP를 `REJECT` 또는 `DISCARD` 처리\n- DNSBL(RBL) 연동: `FEATURE(dnsbl, 'bl.spamcop.net')` 설정\n- 헤더 검사: `FEATURE(local_check_mail)` 활용\n\n**3. 배너 정보 숨김**\n- `sendmail.cf`에서 `SmtpGreetingMessage` 수정\n- 서버 버전 정보 노출 방지 → 공격자의 버전별 취약점 악용 차단\n\n**4. SMTP 인증(SMTP-AUTH)**\n- SASL 인증 연동으로 인증된 사용자만 메일 발송 허용\n\n**5. 주요 파일 권한**:\n| 파일 | 권한 |\n|---|---|\n| sendmail.cf | 644 (root 소유) |\n| access, aliases | 644 |\n| /var/spool/mqueue | 700 |",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 281,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "웹 서버 보안",
+      "front": "Microsoft IIS 웹 서버에서 URL 재작성, 리다이렉션, 특정 패턴 요청 차단 등의 기능을 수행하기 위해 사용하는 대표적인 확장 모듈의 이름을 쓰시오.",
+      "back": "**URL Rewrite 모듈** (URL 재작성 모듈)\n\n**기능**:\n| 기능 | 설명 |\n|---|---|\n| **URL 재작성** | 복잡한 URL을 깔끔한 형태로 변환 (SEO 최적화) |\n| **리다이렉션** | HTTP → HTTPS 강제 전환, 도메인 통합 |\n| **요청 차단** | 특정 패턴(SQL Injection, 디렉터리 탐색 등) 포함 URL 차단 |\n| **헤더 조작** | 요청/응답 헤더 추가·수정 |\n\n**보안 활용 예시**:\n```xml\n<rule name=\"Block SQL Injection\">\n  <match url=\".*\" />\n  <conditions>\n    <add input=\"{QUERY_STRING}\" pattern=\"(union|select|insert|drop)\" />\n  </conditions>\n  <action type=\"CustomResponse\" statusCode=\"403\" />\n</rule>\n```\n\n**참고**: Apache의 `mod_rewrite`, Nginx의 `rewrite` 지시어와 동일한 역할을 한다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 282,
+      "category": "법규 및 관리체계",
+      "subcategory": "정보통신망법",
+      "front": "정보통신망법상, 정보통신서비스 제공을 위하여 다수의 서버·통신장비·저장장치를 집적하여 운영하는 시설을 설치·운영하는 사업자를 무엇이라 하는가?",
+      "back": "**집적정보통신시설 사업자**\n\n**정의**: 타인의 정보통신서비스 제공을 위하여 **서버, 통신장비, 저장장치 등을 집적(集積)하여 운영하는 시설**(IDC, Internet Data Center)을 설치·운영하는 사업자\n\n**법적 근거**: 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제46조\n\n**보호 의무**:\n1. 집적정보통신시설의 **안정적 운영**을 위한 보호조치\n2. **재해·장애 대비** 복구계획 수립\n3. 과학기술정보통신부 장관에게 **보호조치 이행 현황 제출**\n4. 중대한 침해사고 발생 시 **즉시 신고** 의무\n\n> '정보통신기반시설'(정보통신기반보호법)과 혼동 주의. 집적정보통신시설은 IDC 사업자 개념이며, 정보통신기반시설은 국가·사회 기반 시설 보호 개념이다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 283,
+      "category": "법규 및 관리체계",
+      "subcategory": "정보통신망법",
+      "front": "집적정보통신시설의 법적 정의, 보호 의무, 그리고 '정보통신기반시설'과의 차이를 서술하시오.",
+      "back": "**집적정보통신시설**:\n- **법적 근거**: 정보통신망법 제46조\n- **정의**: 타인의 정보통신서비스 제공을 위해 서버·통신장비·저장장치를 집적하여 운영하는 시설 (IDC)\n- **보호 의무**:\n  1. 시설의 안정적 운영을 위한 보호조치 수립·이행\n  2. 재해·장애 대비 복구계획 수립\n  3. 보호조치 이행 현황을 과기정통부 장관에게 제출\n  4. 중대한 침해사고 발생 시 즉시 신고\n  5. 정기적 보안점검 수행\n\n**정보통신기반시설**:\n- **법적 근거**: 정보통신기반보호법\n- **정의**: 국가안보, 행정, 국방, 치안, 금융, 통신, 운송, 에너지 등에서 전자적으로 관리되는 **국가·사회 핵심 기반 시설**\n- 중앙행정기관의 장이 **주요정보통신기반시설로 지정**\n\n| 구분 | 집적정보통신시설 | 정보통신기반시설 |\n|---|---|---|\n| 법률 | 정보통신망법 | 정보통신기반보호법 |\n| 대상 | IDC, 호스팅 사업자 | 국가·사회 핵심 인프라 |\n| 성격 | 사업자 의무 | 국가 차원 보호 |",
+      "type": "서술형",
+      "frequency": "일반"
+    },
+    {
+      "id": 284,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "보안관제",
+      "front": "여러 보안 장비와 시스템에서 발생하는 이벤트 및 로그를 통합 수집하고, 이를 상관분석하여 침해 징후를 탐지·분석하는 보안관제 시스템을 무엇이라고 하는가?",
+      "back": "**SIEM** (Security Information and Event Management)\n\n**핵심 기능**:\n| 기능 | 설명 |\n|---|---|\n| **로그 통합 수집** | 방화벽, IDS/IPS, 서버, DB 등 이기종 장비 로그 수집 |\n| **정규화(Normalization)** | 서로 다른 형식의 로그를 통일된 형태로 변환 |\n| **상관분석(Correlation)** | 이벤트 간 연관 관계를 분석하여 복합 공격 탐지 |\n| **실시간 경보** | 탐지 규칙 기반 알림 및 대시보드 |\n| **위협 인텔리전스 연동** | 외부 위협 정보(IOC)와 로그 매칭 |\n| **컴플라이언스 보고** | 감사 및 법적 요구사항 충족 보고서 생성 |\n\n**대표 솔루션**: Splunk, IBM QRadar, ArcSight, ELK(오픈소스)\n\n> ESM(통합보안관리)에 상관분석, 위협 인텔리전스 등이 추가된 발전형이다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 285,
+      "category": "법규 및 관리체계",
+      "subcategory": "정보보호 조직",
+      "front": "정보보호 최고책임자(CISO)의 주요 역할과 책임 4가지를 법적 근거와 함께 서술하시오.",
+      "back": "**법적 근거**: 정보통신망법 제45조의3\n\n**CISO의 주요 역할과 책임 4가지**:\n\n**1. 정보보호 계획의 수립·시행 및 개선**\n- 조직의 정보보호 정책, 지침, 절차를 수립하고 이행\n- 연간 정보보호 계획 및 예산을 수립·집행\n\n**2. 정보보호 실태와 관행의 정기적인 감사 및 개선**\n- 정보보호 관리체계의 이행 여부를 정기적으로 감사\n- 미흡 사항에 대한 시정·개선 조치 추진\n\n**3. 정보보호 위험의 식별·평가 및 정보보호 대책 마련**\n- 자산 식별, 위협 분석, 취약점 점검을 통한 위험 평가\n- 적절한 기술적·관리적 보호대책 선정 및 적용\n\n**4. 정보보호 교육과 모의훈련 계획의 수립 및 시행**\n- 전 임직원 대상 정보보호 인식 교육 실시\n- 침해사고 대응 모의훈련(사이버 훈련) 계획·수행\n\n**지정 요건**: 일정 규모 이상의 정보통신서비스 제공자는 CISO를 **임원급**으로 지정해야 하며, 겸직이 제한될 수 있다.",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 286,
+      "category": "법규 및 관리체계",
+      "subcategory": "개인정보보호",
+      "front": "생체인식정보 보호와 관련된 6가지 원칙을 쓰고, 각 원칙의 의미를 간략히 설명하시오.",
+      "back": "**1. 비례성(Proportionality)**\n- 생체인식정보 사용으로 얻는 편익과 정보주체의 침해 위험을 비교하여 활용 여부를 판단해야 한다.\n\n**2. 적법성(Lawfulness)**\n- 수집·이용·제공 등 처리의 근거는 법적으로 정당하고 명확해야 한다. 정보주체의 동의 또는 법률에 근거한 경우에만 처리 가능하다.\n\n**3. 목적 제한(Purpose Limitation)**\n- 동의받은 인증·식별 목적 외의 용도로 무단 활용해서는 안 된다. 수집 시 명시한 목적 범위 내에서만 사용한다.\n\n**4. 투명성(Transparency)**\n- 처리 목적, 보호조치, 보유 기간 등 보호 관련 사항을 정보주체가 이해하기 쉽게 공개해야 한다.\n\n**5. 안전성(Security)**\n- 분실, 도난, 유출, 위·변조, 훼손이 발생하지 않도록 안전하게 처리·관리해야 한다. 암호화, 접근통제 등 기술적 보호조치를 적용한다.\n\n**6. 통제권 보장(Data Subject's Control)**\n- 정보주체가 자신의 생체정보를 열람·정정·삭제·처리 정지 등 스스로 통제할 수 있어야 한다.\n\n> 생체인식정보는 변경이 불가능한 고유 정보이므로 일반 개인정보보다 강화된 보호가 필요하다.",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 287,
+      "category": "네트워크 보안",
+      "subcategory": "SSL/TLS",
+      "front": "SSL/TLS 통신 과정에서 **비대칭키(공개키) 암호**와 **대칭키 암호**가 각각 어느 단계에서 어떤 목적으로 사용되는지 설명하시오.",
+      "back": "**비대칭키(공개키) 암호 사용 단계와 용도**:\n\n**1. 서버 인증 단계**\n- 서버가 제시한 인증서를 클라이언트가 **CA의 공개키로 검증**하여 서버의 신원을 확인\n- 인증서에 포함된 서버 공개키의 진위를 확인하는 과정\n\n**2. 키 교환 단계**\n- 세션키를 만들기 위한 비밀값을 안전하게 교환\n- **RSA 방식**: 클라이언트가 Premaster Secret을 생성하여 서버 공개키로 암호화 전송\n- **DHE/ECDHE 방식**: 서버와 클라이언트가 공개값을 교환하고, 각자의 개인키로 공유 비밀 계산 (→ PFS 보장)\n\n---\n\n**대칭키 암호 사용 단계와 용도**:\n\n**1. 암호화 통신 단계 (Change Cipher Spec 이후)**\n- 핸드셰이크에서 합의된 **세션키(대칭키)** 와 IV로 실제 애플리케이션 데이터를 암호화·복호화\n- AES-GCM, ChaCha20-Poly1305 등 사용\n\n---\n\n**비대칭키/대칭키 혼합 사용 이유**:\n| 방식 | 장점 | 단점 |\n|---|---|---|\n| 비대칭키 | 키 분배 용이 | 연산 속도 느림 |\n| 대칭키 | 연산 속도 빠름 | 키 분배 어려움 |\n\n→ **비대칭키로 안전하게 세션키를 교환한 뒤, 대칭키로 빠르게 데이터를 암호화**하는 하이브리드 방식",
+      "type": "서술형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 288,
+      "category": "침해사고 분석 및 대응",
+      "subcategory": "웹 취약점 분석",
+      "front": "**상황:** 웹 프록시 도구(Fiddler)로 HTTPS 트래픽을 분석하는 과정에서 복호화가 되지 않고, 게시글 목록 HTML 응답의 `<dt>` 태그 내부에 `<script>alert(document.cookie)</script>` 가 삽입된 것이 확인되었다.\n\n1. HTTPS 복호화 실패 원인은?\n2. 해결 방안은?\n3. 게시글 목록에서 확인된 취약점은?\n4. 해당 취약점의 대응 방안은?",
+      "back": "**1. HTTPS 복호화 실패 원인**\nFiddler에서 HTTPS 복호화(Decrypt HTTPS traffic) 기능이 비활성화되어 있거나, Fiddler 루트 인증서가 시스템에 신뢰 설치되지 않아 HTTPS 세션을 평문으로 해석하지 못했기 때문이다.\n\n**2. 해결 방안**\n- Fiddler 메뉴에서 **`Decrypt HTTPS traffic`** 옵션을 활성화\n- Fiddler **루트 인증서를 설치하고 신뢰하도록 설정**\n- 필요 시 취약한 SSL 프로토콜을 비활성화하고 **TLS 1.2 이상** 사용\n\n**3. 확인된 취약점**\n**저장형 XSS(Stored XSS)** 취약점\n- 게시글 제목 등 입력 필드에 삽입된 악성 스크립트가 DB에 저장된 후, 게시글 목록을 조회하는 모든 사용자의 브라우저에서 실행됨\n\n**4. 대응 방안**\n- **입력값 검증**: 스크립트 태그, 이벤트 핸들러 등 위험 입력 차단\n- **출력 인코딩**: HTML Entity Encoding 적용 (`<` → `&lt;`, `>` → `&gt;`)\n- **HttpOnly/Secure 쿠키 플래그**: 쿠키 탈취 피해 최소화\n- **CSP(Content-Security-Policy) 헤더**: 인라인 스크립트 실행 제한",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 289,
+      "category": "웹/애플리케이션 보안",
+      "subcategory": "웹 취약점",
+      "front": "**상황:** 웹 애플리케이션에서 회원정보 변경 기능이 다음과 같이 구현되어 있다.\n\n```html\n<form action=\"/member/update\" method=\"POST\">\n  <input name=\"email\" value=\"user@example.com\">\n  <input name=\"phone\" value=\"010-1234-5678\">\n  <input type=\"submit\" value=\"변경\">\n</form>\n```\n\n1. Cookie와 Session의 보안 측면 차이를 설명하시오.\n2. 위 코드의 취약점과 공격 기법을 설명하시오.\n3. 대응 방안을 쓰시오.",
+      "back": "**1. Cookie와 Session의 보안 차이**\n| 구분 | Cookie | Session |\n|---|---|---|\n| 저장 위치 | **클라이언트**(브라우저) | **서버** 측 |\n| 보안성 | 탈취·변조에 취약 | 상대적으로 안전 |\n| 전송 방식 | HTTP 헤더로 매 요청 전송 | 세션 ID만 쿠키로 전달 |\n\n**2. 취약점: CSRF(Cross-Site Request Forgery)**\n- 서버가 정상 요청과 공격자가 유도한 비정상 요청을 구분하지 못함\n- **CSRF 토큰이 없어** 공격자가 피해자의 로그인 세션을 이용해 의도하지 않은 회원정보 변경 요청을 보내게 만들 수 있음\n- 예: 공격자가 악성 페이지에 자동 제출 폼을 삽입 → 피해자가 방문하면 회원정보가 공격자가 원하는 값으로 변경됨\n\n**3. 대응 방안**\n\n**(1) CSRF 토큰 적용**\n```html\n<form action=\"/member/update\" method=\"POST\">\n  <input type=\"hidden\" name=\"csrf_token\" value=\"랜덤토큰값\">\n  ...\n</form>\n```\n- 서버에서 랜덤 토큰을 세션에 저장하고 폼에 hidden으로 포함\n- 요청 시 세션의 토큰과 폼의 토큰 일치 여부 검증\n\n**(2) Referer/Origin 헤더 검증**\n- 요청의 출처가 자기 도메인인지 확인\n\n**(3) 중요 기능에 재인증 요구**\n- 비밀번호 변경, 이메일 변경 등은 현재 비밀번호 재입력 요구",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 290,
+      "category": "네트워크 보안",
+      "subcategory": "DNS 보안",
+      "front": "**상황:** 내부 네트워크에서 사용자들이 정상 도메인(예: bank.example.com)에 접속했음에도 피싱 페이지로 유도되는 사고가 발생했다. tcpdump로 캡처한 결과, 동일 DNS 쿼리에 대해 두 개의 서로 다른 응답이 수신되고 있다.\n\n1. 의심되는 공격 기법은?\n2. 두 개의 응답이 수신되는 이유는?\n3. 대응 방안을 쓰시오.",
+      "back": "**1. 의심되는 공격 기법**\n**DNS 스푸핑(DNS Spoofing)** — 로컬 네트워크에서의 DNS 응답 위조 공격\n\n**2. 두 개 응답이 수신되는 이유**\n- 공격자가 ARP 스푸핑 등으로 네트워크 트래픽을 가로챈 후, **정상 DNS 서버보다 먼저 위조된 DNS 응답을 전송**\n- 이후 정상 DNS 서버의 진짜 응답도 도착하여 두 개의 응답이 캡처됨\n- 클라이언트는 **먼저 도착한 위조 응답을 채택**하여 공격자의 IP로 접속\n\n**3. 대응 방안**\n1. **DNSSEC 적용**: DNS 응답의 전자서명을 검증하여 위변조 탐지\n2. **DNS over HTTPS(DoH) / DNS over TLS(DoT)**: DNS 쿼리를 암호화\n3. **Static ARP 또는 DAI(Dynamic ARP Inspection)**: ARP 스푸핑 방지\n4. **내부 DNS 서버 보안 강화**: 재귀적 질의 제한, 캐시 TTL 관리\n5. **VLAN 분리 및 네트워크 세그먼테이션**: 공격 범위 제한\n6. **DNS 트래픽 모니터링**: 비정상 DNS 응답 탐지 규칙 적용",
+      "type": "실무형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 291,
+      "category": "법규 및 관리체계",
+      "subcategory": "개인정보보호",
+      "front": "생체인식정보 보호의 6대 원칙을 모두 쓰시오.",
+      "back": "1. **비례성**(Proportionality)\n2. **적법성**(Lawfulness)\n3. **목적 제한**(Purpose Limitation)\n4. **투명성**(Transparency)\n5. **안전성**(Security)\n6. **통제권 보장**(Data Subject's Control)\n\n> 생체인식정보는 지문, 홍채, 얼굴, 정맥 등 변경 불가능한 고유 신체 정보로, 유출 시 대체가 불가능하므로 일반 개인정보보다 강화된 보호 원칙이 적용된다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 292,
+      "category": "법규 및 관리체계",
+      "subcategory": "정보보호 조직",
+      "front": "정보통신망법에 따라 CISO(정보보호 최고책임자)가 수행해야 하는 4가지 법적 업무를 모두 쓰시오.",
+      "back": "1. **정보보호 계획의 수립·시행 및 개선**\n2. **정보보호 실태와 관행의 정기적인 감사 및 개선**\n3. **정보보호 위험의 식별·평가 및 정보보호 대책 마련**\n4. **정보보호 교육과 모의훈련 계획의 수립 및 시행**\n\n> 정보통신망법 제45조의3에 근거하며, 일정 규모 이상의 정보통신서비스 제공자는 CISO를 **임원급**으로 지정해야 한다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 293,
+      "category": "네트워크 보안",
+      "subcategory": "SSL/TLS",
+      "front": "SSL/TLS 통신에서 비대칭키 암호와 대칭키 암호가 각각 사용되는 단계를 쓰시오.\n\n(A) 비대칭키 암호가 사용되는 단계 (2가지)\n(B) 대칭키 암호가 사용되는 단계",
+      "back": "**(A) 비대칭키 암호 사용 단계**:\n1. **서버 인증 단계** — CA의 공개키로 서버 인증서 검증\n2. **키 교환 단계** — Premaster Secret 암호화 전송(RSA) 또는 공개값 교환(DHE/ECDHE)\n\n**(B) 대칭키 암호 사용 단계**:\n- **데이터 전송 단계** (Change Cipher Spec 이후) — 세션키(대칭키)로 실제 애플리케이션 데이터 암호화·복호화\n\n> 비대칭키는 '인증·키 교환'에, 대칭키는 '실제 데이터 암호화'에 사용된다. 비대칭키만 쓰면 느리고, 대칭키만 쓰면 키 분배가 어려우므로 **하이브리드 방식**을 채택한다.",
+      "type": "단답형",
+      "frequency": "최빈출"
+    },
+    {
+      "id": 294,
+      "category": "시스템 보안",
+      "subcategory": "리눅스 방화벽",
+      "front": "iptables에서 ICMP 트래픽을 제어하는 방법을 설명하고, ping 차단 설정에서 DROP과 REJECT의 차이, 보안상 권장 설정을 서술하시오.",
+      "back": "**ICMP 제어 iptables 명령**:\n```bash\n# ping 요청(echo-request) 차단\niptables -A INPUT -p icmp --icmp-type echo-request -j DROP\n\n# ping 응답(echo-reply) 차단\niptables -A OUTPUT -p icmp --icmp-type echo-reply -j DROP\n\n# 모든 ICMP 차단\niptables -A INPUT -p icmp -j DROP\n```\n\n**DROP vs REJECT 차이**:\n| 구분 | DROP | REJECT |\n|---|---|---|\n| 동작 | 패킷을 **무응답으로 폐기** | **ICMP Unreachable 응답** 후 폐기 |\n| 공격자 관점 | 방화벽 존재 여부 파악 어려움 | 방화벽이 있음을 알 수 있음 |\n| 사용자 관점 | 타임아웃까지 대기 | 즉시 거부 응답 수신 |\n\n**보안상 권장**:\n- **외부 인터페이스**: `DROP` 사용 — 공격자에게 정보 노출 최소화\n- **내부 인터페이스**: `REJECT` 가능 — 정상 사용자에게 빠른 피드백\n- ping 차단은 **호스트 탐색(Host Discovery) 방지**에 효과적이나, ICMP 전체 차단 시 MTU Discovery, Traceroute 등이 동작하지 않으므로 **필요한 타입만 선별 차단**이 바람직하다.",
+      "type": "서술형",
+      "frequency": "최빈출"
     }
   ]
 }

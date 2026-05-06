@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775990451970,
+  "projectRoot": "/home/ubuntu/quiz_algisa",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "algisa": {
+      "path": "algisa",
+      "purpose": null,
+      "fileCount": 12,
+      "lastAccessed": 1775990451950,
+      "keyFiles": [
+        "알기사_001.pdf",
+        "알기사_008.pdf",
+        "알기사_010.pdf",
+        "알기사_050.pdf",
+        "알기사_115.pdf"
+      ]
+    },
+    "new_data": {
+      "path": "new_data",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1775990451961,
+      "keyFiles": [
+        "new_data_01.json",
+        "new_data_01_converted.json",
+        "new_data_02.txt",
+        "new_data_02_converted.json",
+        "new_data_03.md"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 2,
+      "lastAccessed": 1775990496414,
+      "type": "directory"
+    },
+    {
+      "path": "app.js",
+      "accessCount": 2,
+      "lastAccessed": 1775990675690,
+      "type": "file"
+    },
+    {
+      "path": "index.html",
+      "accessCount": 1,
+      "lastAccessed": 1775990482128,
+      "type": "file"
+    },
+    {
+      "path": "run.sh",
+      "accessCount": 1,
+      "lastAccessed": 1775990483097,
+      "type": "file"
+    },
+    {
+      "path": "style.css",
+      "accessCount": 1,
+      "lastAccessed": 1775990483228,
+      "type": "file"
+    },
+    {
+      "path": ".claude/settings.local.json",
+      "accessCount": 1,
+      "lastAccessed": 1775990483660,
+      "type": "file"
+    },
+    {
+      "path": "data.json",
+      "accessCount": 1,
+      "lastAccessed": 1775990483907,
+      "type": "file"
+    },
+    {
+      "path": "review_result.json",
+      "accessCount": 1,
+      "lastAccessed": 1775990490918,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1775990616675,
+      "type": "file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "accessCount": 1,
+      "lastAccessed": 1775990619828,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

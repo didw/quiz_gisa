@@ -26,17 +26,20 @@ const freqBtns = document.querySelectorAll('.freq-btn');
 const examBtn = document.getElementById('examBtn');
 
 // Sanitize HTML output - strip dangerous tags while keeping markdown-generated ones
+const ALLOWED_TAGS = new Set(['p','strong','em','ul','ol','li','table','thead','tbody','tr','th','td',
+  'h1','h2','h3','h4','h5','h6','br','hr','a','code','pre','blockquote','span','div','del','sup','sub']);
+const sanitizeDiv = document.createElement('div');
+
 function sanitizeHtml(html) {
-  const allowed = new Set(['p','strong','em','ul','ol','li','table','thead','tbody','tr','th','td',
-    'h1','h2','h3','h4','h5','h6','br','hr','a','code','pre','blockquote','span','div','del','sup','sub']);
-  const div = document.createElement('div');
-  div.innerHTML = html;
-  div.querySelectorAll('*').forEach(el => {
-    if (!allowed.has(el.tagName.toLowerCase())) {
+  sanitizeDiv.innerHTML = html;
+  sanitizeDiv.querySelectorAll('*').forEach(el => {
+    if (!ALLOWED_TAGS.has(el.tagName.toLowerCase())) {
       el.replaceWith(document.createTextNode(el.textContent));
     }
   });
-  return div.innerHTML;
+  const result = sanitizeDiv.innerHTML;
+  sanitizeDiv.textContent = '';
+  return result;
 }
 
 // Load data
